@@ -524,22 +524,22 @@ textarea,
 
 @font-face {
   font-family: 'CerebriSans';
-  src: url(https://wallet.swap.online/fonts/CerebriSans-Regular.eot);
-  src: url(https://wallet.swap.online/fonts/CerebriSans-Regular.eot?#iefix) format("embedded-opentype"), url(https://wallet.swap.online/fonts/CerebriSans-Regular.woff2) format("woff2"), url(https://wallet.swap.online/fonts/CerebriSans-Regular.woff) format("woff"), url(https://wallet.swap.online/fonts/CerebriSans-Regular.ttf) format("truetype");
+  src: url(https://swap.online/fonts/CerebriSans-Regular.eot);
+  src: url(https://swap.online/fonts/CerebriSans-Regular.eot?#iefix) format("embedded-opentype"), url(https://swap.online/fonts/CerebriSans-Regular.woff2) format("woff2"), url(https://swap.online/fonts/CerebriSans-Regular.woff) format("woff"), url(https://swap.online/fonts/CerebriSans-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'CerebriSans SemiBold';
-  src: url(https://wallet.swap.online/fonts/CerebriSans-SemiBold.eot);
-  src: url(https://wallet.swap.online/fonts/CerebriSans-SemiBold.eot?#iefix) format("embedded-opentype"), url(https://wallet.swap.online/fonts/CerebriSans-SemiBold.woff2) format("woff2"), url(https://wallet.swap.online/fonts/CerebriSans-SemiBold.woff) format("woff"), url(https://wallet.swap.online/fonts/CerebriSans-SemiBold.ttf) format("truetype");
+  src: url(https://swap.online/fonts/CerebriSans-SemiBold.eot);
+  src: url(https://swap.online/fonts/CerebriSans-SemiBold.eot?#iefix) format("embedded-opentype"), url(https://swap.online/fonts/CerebriSans-SemiBold.woff2) format("woff2"), url(https://swap.online/fonts/CerebriSans-SemiBold.woff) format("woff"), url(https://swap.online/fonts/CerebriSans-SemiBold.ttf) format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'CerebriSans Bold';
-  src: url(https://wallet.swap.online/fonts/CerebriSans-Bold.eot);
-  src: url(https://wallet.swap.online/fonts/CerebriSans-Bold.eot?#iefix) format("embedded-opentype"), url(https://wallet.swap.online/fonts/CerebriSans-Bold.woff2) format("woff2"), url(https://wallet.swap.online/fonts/CerebriSans-Bold.woff) format("woff"), url(https://wallet.swap.online/fonts/CerebriSans-Bold.ttf) format("truetype");
+  src: url(https://swap.online/fonts/CerebriSans-Bold.eot);
+  src: url(https://swap.online/fonts/CerebriSans-Bold.eot?#iefix) format("embedded-opentype"), url(https://swap.online/fonts/CerebriSans-Bold.woff2) format("woff2"), url(https://swap.online/fonts/CerebriSans-Bold.woff) format("woff"), url(https://swap.online/fonts/CerebriSans-Bold.ttf) format("truetype");
   font-weight: 600;
   font-style: normal; }
 
