@@ -1,4 +1,12 @@
+.gitignore
+.DS_Store
+
 .DS_Store
 .idea
+
+*-lock.*
+
+build-*
+
 app.*.css
 app.*.js
