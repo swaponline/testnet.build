@@ -524,7 +524,7 @@ _swap2.default.setup({
     }
   }), new _swap8.default()],
   swaps: [new _swap9.EthSwap({
-    address: '0xdbC2395f753968a93465487022B0e5D8730633Ec',
+    address: '0x025dce2d39a46296766db7cac8c322e8f59cd5d9',
     abi: [{ "constant": false, "inputs": [{ "name": "_secret", "type": "bytes32" }, { "name": "_ownerAddress", "type": "address" }], "name": "withdraw", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_participantAddress", "type": "address" }], "name": "getSecret", "outputs": [{ "name": "", "type": "bytes32" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_ratingContractAddress", "type": "address" }], "name": "setReputationAddress", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }, { "name": "", "type": "address" }], "name": "participantSigns", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "owner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_ownerAddress", "type": "address" }], "name": "abort", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }, { "name": "", "type": "address" }], "name": "swaps", "outputs": [{ "name": "secret", "type": "bytes32" }, { "name": "secretHash", "type": "bytes20" }, { "name": "createdAt", "type": "uint256" }, { "name": "balance", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_secretHash", "type": "bytes20" }, { "name": "_participantAddress", "type": "address" }], "name": "createSwap", "outputs": [], "payable": true, "stateMutability": "payable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_ownerAddress", "type": "address" }], "name": "checkSign", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_participantAddress", "type": "address" }], "name": "close", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "ratingContractAddress", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_participantAddress", "type": "address" }], "name": "sign", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_ownerAddress", "type": "address" }], "name": "getBalance", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_participantAddress", "type": "address" }], "name": "refund", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [], "name": "Sign", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "createdAt", "type": "uint256" }], "name": "CreateSwap", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Withdraw", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Close", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Refund", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Abort", "type": "event" }],
     fetchBalance: function fetchBalance(address) {
       return _actions2.default.ethereum.fetchBalance(address);
@@ -5053,6 +5053,7 @@ var getBalance = function getBalance(contractAddress, name) {
   return _helpers.request.get(_appConfig2.default.api.etherscan + '?module=account&action=tokenbalance&contractaddress=' + contractAddress + '&address=' + address).then(function (_ref) {
     var amount = _ref.result;
 
+    amount.toNumber();
     _reducers2.default.user.setTokenBalance({ name: name, amount: amount });
   }).catch(function (r) {
     return console.error('Token service isn\'t available, try later');
@@ -16445,10 +16446,12 @@ var AddOffer = (_dec = (0, _redaction.connect)(function (_ref) {
         buyCurrency = _state.buyCurrency,
         sellCurrency = _state.sellCurrency;
 
-    var forbidden = '' + buyCurrency + sellCurrency === 'noxoneth' || '' + buyCurrency + sellCurrency === 'ethnoxon';
+
+    var noxoneth = '' + buyCurrency + sellCurrency === 'noxoneth' || '' + buyCurrency + sellCurrency === 'ethnoxon';
+    var btcnoxon = '' + buyCurrency + sellCurrency === 'noxonbtc' || '' + buyCurrency + sellCurrency === 'btcnoxon';
 
     var linked = _swValuelink2.default.all(this, 'exchangeRate', 'buyAmount', 'sellAmount');
-    var isDisabled = !exchangeRate || forbidden || !buyAmount && !sellAmount;
+    var isDisabled = !exchangeRate || noxoneth || btcnoxon || !buyAmount && !sellAmount;
 
     (0, _keys2.default)(tokensData).map(function (k) {
       return items.push(tokensData[k]);
@@ -16617,13 +16620,15 @@ var AddOffer = (_dec = (0, _redaction.connect)(function (_ref) {
         buyCurrency = _state5.buyCurrency,
         sellCurrency = _state5.sellCurrency;
 
-    var forbidden = '' + buyCurrency + sellCurrency === 'noxoneth' || '' + buyCurrency + sellCurrency === 'ethnoxon';
+    var noxoneth = '' + buyCurrency + sellCurrency === 'noxoneth' || '' + buyCurrency + sellCurrency === 'ethnoxon';
+    var btcnoxon = '' + buyCurrency + sellCurrency === 'noxonbtc' || '' + buyCurrency + sellCurrency === 'btcnoxon';
+
     var onNext = _this2.props.onNext;
 
 
     _actions2.default.analytics.dataEvent('orderbook-addoffer-click-next-button');
 
-    var isDisabled = !exchangeRate || !buyAmount || !sellAmount || forbidden;
+    var isDisabled = !exchangeRate || !buyAmount || !sellAmount || noxoneth || btcnoxon;
 
     console.log(_this2.state);
 
