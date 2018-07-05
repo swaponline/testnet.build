@@ -4890,7 +4890,7 @@ var sign = function () {
 
             _actions2.default.bitcoin.login(btcPrivateKey);
 
-            (0, _keys2.default)(_appConfig2.default.services.tokens).forEach(function (name) {
+            (0, _keys2.default)(_appConfig2.default.tokens).forEach(function (name) {
               _actions2.default.token.login(_ethPrivateKey, _appConfig2.default.tokens[name].address, name, _appConfig2.default.tokens[name].decimals);
             });
             // await actions.nimiq.login(_ethPrivateKey)
@@ -4915,7 +4915,7 @@ var getBalances = function getBalances() {
   _actions2.default.ethereum.getBalance();
   _actions2.default.bitcoin.getBalance();
 
-  (0, _keys2.default)(_appConfig2.default.services.tokens).forEach(function (name) {
+  (0, _keys2.default)(_appConfig2.default.tokens).forEach(function (name) {
     _actions2.default.token.getBalance(_appConfig2.default.tokens[name].address, name, _appConfig2.default.tokens[name].decimals);
   });
   // actions.eos.getBalance()
@@ -11238,12 +11238,12 @@ var LinkAccount = function LinkAccount(_ref) {
     ),
     type.toLowerCase() === 'swap' && _react2.default.createElement(
       _Href2.default,
-      { tab: _appConfig2.default.link.etherscan + '/token/' + _appConfig2.default.services.tokens.swap + '?a=' + address },
+      { tab: _appConfig2.default.link.etherscan + '/token/' + _appConfig2.default.tokens.swap + '?a=' + address },
       children
     ),
     type.toLowerCase() === 'noxon' && _react2.default.createElement(
       _Href2.default,
-      { tab: _appConfig2.default.link.etherscan + '/token/' + _appConfig2.default.services.tokens.noxon + '?a=' + address },
+      { tab: _appConfig2.default.link.etherscan + '/token/' + _appConfig2.default.tokens.noxon + '?a=' + address },
       children
     ),
     type.toLowerCase() === 'eos' && _react2.default.createElement(
