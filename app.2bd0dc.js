@@ -4014,13 +4014,6 @@ var Home = (_temp = _class = function (_Component) {
   }
 
   (0, _createClass3.default)(Home, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      if (_helpers.localStorage.getItem(_helpers.constants.localStorage.privateKeysSaved)) {
-        this.changeView('checkKeys');
-      }
-    }
-  }, {
     key: 'render',
     value: function render() {
       var _state = this.state,
@@ -8325,6 +8318,13 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
   }
 
   (0, _createClass3.default)(Balances, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      if (localStorage.getItem(_helpers.constants.localStorage.privateKeysSaved)) {
+        this.changeView('checkKeys');
+      }
+    }
+  }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
       _actions2.default.user.getBalances();
@@ -8364,13 +8364,6 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
               return _this2.changeView('on');
             } })
         ),
-        _react2.default.createElement(_Table2.default, {
-          titles: titles,
-          rows: items,
-          rowRender: function rowRender(row, index) {
-            return _react2.default.createElement(_Row2.default, (0, _extends3.default)({ key: index }, row));
-          }
-        }),
         _react2.default.createElement(_Confirm2.default, {
           title: 'Are you sure ?',
           isConfirm: function isConfirm() {
@@ -8380,6 +8373,13 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
             return _this2.changeView('off');
           },
           animation: view === 'on'
+        }),
+        _react2.default.createElement(_Table2.default, {
+          titles: titles,
+          rows: items,
+          rowRender: function rowRender(row, index) {
+            return _react2.default.createElement(_Row2.default, (0, _extends3.default)({ key: index }, row));
+          }
         }),
         false && _react2.default.createElement(
           'a',
