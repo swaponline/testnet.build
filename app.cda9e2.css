@@ -13,6 +13,13 @@
   font-size: 32px; }
   ._3J0EOu:first-child {
     margin-top: 0; }
+._2AdbGo {
+  margin-top: 20px;
+  font-family: 'CerebriSans Bold';
+  font-weight: 700;
+  font-size: 32px; }
+  ._2AdbGo:first-child {
+    margin-top: 0; }
 ._1TWvrk {
   display: -webkit-box;
   display: -webkit-flex;
@@ -665,14 +672,24 @@ td {
   .B1fidj._3MGYaP {
     color: #ff4e34; }
 
+._3iy6qi {
+  border-radius: 20px;
+  padding: 0px 25px;
+  width: 145px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  display: inline-block; }
+
 ._38S3z2 {
-  color: #3bb33b; }
+  color: #ffffff;
+  background: rgba(61, 226, 91, 0.7); }
 
 ._2NV1PP {
-  color: #ff354b; }
+  color: #ff354b;
+  background: rgba(255, 53, 75, 0.4); }
 
 ._3qRLEP {
-  margin-top: 5px;
   font-size: 14px;
   font-weight: 500;
   color: #aaa; }
@@ -752,14 +769,6 @@ td {
   display: block;
   width: 100%;
   height: auto; }
-._2wnb2C {
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  cursor: pointer;
-  text-align: center;
-  font-size: 18px;
-  margin-left: 25px; }
 ._3gjuKq {
   position: relative;
   z-index: 3;
