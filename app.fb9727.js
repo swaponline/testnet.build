@@ -8209,10 +8209,6 @@ var _extends2 = __webpack_require__(59);
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _keys = __webpack_require__(54);
-
-var _keys2 = _interopRequireDefault(_keys);
-
 var _getPrototypeOf = __webpack_require__(4);
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -8232,6 +8228,10 @@ var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorRet
 var _inherits2 = __webpack_require__(8);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _keys = __webpack_require__(54);
+
+var _keys2 = _interopRequireDefault(_keys);
 
 var _dec, _class;
 
@@ -8281,8 +8281,10 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
       eosData = _ref$user.eosData,
       nimData = _ref$user.nimData;
   return {
-    items: [ethData, btcData /* eosData  nimData */],
-    tokensData: tokensData
+    tokens: (0, _keys2.default)(tokensData).map(function (k) {
+      return tokensData[k];
+    }),
+    items: [ethData, btcData /* eosData  nimData */]
   };
 }), _dec(_class = function (_Component) {
   (0, _inherits3.default)(Balances, _Component);
@@ -8341,13 +8343,9 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
       var view = this.state.view;
       var _props = this.props,
           items = _props.items,
-          tokensData = _props.tokensData;
+          tokens = _props.tokens;
 
       var titles = ['Coin', 'Name', 'Balance', 'Address', ''];
-
-      (0, _keys2.default)(tokensData).map(function (k) {
-        return items.push(tokensData[k]);
-      });
 
       return _react2.default.createElement(
         'section',
@@ -8376,7 +8374,7 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
         }),
         _react2.default.createElement(_Table2.default, {
           titles: titles,
-          rows: items,
+          rows: [].concat(items, tokens),
           rowRender: function rowRender(row, index) {
             return _react2.default.createElement(_Row2.default, (0, _extends3.default)({ key: index }, row));
           }
