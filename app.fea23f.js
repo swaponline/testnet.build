@@ -8306,7 +8306,7 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
       window.location.reload();
     }, _this.handleDownload = function () {
       _actions2.default.user.downloadPrivateKeys();
-      _this.changeView('on');
+      _this.changeView('checkKeys');
     }, _this.handleConfirm = function () {
       _this.changeView('checkKeys');
       localStorage.setItem(_helpers.constants.localStorage.privateKeysSaved, true);
@@ -8487,7 +8487,7 @@ var SaveKeys = (_dec = (0, _redaction.connect)(function (_ref) {
           _react2.default.createElement('br', null),
           'the button or take a screenshot of this page, then confirm it and click here. ',
           _react2.default.createElement('br', null),
-          isChange && _react2.default.createElement(
+          _react2.default.createElement(
             'a',
             { href: '', onClick: function onClick(event) {
                 event.preventDefault();isChange();
