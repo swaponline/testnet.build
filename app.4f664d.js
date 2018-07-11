@@ -318,7 +318,7 @@ var _reactCssModules = __webpack_require__(1);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Button = __webpack_require__(987);
+var _Button = __webpack_require__(990);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -3158,7 +3158,7 @@ var _Home = __webpack_require__(713);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Balances = __webpack_require__(988);
+var _Balances = __webpack_require__(985);
 
 var _Balances2 = _interopRequireDefault(_Balances);
 
@@ -3985,10 +3985,6 @@ var _Orders = __webpack_require__(929);
 
 var _Orders2 = _interopRequireDefault(_Orders);
 
-var _Confirm = __webpack_require__(985);
-
-var _Confirm2 = _interopRequireDefault(_Confirm);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = (_temp = _class = function (_Component) {
@@ -4027,8 +4023,6 @@ var Home = (_temp = _class = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       var _state = this.state,
           buyCurrency = _state.buyCurrency,
           sellCurrency = _state.sellCurrency,
@@ -4080,16 +4074,6 @@ var Home = (_temp = _class = function (_Component) {
             buyCurrency: buyCurrency,
             sellCurrency: sellCurrency,
             flipCurrency: this.flipCurrency
-          }),
-          _react2.default.createElement(_Confirm2.default, {
-            title: 'Are you sure ?',
-            isConfirm: function isConfirm() {
-              return _this2.handleConfirm();
-            },
-            isReject: function isReject() {
-              return _this2.changeView('saveKeys');
-            },
-            animation: view === 'confirm'
           })
         )
       );
@@ -4097,27 +4081,11 @@ var Home = (_temp = _class = function (_Component) {
   }]);
   return Home;
 }(_react.Component), _initialiseProps = function _initialiseProps() {
-  var _this3 = this;
-
-  this.changeView = function (view) {
-    _this3.setState({
-      view: view
-    });
-  };
-
-  this.handleDownload = function () {
-    _actions2.default.user.downloadPrivateKeys();
-    _this3.changeView('checkKeys');
-  };
-
-  this.handleConfirm = function () {
-    _this3.changeView('checkKeys');
-    _helpers.localStorage.setItem(_helpers.constants.localStorage.privateKeysSaved, true);
-  };
+  var _this2 = this;
 
   this.handleSellCurrencySelect = function (_ref3) {
     var value = _ref3.value;
-    var _state2 = _this3.state,
+    var _state2 = _this2.state,
         buyCurrency = _state2.buyCurrency,
         sellCurrency = _state2.sellCurrency;
 
@@ -4128,19 +4096,19 @@ var Home = (_temp = _class = function (_Component) {
 
     buyCurrency = value;
 
-    _this3.setState({
+    _this2.setState({
       buyCurrency: buyCurrency,
       sellCurrency: sellCurrency
     });
   };
 
   this.flipCurrency = function () {
-    var _state3 = _this3.state,
+    var _state3 = _this2.state,
         buyCurrency = _state3.buyCurrency,
         sellCurrency = _state3.sellCurrency;
 
 
-    _this3.setState({
+    _this2.setState({
       buyCurrency: sellCurrency,
       sellCurrency: buyCurrency
     });
@@ -8242,85 +8210,6 @@ module.exports = {"userTooltip":"_3fhX3C","buy":"_2e83r_","accept":"_2ClHjy","se
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactCssModules = __webpack_require__(1);
-
-var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
-
-var _Confirm = __webpack_require__(986);
-
-var _Confirm2 = _interopRequireDefault(_Confirm);
-
-var _SubTitle = __webpack_require__(223);
-
-var _SubTitle2 = _interopRequireDefault(_SubTitle);
-
-var _Button = __webpack_require__(71);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Confirm = function Confirm(_ref) {
-  var isConfirm = _ref.isConfirm,
-      isReject = _ref.isReject,
-      title = _ref.title,
-      animation = _ref.animation;
-  return _react2.default.createElement(
-    'div',
-    { styleName: animation ? 'confirm animation' : 'confirm' },
-    _react2.default.createElement(
-      _SubTitle2.default,
-      null,
-      title
-    ),
-    _react2.default.createElement(
-      'div',
-      { styleName: 'row' },
-      _react2.default.createElement(
-        _Button2.default,
-        { brand: true, onClick: isConfirm },
-        'Yes'
-      ),
-      _react2.default.createElement(
-        _Button2.default,
-        { brand: true, onClick: isReject },
-        'No'
-      )
-    )
-  );
-};
-
-exports.default = (0, _reactCssModules2.default)(Confirm, _Confirm2.default, { allowMultiple: true });
-
-/***/ }),
-/* 986 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"confirm":"_3hz-0j","animation":"_2QfucO","open":"_1BY5jO","row":"_3sMVTN"};
-
-/***/ }),
-/* 987 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"button":"qJheS4","fullWidth":"_2Gzkvz","brand":"_3zY6WO","green":"_s-GvI","white":"ewAS27","gray":"_9dfBig","disabled":"_1WzQpi"};
-
-/***/ }),
-/* 988 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 exports.default = undefined;
 
 var _extends2 = __webpack_require__(59);
@@ -8373,13 +8262,17 @@ var _SubTitle = __webpack_require__(223);
 
 var _SubTitle2 = _interopRequireDefault(_SubTitle);
 
-var _SaveKeys = __webpack_require__(989);
+var _SaveKeys = __webpack_require__(986);
 
 var _SaveKeys2 = _interopRequireDefault(_SaveKeys);
 
 var _Table = __webpack_require__(122);
 
 var _Table2 = _interopRequireDefault(_Table);
+
+var _Confirm = __webpack_require__(991);
+
+var _Confirm2 = _interopRequireDefault(_Confirm);
 
 var _Row = __webpack_require__(993);
 
@@ -8412,10 +8305,22 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref2 = Balances.__proto__ || (0, _getPrototypeOf2.default)(Balances)).call.apply(_ref2, [this].concat(args))), _this), _this.handleClear =  true ? function () {} : function (event) {
+    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref2 = Balances.__proto__ || (0, _getPrototypeOf2.default)(Balances)).call.apply(_ref2, [this].concat(args))), _this), _this.state = {
+      view: 'off'
+    }, _this.handleClear =  true ? function () {} : function (event) {
       event.preventDefault();
       window.localStorage.clear();
       window.location.reload();
+    }, _this.handleDownload = function () {
+      _actions2.default.user.downloadPrivateKeys();
+      _this.changeView('on');
+    }, _this.handleConfirm = function () {
+      _this.changeView('checkKeys');
+      localStorage.setItem(_helpers.constants.localStorage.privateKeysSaved, true);
+    }, _this.changeView = function (view) {
+      _this.setState({
+        view: view
+      });
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
   }
 
@@ -8431,6 +8336,9 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
   }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
+      var view = this.state.view;
       var _props = this.props,
           items = _props.items,
           tokensData = _props.tokensData;
@@ -8452,8 +8360,8 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
             null,
             'Balances'
           ),
-          _react2.default.createElement(_SaveKeys2.default, { isDownload: function isDownload() {
-              return _actions2.default.user.downloadPrivateKeys();
+          view === 'off' && _react2.default.createElement(_SaveKeys2.default, { isDownload: this.handleDownload, isChange: function isChange() {
+              return _this2.changeView('on');
             } })
         ),
         _react2.default.createElement(_Table2.default, {
@@ -8462,6 +8370,16 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
           rowRender: function rowRender(row, index) {
             return _react2.default.createElement(_Row2.default, (0, _extends3.default)({ key: index }, row));
           }
+        }),
+        _react2.default.createElement(_Confirm2.default, {
+          title: 'Are you sure ?',
+          isConfirm: function isConfirm() {
+            return _this2.handleConfirm();
+          },
+          isReject: function isReject() {
+            return _this2.changeView('off');
+          },
+          animation: view === 'on'
         }),
         false && _react2.default.createElement(
           'a',
@@ -8476,7 +8394,7 @@ var Balances = (_dec = (0, _redaction.connect)(function (_ref) {
 exports.default = Balances;
 
 /***/ }),
-/* 989 */
+/* 986 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8519,11 +8437,11 @@ var _reactCssModules = __webpack_require__(1);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _SaveKeys = __webpack_require__(990);
+var _SaveKeys = __webpack_require__(987);
 
 var _SaveKeys2 = _interopRequireDefault(_SaveKeys);
 
-var _Field = __webpack_require__(991);
+var _Field = __webpack_require__(988);
 
 var _Field2 = _interopRequireDefault(_Field);
 
@@ -8606,14 +8524,14 @@ var SaveKeys = (_dec = (0, _redaction.connect)(function (_ref) {
 exports.default = SaveKeys;
 
 /***/ }),
-/* 990 */
+/* 987 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"title":"_34whwW","row":"_1iYant"};
 
 /***/ }),
-/* 991 */
+/* 988 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8631,7 +8549,7 @@ var _reactCssModules = __webpack_require__(1);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Field = __webpack_require__(992);
+var _Field = __webpack_require__(989);
 
 var _Field2 = _interopRequireDefault(_Field);
 
@@ -8657,11 +8575,90 @@ var Field = function Field(_ref) {
 exports.default = (0, _reactCssModules2.default)(Field, _Field2.default);
 
 /***/ }),
-/* 992 */
+/* 989 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"row":"_37f8Rw"};
+
+/***/ }),
+/* 990 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"button":"qJheS4","fullWidth":"_2Gzkvz","brand":"_3zY6WO","green":"_s-GvI","white":"ewAS27","gray":"_9dfBig","disabled":"_1WzQpi"};
+
+/***/ }),
+/* 991 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactCssModules = __webpack_require__(1);
+
+var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
+
+var _Confirm = __webpack_require__(992);
+
+var _Confirm2 = _interopRequireDefault(_Confirm);
+
+var _SubTitle = __webpack_require__(223);
+
+var _SubTitle2 = _interopRequireDefault(_SubTitle);
+
+var _Button = __webpack_require__(71);
+
+var _Button2 = _interopRequireDefault(_Button);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Confirm = function Confirm(_ref) {
+  var isConfirm = _ref.isConfirm,
+      isReject = _ref.isReject,
+      title = _ref.title,
+      animation = _ref.animation;
+  return _react2.default.createElement(
+    'div',
+    { styleName: animation ? 'confirm animation' : 'confirm' },
+    _react2.default.createElement(
+      _SubTitle2.default,
+      null,
+      title
+    ),
+    _react2.default.createElement(
+      'div',
+      { styleName: 'row' },
+      _react2.default.createElement(
+        _Button2.default,
+        { brand: true, onClick: isConfirm },
+        'Yes'
+      ),
+      _react2.default.createElement(
+        _Button2.default,
+        { brand: true, onClick: isReject },
+        'No'
+      )
+    )
+  );
+};
+
+exports.default = (0, _reactCssModules2.default)(Confirm, _Confirm2.default, { allowMultiple: true });
+
+/***/ }),
+/* 992 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"confirm":"_3hz-0j","animation":"_2QfucO","open":"_1BY5jO","row":"_3sMVTN"};
 
 /***/ }),
 /* 993 */
