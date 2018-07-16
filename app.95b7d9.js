@@ -21696,7 +21696,7 @@ var WithdrawModal = (_dec = (0, _redaction.connect)({
         action = _actions2.default.nimiq;
       } else if (currency === 'EOS') {
         action = _actions2.default.eos;
-      } else if (currency === 'NOXON') {
+      } else {
         action = _actions2.default.token;
       }
 
