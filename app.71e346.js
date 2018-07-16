@@ -9976,7 +9976,7 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
         _react2.default.createElement(
           'td',
           null,
-          currency.toUpperCase()
+          currency
         ),
         _react2.default.createElement(
           'td',
@@ -10011,7 +10011,7 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
               'Copy'
             ),
             _react2.default.createElement(_ReloadButton2.default, { styleName: 'reloadButton', onClick: this.handleReloadBalance }),
-            _react2.default.createElement(_WithdrawButton2.default, { data: { currency: currency, balance: balance, address: address, contractAddress: contractAddress, decimals: decimals } }),
+            _react2.default.createElement(_WithdrawButton2.default, { data: { currency: currency, address: address, contractAddress: contractAddress, decimals: decimals } }),
             viewText && _react2.default.createElement(
               'p',
               { styleName: 'copied' },
