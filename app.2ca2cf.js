@@ -5557,6 +5557,7 @@ var getBalances = function getBalances() {
   _actions2.default.eos.getBalance();
 
   (0, _keys2.default)(_appConfig2.default.tokens).forEach(function (name) {
+    console.log('USER', name);
     _actions2.default.token.getBalance(_appConfig2.default.tokens[name].address, name, _appConfig2.default.tokens[name].decimals);
   });
   // actions.nimiq.getBalance()
@@ -6073,6 +6074,10 @@ var getBalance = function getBalance(contractAddress, name, decimals) {
       address = _getState.user.ethData.address;
 
   var url = _appConfig2.default.api.etherscan + '?module=account&action=tokenbalance&contractaddress=' + contractAddress + '&address=' + address;
+
+  if (name === undefined) {
+    return null;
+  }
 
   return _helpers.request.get(url).then(function (_ref) {
     var result = _ref.result;
@@ -8315,7 +8320,8 @@ var Row = (_temp2 = _class = function (_Component) {
             balance: balance
           });
         });
-      } else {
+      } else if (currency !== undefined) {
+        console.log('currency Orders', currency);
         _actions2.default.token.getBalance(_appConfig2.default.tokens[currency].address, currency, _appConfig2.default.tokens[currency].decimals).then(function (balance) {
           _this2.setState({
             balance: balance
@@ -9917,7 +9923,8 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
       } else if (currency === 'eos') {
         action = _actions2.default.eos.getBalance;
         _actions2.default.analytics.dataEvent('balances-update-eos');
-      } else {
+      } else if (currency !== undefined) {
+        console.log('currency Waller', currency);
         action = _actions2.default.token.getBalance;
         _actions2.default.analytics.dataEvent('balances-update-token');
       }
@@ -10002,7 +10009,7 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
         _react2.default.createElement(
           'td',
           { style: { position: 'relative' } },
-          address !== '' && _react2.default.createElement(
+          _react2.default.createElement(
             'div',
             null,
             _react2.default.createElement(
