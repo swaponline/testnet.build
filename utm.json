@@ -1,0 +1,14 @@
+{
+	"default": {
+		"title": "Take part in <span>Smart Airdrop</span>",
+		"desc": "On 30 July 2018 we will send tokens  to users for testing the product.",
+		"placeholder": "Fill in your contact",
+		"button": "Get Swap Tokens"
+	},
+	"noxon" : {
+		"title": "Take part in <span>Smart Airdrop 2</span>",
+		"desc": "On 30 July 2018 we will send tokens  to users for testing the product. 2",
+		"placeholder": "Fill in your contact 2",
+		"button": "Get Swap Tokens 2"
+	}
+}
