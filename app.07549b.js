@@ -7083,7 +7083,7 @@ var getBalance = function getBalance() {
 };
 
 var fetchBalance = function fetchBalance(address) {
-  _web2.default.eth.getBalance(address).then(function (result) {
+  return _web2.default.eth.getBalance(address).then(function (result) {
     return Number(_web2.default.utils.fromWei(result));
   }).catch(function (e) {
     console.log('Web3 doesn\'t work please again later ', e.error);
@@ -11667,11 +11667,6 @@ var BtcToEth = function (_Component) {
           )
         ),
         _react2.default.createElement('br', null),
-        !flow.isFinished && _react2.default.createElement(
-          _Button2.default,
-          { green: true, onClick: this.addGasPrice },
-          'Add gas price'
-        ),
         children
       );
     }
@@ -12137,11 +12132,6 @@ var EthToBtc = function (_Component) {
           )
         ),
         _react2.default.createElement('br', null),
-        !flow.isFinished && _react2.default.createElement(
-          _Button2.default,
-          { white: true, onClick: this.addGasPrice },
-          'Add gas price'
-        ),
         children
       );
     }
@@ -14076,9 +14066,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Feedback = __webpack_require__(1108);
+var _FeedBack = __webpack_require__(1108);
 
-var _Feedback2 = _interopRequireDefault(_Feedback);
+var _FeedBack2 = _interopRequireDefault(_FeedBack);
 
 var _reactCssModules = __webpack_require__(1);
 
@@ -14132,14 +14122,14 @@ var FeedBack = function FeedBack(_ref) {
   );
 };
 
-exports.default = (0, _reactCssModules2.default)(FeedBack, _Feedback2.default);
+exports.default = (0, _reactCssModules2.default)(FeedBack, _FeedBack2.default);
 
 /***/ }),
 /* 1108 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"feedback":"uFsfps","heading":"_1NZmcK","text":"_11GInN","contact":"_1Tp3qV"};
+module.exports = {"feedback":"_2qwouh","heading":"_1kFWUv","text":"_4ViCT0","contact":"_10Uaos"};
 
 /***/ }),
 /* 1109 */
