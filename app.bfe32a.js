@@ -25,7 +25,7 @@ var _btc = __webpack_require__(502);
 
 var _btc2 = _interopRequireDefault(_btc);
 
-var _web = __webpack_require__(150);
+var _web = __webpack_require__(151);
 
 var _web2 = _interopRequireDefault(_web);
 
@@ -123,8 +123,7 @@ exports.constants = _constants2.default;
 exports.util = _util2.default;
 
 /***/ }),
-/* 13 */,
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -205,6 +204,7 @@ exports.default = {
 };
 
 /***/ }),
+/* 14 */,
 /* 15 */,
 /* 16 */,
 /* 17 */,
@@ -816,6 +816,130 @@ var _inherits2 = __webpack_require__(9);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
+var _dec, _class, _class2, _temp;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(4);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactCssModules = __webpack_require__(1);
+
+var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
+
+var _Timer = __webpack_require__(1084);
+
+var _Timer2 = _interopRequireDefault(_Timer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Timer = (_dec = (0, _reactCssModules2.default)(_Timer2.default), _dec(_class = (_temp = _class2 = function (_React$Component) {
+  (0, _inherits3.default)(Timer, _React$Component);
+
+  function Timer(_ref) {
+    var lockTime = _ref.lockTime;
+    (0, _classCallCheck3.default)(this, Timer);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (Timer.__proto__ || (0, _getPrototypeOf2.default)(Timer)).call(this));
+
+    _this.timer = null;
+
+    _this.tick = function () {
+      var timeLeft = _this.state.timeLeft;
+
+      var newTimeLeft = timeLeft - 1000;
+
+      if (newTimeLeft <= 0) {
+        _this.props.enabledButton();
+      } else {
+        _this.timer = setTimeout(_this.tick, 1000);
+        _this.setState({
+          timeLeft: newTimeLeft
+        });
+      }
+    };
+
+    _this.state = {
+      lockTime: lockTime,
+      timeLeft: null
+    };
+    return _this;
+  }
+
+  (0, _createClass3.default)(Timer, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.tick();
+    }
+  }, {
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var lockTime = this.state.lockTime;
+
+      console.log(lockTime);
+
+      var dateNow = new Date().getTime();
+      var timeLeft = lockTime - dateNow;
+
+      this.setState({
+        timeLeft: timeLeft
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var timeLeft = this.state.timeLeft;
+
+      var min = Math.ceil(timeLeft / 1000 / 60);
+
+      return _react2.default.createElement(
+        'div',
+        { styleName: 'timer' },
+        min > 0 ? min + ' minute left for refund' : 'refund ready'
+      );
+    }
+  }]);
+  return Timer;
+}(_react2.default.Component), _class2.propTypes = {
+  lockTime: _propTypes2.default.number
+}, _temp)) || _class);
+exports.default = Timer;
+
+/***/ }),
+/* 142 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = undefined;
+
+var _getPrototypeOf = __webpack_require__(5);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(6);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(7);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(8);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(9);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
 var _class, _temp, _initialiseProps;
 
 var _react = __webpack_require__(0);
@@ -913,7 +1037,6 @@ var TimerButton = (_temp = _class = function (_Component) {
 exports.default = TimerButton;
 
 /***/ }),
-/* 142 */,
 /* 143 */,
 /* 144 */,
 /* 145 */,
@@ -921,7 +1044,8 @@ exports.default = TimerButton;
 /* 147 */,
 /* 148 */,
 /* 149 */,
-/* 150 */
+/* 150 */,
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -946,7 +1070,6 @@ var web3 = new _web2.default(new _web2.default.providers.HttpProvider(_appConfig
 exports.default = web3;
 
 /***/ }),
-/* 151 */,
 /* 152 */,
 /* 153 */,
 /* 154 */,
@@ -973,7 +1096,8 @@ exports.default = web3;
 /* 175 */,
 /* 176 */,
 /* 177 */,
-/* 178 */
+/* 178 */,
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1017,7 +1141,7 @@ var Coins = function Coins(_ref) {
 exports.default = (0, _reactCssModules2.default)(Coins, _Coins2.default);
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1067,134 +1191,9 @@ var Href = function Href(_ref) {
 exports.default = (0, _reactCssModules2.default)(Href, _Href2.default);
 
 /***/ }),
-/* 180 */,
 /* 181 */,
 /* 182 */,
-/* 183 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = undefined;
-
-var _getPrototypeOf = __webpack_require__(5);
-
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = __webpack_require__(6);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(7);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(8);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(9);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _dec, _class, _class2, _temp;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(4);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _reactCssModules = __webpack_require__(1);
-
-var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
-
-var _Timer = __webpack_require__(1084);
-
-var _Timer2 = _interopRequireDefault(_Timer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Timer = (_dec = (0, _reactCssModules2.default)(_Timer2.default), _dec(_class = (_temp = _class2 = function (_React$Component) {
-  (0, _inherits3.default)(Timer, _React$Component);
-
-  function Timer(_ref) {
-    var lockTime = _ref.lockTime;
-    (0, _classCallCheck3.default)(this, Timer);
-
-    var _this = (0, _possibleConstructorReturn3.default)(this, (Timer.__proto__ || (0, _getPrototypeOf2.default)(Timer)).call(this));
-
-    _this.timer = null;
-
-    _this.tick = function () {
-      var timeLeft = _this.state.timeLeft;
-
-      var newTimeLeft = timeLeft - 1000;
-
-      if (newTimeLeft <= 0) {
-        _this.props.enabledButton();
-      } else {
-        _this.timer = setTimeout(_this.tick, 1000);
-        _this.setState({
-          timeLeft: newTimeLeft
-        });
-      }
-    };
-
-    _this.state = {
-      lockTime: lockTime,
-      timeLeft: null
-    };
-    return _this;
-  }
-
-  (0, _createClass3.default)(Timer, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.tick();
-    }
-  }, {
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      var lockTime = this.state.lockTime;
-
-      console.log(lockTime);
-
-      var dateNow = new Date().getTime();
-      var timeLeft = lockTime - dateNow;
-
-      this.setState({
-        timeLeft: timeLeft
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var timeLeft = this.state.timeLeft;
-
-      var min = Math.ceil(timeLeft / 1000 / 60);
-
-      return _react2.default.createElement(
-        'div',
-        { styleName: 'timer' },
-        min,
-        ' minute left for refund'
-      );
-    }
-  }]);
-  return Timer;
-}(_react2.default.Component), _class2.propTypes = {
-  lockTime: _propTypes2.default.number
-}, _temp)) || _class);
-exports.default = Timer;
-
-/***/ }),
+/* 183 */,
 /* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1497,7 +1496,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -1906,7 +1905,7 @@ var _RemoveButton = __webpack_require__(428);
 
 var _RemoveButton2 = _interopRequireDefault(_RemoveButton);
 
-var _TimerButton = __webpack_require__(141);
+var _TimerButton = __webpack_require__(142);
 
 var _TimerButton2 = _interopRequireDefault(_TimerButton);
 
@@ -4051,7 +4050,7 @@ var _classnames = __webpack_require__(43);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -4229,7 +4228,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(143);
+var _reactRouter = __webpack_require__(144);
 
 var _reactRouterDom = __webpack_require__(50);
 
@@ -4799,7 +4798,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _stringify = __webpack_require__(162);
+var _stringify = __webpack_require__(163);
 
 var _stringify2 = _interopRequireDefault(_stringify);
 
@@ -5004,7 +5003,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -5075,12 +5074,7 @@ var Home = (_temp = _class = function (_Component) {
             _react2.default.createElement(
               _Title2.default,
               null,
-              'Swap.Online - CRYPTO-CURRENCY ',
-              _react2.default.createElement(
-                'abbr',
-                { title: 'Over-The-Counter Market' },
-                'OTC MARKET'
-              )
+              'Swap.Online - Decentralized Exchange Based on Atomic Swap Protocol'
             ),
             _react2.default.createElement(
               _SubTitle2.default,
@@ -5253,7 +5247,7 @@ var _objectWithoutProperties2 = __webpack_require__(54);
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _defineProperty2 = __webpack_require__(163);
+var _defineProperty2 = __webpack_require__(164);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
@@ -5299,7 +5293,7 @@ var _objectWithoutProperties2 = __webpack_require__(54);
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _defineProperty2 = __webpack_require__(163);
+var _defineProperty2 = __webpack_require__(164);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
@@ -5430,7 +5424,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.setTokenApprove = exports.setTokenBalance = exports.setBalance = exports.setTokenAuthData = exports.setAuthData = exports.initialState = undefined;
 
-var _defineProperty2 = __webpack_require__(163);
+var _defineProperty2 = __webpack_require__(164);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
@@ -5658,7 +5652,7 @@ var _moment2 = _interopRequireDefault(_moment);
 
 var _helpers = __webpack_require__(11);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -6799,7 +6793,7 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(Buffer) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -6809,7 +6803,7 @@ var _assign = __webpack_require__(29);
 
 var _assign2 = _interopRequireDefault(_assign);
 
-var _stringify = __webpack_require__(162);
+var _stringify = __webpack_require__(163);
 
 var _stringify2 = _interopRequireDefault(_stringify);
 
@@ -6929,6 +6923,25 @@ var getTransaction = function getTransaction() {
   });
 };
 
+var createScript = function createScript(data) {
+  var secretHash = data.secretHash,
+      ownerPublicKey = data.ownerPublicKey,
+      recipientPublicKey = data.recipientPublicKey,
+      lockTime = data.lockTime;
+
+
+  var network =  true ? _bitcoinjsLib2.default.networks.bitcoin : _bitcoinjsLib2.default.networks.testnet;
+
+  var script = _bitcoinjsLib2.default.script.compile([_bitcoinjsLib2.default.opcodes.OP_RIPEMD160, Buffer.from(secretHash, 'hex'), _bitcoinjsLib2.default.opcodes.OP_EQUALVERIFY, Buffer.from(recipientPublicKey, 'hex'), _bitcoinjsLib2.default.opcodes.OP_EQUAL, _bitcoinjsLib2.default.opcodes.OP_IF, Buffer.from(recipientPublicKey, 'hex'), _bitcoinjsLib2.default.opcodes.OP_CHECKSIG, _bitcoinjsLib2.default.opcodes.OP_ELSE, _bitcoinjsLib2.default.script.number.encode(lockTime), _bitcoinjsLib2.default.opcodes.OP_CHECKLOCKTIMEVERIFY, _bitcoinjsLib2.default.opcodes.OP_DROP, Buffer.from(ownerPublicKey, 'hex'), _bitcoinjsLib2.default.opcodes.OP_CHECKSIG, _bitcoinjsLib2.default.opcodes.OP_ENDIF]);
+
+  var scriptPubKey = _bitcoinjsLib2.default.script.scriptHash.output.encode(_bitcoinjsLib2.default.crypto.hash160(script));
+  var scriptAddress = _bitcoinjsLib2.default.address.fromOutputScript(scriptPubKey, network);
+
+  return {
+    scriptAddress: scriptAddress
+  };
+};
+
 var send = function send(from, to, amount) {
   return new _promise2.default(function (resolve, reject) {
     var _getState3 = (0, _core.getState)(),
@@ -6987,9 +7000,11 @@ exports.default = {
   getTransaction: getTransaction,
   send: send,
   fetchUnspents: fetchUnspents,
+  createScript: createScript,
   broadcastTx: broadcastTx,
   fetchBalance: fetchBalance
 };
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2).Buffer))
 
 /***/ }),
 /* 845 */
@@ -7022,11 +7037,11 @@ var _humanStandardTokenAbi2 = _interopRequireDefault(_humanStandardTokenAbi);
 
 var _core = __webpack_require__(103);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
-var _web = __webpack_require__(150);
+var _web = __webpack_require__(151);
 
 var _web2 = _interopRequireDefault(_web);
 
@@ -7543,11 +7558,11 @@ var _helpers = __webpack_require__(11);
 
 var _core = __webpack_require__(103);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
-var _web = __webpack_require__(150);
+var _web = __webpack_require__(151);
 
 var _web2 = _interopRequireDefault(_web);
 
@@ -8464,7 +8479,7 @@ var _swap = __webpack_require__(12);
 
 var _swap2 = _interopRequireDefault(_swap);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -8644,7 +8659,7 @@ var _swap = __webpack_require__(12);
 
 var _swap2 = _interopRequireDefault(_swap);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -8652,7 +8667,7 @@ var _helpers = __webpack_require__(11);
 
 var _reactRouterDom = __webpack_require__(50);
 
-var _Coins = __webpack_require__(178);
+var _Coins = __webpack_require__(179);
 
 var _Coins2 = _interopRequireDefault(_Coins);
 
@@ -8972,7 +8987,7 @@ var _swap = __webpack_require__(12);
 
 var _swap2 = _interopRequireDefault(_swap);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -9094,7 +9109,7 @@ var _RowFeeds = __webpack_require__(1023);
 
 var _RowFeeds2 = _interopRequireDefault(_RowFeeds);
 
-var _Coins = __webpack_require__(178);
+var _Coins = __webpack_require__(179);
 
 var _Coins2 = _interopRequireDefault(_Coins);
 
@@ -9734,7 +9749,7 @@ var _redaction = __webpack_require__(32);
 
 var _helpers = __webpack_require__(11);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -10190,7 +10205,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -10514,7 +10529,7 @@ var _appConfig = __webpack_require__(23);
 
 var _appConfig2 = _interopRequireDefault(_appConfig);
 
-var _Href = __webpack_require__(179);
+var _Href = __webpack_require__(180);
 
 var _Href2 = _interopRequireDefault(_Href);
 
@@ -10572,7 +10587,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _stringify = __webpack_require__(162);
+var _stringify = __webpack_require__(163);
 
 var _stringify2 = _interopRequireDefault(_stringify);
 
@@ -10754,7 +10769,7 @@ var _createClass2 = __webpack_require__(20);
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _bignumber = __webpack_require__(180);
+var _bignumber = __webpack_require__(181);
 
 var _bignumber2 = _interopRequireDefault(_bignumber);
 
@@ -11132,7 +11147,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _stringify = __webpack_require__(162);
+var _stringify = __webpack_require__(163);
 
 var _stringify2 = _interopRequireDefault(_stringify);
 
@@ -11289,7 +11304,7 @@ var _appConfig2 = _interopRequireDefault(_appConfig);
 
 var _bignumber = __webpack_require__(91);
 
-var _Timer = __webpack_require__(183);
+var _Timer = __webpack_require__(141);
 
 var _Timer2 = _interopRequireDefault(_Timer);
 
@@ -11301,7 +11316,7 @@ var _InlineLoader = __webpack_require__(138);
 
 var _InlineLoader2 = _interopRequireDefault(_InlineLoader);
 
-var _TimerButton = __webpack_require__(141);
+var _TimerButton = __webpack_require__(142);
 
 var _TimerButton2 = _interopRequireDefault(_TimerButton);
 
@@ -11564,7 +11579,7 @@ var BtcToEth = function (_Component) {
             ),
             !flow.btcScriptValues && _react2.default.createElement(_InlineLoader2.default, null)
           ),
-          flow.btcScriptValues && _react2.default.createElement(
+          flow.btcScriptValues && !flow.isFinished && _react2.default.createElement(
             _react.Fragment,
             null,
             _react2.default.createElement('br', null),
@@ -11729,7 +11744,7 @@ var _InlineLoader = __webpack_require__(138);
 
 var _InlineLoader2 = _interopRequireDefault(_InlineLoader);
 
-var _TimerButton = __webpack_require__(141);
+var _TimerButton = __webpack_require__(142);
 
 var _TimerButton2 = _interopRequireDefault(_TimerButton);
 
@@ -11737,7 +11752,7 @@ var _Button = __webpack_require__(34);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Timer = __webpack_require__(183);
+var _Timer = __webpack_require__(141);
 
 var _Timer2 = _interopRequireDefault(_Timer);
 
@@ -12187,7 +12202,7 @@ var _InlineLoader = __webpack_require__(138);
 
 var _InlineLoader2 = _interopRequireDefault(_InlineLoader);
 
-var _TimerButton = __webpack_require__(141);
+var _TimerButton = __webpack_require__(142);
 
 var _TimerButton2 = _interopRequireDefault(_TimerButton);
 
@@ -12195,7 +12210,7 @@ var _Button = __webpack_require__(34);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Timer = __webpack_require__(183);
+var _Timer = __webpack_require__(141);
 
 var _Timer2 = _interopRequireDefault(_Timer);
 
@@ -12646,7 +12661,7 @@ var _InlineLoader = __webpack_require__(138);
 
 var _InlineLoader2 = _interopRequireDefault(_InlineLoader);
 
-var _TimerButton = __webpack_require__(141);
+var _TimerButton = __webpack_require__(142);
 
 var _TimerButton2 = _interopRequireDefault(_TimerButton);
 
@@ -12654,7 +12669,7 @@ var _Button = __webpack_require__(34);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Timer = __webpack_require__(183);
+var _Timer = __webpack_require__(141);
 
 var _Timer2 = _interopRequireDefault(_Timer);
 
@@ -12909,7 +12924,7 @@ var BtcToEthToken = function (_Component) {
             ),
             !flow.btcScriptValues && _react2.default.createElement(_InlineLoader2.default, null)
           ),
-          flow.btcScriptValues && _react2.default.createElement(
+          flow.btcScriptValues && !flow.isFinished && _react2.default.createElement(
             _react.Fragment,
             null,
             _react2.default.createElement('br', null),
@@ -13071,7 +13086,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _redaction = __webpack_require__(32);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -13341,7 +13356,7 @@ var _appConfig = __webpack_require__(23);
 
 var _appConfig2 = _interopRequireDefault(_appConfig);
 
-var _Href = __webpack_require__(179);
+var _Href = __webpack_require__(180);
 
 var _Href2 = _interopRequireDefault(_Href);
 
@@ -13421,7 +13436,7 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -13677,6 +13692,10 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _actions = __webpack_require__(13);
+
+var _actions2 = _interopRequireDefault(_actions);
+
 var _helpers = __webpack_require__(11);
 
 var _reactRouterDom = __webpack_require__(50);
@@ -13689,9 +13708,13 @@ var _RowHistory = __webpack_require__(1100);
 
 var _RowHistory2 = _interopRequireDefault(_RowHistory);
 
-var _Coins = __webpack_require__(178);
+var _Coins = __webpack_require__(179);
 
 var _Coins2 = _interopRequireDefault(_Coins);
+
+var _Timer = __webpack_require__(141);
+
+var _Timer2 = _interopRequireDefault(_Timer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13706,6 +13729,8 @@ var RowHistory = function RowHistory(_ref) {
   var buyAmount = row.buyAmount,
       buyCurrency = row.buyCurrency,
       sellAmount = row.sellAmount,
+      btcScriptValues = row.btcScriptValues,
+      isRefunded = row.isRefunded,
       isMy = row.isMy,
       sellCurrency = row.sellCurrency,
       isFinished = row.isFinished,
@@ -13735,6 +13760,18 @@ var RowHistory = function RowHistory(_ref) {
       null,
       (sellAmount / buyAmount).toFixed(5),
       ' ' + sellCurrency + '/' + buyCurrency
+    ),
+    _react2.default.createElement(
+      'td',
+      null,
+      btcScriptValues && !isRefunded ? _react2.default.createElement(_Timer2.default, {
+        lockTime: btcScriptValues.lockTime * 1000,
+        enabledButton: function enabledButton() {}
+      }) : _react2.default.createElement(
+        'span',
+        null,
+        'Refund not available'
+      )
     ),
     _react2.default.createElement(
       'td',
@@ -13878,7 +13915,7 @@ var _listingScreen = __webpack_require__(1105);
 
 var _listingScreen2 = _interopRequireDefault(_listingScreen);
 
-var _Href = __webpack_require__(179);
+var _Href = __webpack_require__(180);
 
 var _Href2 = _interopRequireDefault(_Href);
 
@@ -14078,7 +14115,7 @@ var _telegram = __webpack_require__(1109);
 
 var _telegram2 = _interopRequireDefault(_telegram);
 
-var _Href = __webpack_require__(179);
+var _Href = __webpack_require__(180);
 
 var _Href2 = _interopRequireDefault(_Href);
 
@@ -14188,7 +14225,7 @@ var _objectWithoutProperties2 = __webpack_require__(54);
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _defineProperty2 = __webpack_require__(163);
+var _defineProperty2 = __webpack_require__(164);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
@@ -14626,13 +14663,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(143);
+var _reactRouter = __webpack_require__(144);
 
 var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -14798,7 +14835,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.createSwapApp = undefined;
 
-var _web = __webpack_require__(150);
+var _web = __webpack_require__(151);
 
 var _web2 = _interopRequireDefault(_web);
 
@@ -14812,7 +14849,7 @@ var _appConfig2 = _interopRequireDefault(_appConfig);
 
 var _helpers = __webpack_require__(11);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -15292,7 +15329,7 @@ var _extends2 = __webpack_require__(108);
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _bignumber = __webpack_require__(180);
+var _bignumber = __webpack_require__(181);
 
 var _bignumber2 = _interopRequireDefault(_bignumber);
 
@@ -16062,7 +16099,7 @@ var _asyncToGenerator2 = __webpack_require__(77);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
-var _promise = __webpack_require__(181);
+var _promise = __webpack_require__(182);
 
 var _promise2 = _interopRequireDefault(_promise);
 
@@ -16090,7 +16127,7 @@ var _swap = __webpack_require__(12);
 
 var _swap2 = _interopRequireDefault(_swap);
 
-var _bignumber = __webpack_require__(180);
+var _bignumber = __webpack_require__(181);
 
 var _bignumber2 = _interopRequireDefault(_bignumber);
 
@@ -16681,7 +16718,7 @@ var _asyncToGenerator2 = __webpack_require__(77);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
-var _promise = __webpack_require__(181);
+var _promise = __webpack_require__(182);
 
 var _promise2 = _interopRequireDefault(_promise);
 
@@ -16713,7 +16750,7 @@ var _swap = __webpack_require__(12);
 
 var _swap2 = _interopRequireDefault(_swap);
 
-var _bignumber = __webpack_require__(180);
+var _bignumber = __webpack_require__(181);
 
 var _bignumber2 = _interopRequireDefault(_bignumber);
 
@@ -17378,7 +17415,7 @@ var _typeof2 = __webpack_require__(186);
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _promise = __webpack_require__(181);
+var _promise = __webpack_require__(182);
 
 var _promise2 = _interopRequireDefault(_promise);
 
@@ -17652,7 +17689,7 @@ var BtcSwap = function (_SwapInterface) {
 
 
                   if (typeof handleTransactionHash === 'function') {
-                    handleTransactionHash(txRaw.getId());
+                    handleTransactionHash(txRaw.getId(), scriptAddress);
                   }
 
                   _context2.prev = 18;
@@ -18952,6 +18989,7 @@ var BTC2ETH = function (_Flow) {
       balance: null,
 
       isEthContractFunded: false,
+      scriptAddress: null,
 
       ethSwapWithdrawTransactionHash: null,
       isEthWithdrawn: false,
@@ -19020,14 +19058,14 @@ var BTC2ETH = function (_Flow) {
       // 4. Create BTC Script, fund, notify participant
 
       (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
-        var _flow$swap, sellAmount, participant, btcScriptCreatingTransactionHash, utcNow, getLockTime, scriptValues;
+        var _flow$swap, sellAmount, participant, btcScriptCreatingTransactionHash, scriptAddress, utcNow, getLockTime, scriptValues;
 
         return _regenerator2.default.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 _flow$swap = flow.swap, sellAmount = _flow$swap.sellAmount, participant = _flow$swap.participant;
-                btcScriptCreatingTransactionHash = void 0;
+                btcScriptCreatingTransactionHash = void 0, scriptAddress = void 0;
 
                 // TODO move this somewhere!
 
@@ -19049,10 +19087,14 @@ var BTC2ETH = function (_Flow) {
                 return flow.btcSwap.fundScript({
                   scriptValues: scriptValues,
                   amount: sellAmount
-                }, function (hash) {
+                }, function (hash, scriptAddress) {
+
+                  console.log('scriptAddress', scriptAddress);
                   btcScriptCreatingTransactionHash = hash;
+                  scriptAddress = scriptAddress;
                   flow.setState({
-                    btcScriptCreatingTransactionHash: hash
+                    btcScriptCreatingTransactionHash: hash,
+                    scriptAddress: scriptAddress
                   });
                 });
 
@@ -19061,13 +19103,15 @@ var BTC2ETH = function (_Flow) {
                 flow.swap.room.on('request btc script', function () {
                   flow.swap.room.sendMessage('create btc script', {
                     scriptValues: scriptValues,
-                    btcScriptCreatingTransactionHash: btcScriptCreatingTransactionHash
+                    btcScriptCreatingTransactionHash: btcScriptCreatingTransactionHash,
+                    scriptAddress: scriptAddress
                   });
                 });
 
                 flow.swap.room.sendMessage('create btc script', {
                   scriptValues: scriptValues,
-                  btcScriptCreatingTransactionHash: btcScriptCreatingTransactionHash
+                  btcScriptCreatingTransactionHash: btcScriptCreatingTransactionHash,
+                  scriptAddress: scriptAddress
                 });
 
                 flow.finishStep({
@@ -20877,7 +20921,7 @@ var _swap = __webpack_require__(12);
 
 var _swap2 = _interopRequireDefault(_swap);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -21405,7 +21449,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -21831,7 +21875,7 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -22053,7 +22097,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -22083,7 +22127,7 @@ var _Button = __webpack_require__(34);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Coins = __webpack_require__(178);
+var _Coins = __webpack_require__(179);
 
 var _Coins2 = _interopRequireDefault(_Coins);
 
@@ -22460,7 +22504,7 @@ var _swValuelink = __webpack_require__(95);
 
 var _swValuelink2 = _interopRequireDefault(_swValuelink);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -22561,9 +22605,16 @@ var AddOffer = (_dec = (0, _redaction.connect)(function (_ref) {
 
       var linked = _swValuelink2.default.all(this, 'exchangeRate', 'buyAmount', 'sellAmount');
 
-      linked.sellAmount.check(function (value) {
-        return value > min;
-      }, 'Amount must be greater than 0.01 ');
+      if (sellCurrency === 'btc') {
+        linked.sellAmount.check(function (value) {
+          return value > 0.004;
+        }, 'Amount must be greater than 0.004 ');
+      } else {
+        linked.sellAmount.check(function (value) {
+          return value > min;
+        }, 'Amount must be greater than ' + min + ' ');
+      }
+
       linked.sellAmount.check(function (value) {
         return value < balance;
       }, 'Amount must be bigger your balance');
@@ -23015,7 +23066,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _helpers = __webpack_require__(11);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -23141,7 +23192,7 @@ var WithdrawModal = (_dec = (0, _reactCssModules2.default)(_WithdrawModal2.defau
       if (isSubmitted) {
         linked.amount.check(function (value) {
           return value > 0.01;
-        }, 'Amount must be greater than 0.01 ');
+        }, 'Amount must be greater than 0.05 ');
         linked.amount.check(function (value) {
           return value < balance;
         }, 'Amount must be bigger your balance');
@@ -23250,7 +23301,7 @@ var _moment = __webpack_require__(71);
 
 var _moment2 = _interopRequireDefault(_moment);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -23664,7 +23715,7 @@ var _swValuelink = __webpack_require__(95);
 
 var _swValuelink2 = _interopRequireDefault(_swValuelink);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -23997,7 +24048,7 @@ var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _actions = __webpack_require__(14);
+var _actions = __webpack_require__(13);
 
 var _actions2 = _interopRequireDefault(_actions);
 
