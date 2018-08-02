@@ -16168,8 +16168,8 @@ var EthSwap = function (_SwapInterface) {
     _this.abi = options.abi;
 
     _this._swapName = _swap.constants.COINS.eth;
-    _this.gasLimit = options.gasLimit || 3e6;
-    _this.gasPrice = options.gasPrice;
+    _this.gasLimit = options.gasLimit || 1e5;
+    _this.gasPrice = options.gasPrice || 1e10;
     _this.fetchBalance = options.fetchBalance;
     return _this;
   }
