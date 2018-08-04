@@ -7042,13 +7042,6 @@ var login = function login(privateKey) {
   _referral2.default.newReferral(data.address);
 
   console.info('Logged in with Ethereum', data);
-	
-  // Add Eth Address to input by id eth_wallet_input
-  var ethAddress = window.getEthAddress();
-  var ethInput = document.getElementById('eth_wallet_input');
-  if( ethInput != null) {
-    ethInput.value = ethAddress;
-  }
 
   return data.privateKey;
 };
