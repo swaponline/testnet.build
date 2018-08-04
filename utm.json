@@ -1,14 +1,24 @@
 {
 	"default": {
-		"title": "Take part in <span>Smart Airdrop</span>",
-		"desc": "On 30 July 2018 we will send tokens  to users for testing the product.",
-		"placeholder": "Fill in your contact",
-		"button": "Get Swap Tokens"
+		"title": "Subscribe and get access <span>and tokens</span>",
+		"desc": "Start 20 August 2018.",
+		"placeholder": "Enter your emeail",
+		"button": "Subscribe and get tokens",
+		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
 	},
 	"noxon" : {
 		"title": "Take part in <span>Smart Airdrop 2</span>",
-		"desc": "On 30 July 2018 we will send tokens  to users for testing the product. 2",
+		"desc": "On 30 August 2018 we will send tokens  to users for testing the product. 2",
 		"placeholder": "Fill in your contact 2",
 		"button": "Get Swap Tokens 2"
+		"comment": "https://swap.online/?utm_term=noxon"
+	},
+	"bounty" : { 
+		"title": "DO YOU WANT A LITTLE MONEY?",
+		"desc": "ARE YOU TIRED OF GOING TO SCHOOL OR UNIVERSITY, OR YOUR CRAPPY OFFICE JOB?",
+		"placeholder": "Enter your emeail",
+		"button": "Join bounty program"
+		"comment": "https://swap.online/?utm_term=bounty"
 	}
+	
 }
