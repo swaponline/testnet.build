@@ -6,6 +6,13 @@
 		"button": "Start trading",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
 	},
+	"ru": {
+		"title": "Получи доступ к <span>Swap.Online</span>",
+		"desc": "те кто сейчас оставят емейл смогут торговать без комиссии всегда",
+		"placeholder": "Enter your e-meail",
+		"button": "Start trading",
+		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/?utm_term=ru"
+	},
 	"airdrop" : {
 		"title": "Take part in <span>Smart Airdrop 2</span>",
 		"desc": "On 30 August 2018 we will send tokens  to users for testing the product. ",
