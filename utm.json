@@ -1,7 +1,7 @@
 {
 	"default": {
-		"title": "Subscribe and get access <span>and tokens</span>",
-		"desc": "SWAP.ONLINE - DECENTRALIZED EXCHANGE BASED ON ATOMIC SWAP PROTOCOL. Launch on August 20",
+		"title": "Be the first with the access to <span>Swap.Online </span>",
+		"desc": "SWAP.ONLINE - DECENTRALIZED EXCHANGE BASED ON ATOMIC SWAP PROTOCOL",
 		"placeholder": "Enter your emeail",
 		"button": "Subscribe and get tokens",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
