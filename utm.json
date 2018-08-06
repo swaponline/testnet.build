@@ -1,22 +1,16 @@
 {
 	"default": {
 		"title": "Be the first with the access to <span>Swap.Online</span>",
+		"titleonexit": "Be the first with the access to <span>Swap.Online</span> exit",
 		"desc": "Swap.Online — decentralized OTC market based on Atomic Swap",
 		"placeholder": "E-mail",
 		"button": "Start Trading",
 		"closebtn": "Remind me later",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
 	},
-	"onexit": {
-		"title": "Be the first with the access to <span>Swap.Online exit</span>",
-		"desc": "Swap.Online — decentralized OTC market based on Atomic Swap exit",
-		"placeholder": "E-mail exit",
-		"button": "Start Trading exit",
-		"closebtn": "Remind me later",
-		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/ exit"
-	}, 
 	"ru": {
 		"title": "Будь первым, кто получит доступ к <span>Swap.Online</span>",
+		"titleonexit": "Будь первым, кто получит доступ к <span>Swap.Online</span>",
 		"desc": "Первые пользователи, которые доверят нам свой е-мейл, будут торговать без комиссии пожизненно",
 		"placeholder": "Е-мейл",
 		"button": "Торговать без комиссии всегда",
@@ -25,6 +19,7 @@
 	},
 	"airdrop" : {
 		"title": "Take part in <span>Smart Airdrop 2</span>",
+		"titleonexit": "Take part in <span>Smart Airdrop 2</span>",
 		"desc": "On 30 August 2018 we will send tokens to users for testing our decentralized OTC market Swap.Online.",
 		"placeholder": "E-mail",
 		"button": "Get Swap Tokens Free",
@@ -33,6 +28,7 @@
 	},
 	"bounty" : { 
 		"title": "What do you think about <span>earn a little money?</span>",
+		"titleonexit": "What do you think about <span>earn a little money?</span>",
 		"desc": "You are the biggest lucky man in universe, because you are on this page! If you are tired of going to school / university, or your crappy office job, join us and start making money! ",
 		"placeholder": "E-mail",
 		"button": "Join To Bounty Program",
@@ -41,6 +37,7 @@
 	},
 	"rubounty" : { 
 		"title": "Как тебе идея поднять <span>немного деньжат?</span>",
+		"titleonexit": "Как тебе идея поднять <span>немного деньжат?</span>",
 		"desc": "Тебе повезло, что ты попал на эту страницу! Если тебе надоело терять время в школе / университете, или на скучной работе в офисе, присоединяйся к нам и начни зарабатывать деньги!",
 		"placeholder": "E-мейл",
 		"button": "Начать делать деньги",
