@@ -1,22 +1,22 @@
 {
 	"default": {
-		"title": "Be the first with the access to <span>Swap.Online </span>",
-		"desc": "SWAP.ONLINE - DECENTRALIZED EXCHANGE BASED ON ATOMIC SWAP PROTOCOL",
-		"placeholder": "Enter your emeail",
-		"button": "Subscribe and get tokens",
+		"title": "Be the first with the access to <span>Swap.Online</span>",
+		"desc": "SWAP.ONLINE - DECENTRALIZED EXCHANGE BASED ON ATOMIC SWAP",
+		"placeholder": "Enter your e-meail",
+		"button": "Start trading",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
 	},
 	"airdrop" : {
 		"title": "Take part in <span>Smart Airdrop 2</span>",
 		"desc": "On 30 August 2018 we will send tokens  to users for testing the product. ",
-		"placeholder": "Fill in your contact ",
+		"placeholder": "Enter your e-mail",
 		"button": "Get Swap Tokens ",
 		"comment": "https://swap.online/?utm_term=noxon"
 	},
 	"bounty" : { 
 		"title": "DO YOU WANT A LITTLE MONEY?",
 		"desc": "ARE YOU TIRED OF GOING TO SCHOOL OR UNIVERSITY, OR YOUR CRAPPY OFFICE JOB?",
-		"placeholder": "Enter your emeail",
+		"placeholder": "Enter your e-mail",
 		"button": "Join bounty program",
 		"comment": "https://swap.online/?utm_term=bounty"
 	}
