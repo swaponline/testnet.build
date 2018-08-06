@@ -2,8 +2,8 @@
 	"default": {
 		"title": "Be the first with the access to <span>Swap.Online</span>",
 		"desc": "Swap.Online — decentralized OTC market based on Atomic Swap",
-		"placeholder": "Enter your e-mail",
-		"button": "Start trading",
+		"placeholder": "E-mail",
+		"button": "Start Trading",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
 	},
 	"ru": {
@@ -16,15 +16,15 @@
 	"airdrop" : {
 		"title": "Take part in <span>Smart Airdrop 2</span>",
 		"desc": "On 30 August 2018 we will send tokens to users for testing our decentralized OTC market Swap.Online.",
-		"placeholder": "Enter your e-mail",
+		"placeholder": "E-mail",
 		"button": "Get Swap Tokens Free",
 		"comment": "AIRDROP https://swap.online/?utm_term=airdrop"
 	},
 	"bounty" : { 
 		"title": "Do you want <span>a little money?</span>",
-		"desc": "If you are tired of going to school / university, or your crappy office job, join us! Enter your e-mail and start making money! The offer is valid only for Winners, Luckies and Armchair Investors.",
-		"placeholder": "Enter your e-mail",
-		"button": "Join to bounty program",
+		"desc": "If you are tired of going to school / university, or your crappy office job, join us! The offer is valid only for Winners, Luckies and Armchair Investors.",
+		"placeholder": "E-mail",
+		"button": "Join To Bounty Program",
 		"comment": "https://swap.online/?utm_term=bounty"
 	}
 	
