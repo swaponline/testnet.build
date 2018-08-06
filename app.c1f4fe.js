@@ -4296,10 +4296,10 @@ var routes = _react2.default.createElement(
   _reactRouterDom.Switch,
   null,
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.orders + '/:buy-:sell', component: _Home2.default }),
-  _react2.default.createElement(_reactRouter.Route, { exact: true, path: _helpers.links.orders, component: _Home2.default }),
+  _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.orders, component: _Home2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.affiliate, component: _Affiliate2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.listing, component: _Listing2.default }),
-  _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.home, component: _Wallet2.default }),
+  _react2.default.createElement(_reactRouter.Route, { exact: true, path: _helpers.links.home, component: _Wallet2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.history, component: _History2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.swap + '/:buy-:sell/:orderId', component: _Swap2.default }),
   _react2.default.createElement(_reactRouter.Route, { component: _NotFound2.default })
