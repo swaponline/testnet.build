@@ -29,7 +29,7 @@
 	"airgift" : {
 		"title": "Someone gave you free access!",
 		"titleonexit": "Last chance!",
-		"desc": "Someone want present you SWAP tokens, enter your e-mail",
+		"desc": "Someone want present you SWAP tokens, enter your email",
 		"placeholder": "E-mail",
 		"button": "Open a gift",
 		"closebtn": "Remind me later",
