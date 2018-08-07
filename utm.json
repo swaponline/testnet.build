@@ -4,6 +4,7 @@
 		"titleonexit": "Be the first with the access to <span>Swap.Online</span> exit",
 		"desc": "Swap.Online — decentralized OTC market based on Atomic Swap",
 		"placeholder": "E-mail",
+		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
 		"button": "Start Trading",
 		"closebtn": "Remind me later",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
@@ -13,6 +14,7 @@
 		"titleonexit": "Будь первым, кто получит доступ к <span>Swap.Online</span> выход",
 		"desc": "Первые пользователи, которые доверят нам свой е-мейл, будут торговать без комиссии пожизненно",
 		"placeholder": "Е-мейл",
+		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
 		"button": "Торговать без комиссии всегда",
 		"closebtn": "Remind me later",
 		"comment": "Попап, который выскакивает, если перейти с utm_term меткой ru https://swap.online/?utm_term=ru"
@@ -22,6 +24,7 @@
 		"titleonexit": "Take part in <span>Smart Airdrop 2</span>",
 		"desc": "On 30 August 2018 we will send tokens to users for testing our decentralized OTC market Swap.Online.",
 		"placeholder": "E-mail",
+		"placeholdertext": "",
 		"button": "Get Swap Tokens Free",
 		"closebtn": "Remind me later",
 		"comment": "AIRDROP https://swap.online/?utm_term=airdrop"
@@ -31,6 +34,7 @@
 		"titleonexit": "Last chance!",
 		"desc": "Someone want present you SWAP tokens, enter your email",
 		"placeholder": "E-mail",
+		"placeholdertext": "",
 		"button": "Open a gift",
 		"closebtn": "Remind me later",
 		"comment": "френдлист"
@@ -40,6 +44,7 @@
 		"titleonexit": "What do you think about <span>earn a little money?</span>",
 		"desc": "You are the biggest lucky man in universe, because you are on this page! If you are tired of going to school / university, or your crappy office job, join us and start making money! ",
 		"placeholder": "E-mail",
+		"placeholdertext": "",
 		"button": "Join To Bounty Program",
 		"closebtn": "Remind me later",
 		"comment": "https://swap.online/?utm_term=bounty"
