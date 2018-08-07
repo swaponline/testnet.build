@@ -26,6 +26,15 @@
 		"closebtn": "Remind me later",
 		"comment": "AIRDROP https://swap.online/?utm_term=airdrop"
 	},
+	"airgift" : {
+		"title": "Someone gave you free access!",
+		"titleonexit": "Last chance!",
+		"desc": "Someone want present you SWAP tokens, enter your e-mail",
+		"placeholder": "E-mail",
+		"button": "Open a gift",
+		"closebtn": "Remind me later",
+		"comment": "френдлист"
+	},
 	"bounty" : { 
 		"title": "What do you think about <span>earn a little money?</span>",
 		"titleonexit": "What do you think about <span>earn a little money?</span>",
