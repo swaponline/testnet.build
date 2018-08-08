@@ -49,6 +49,16 @@
 		"closebtn": "Remind me later",
 		"comment": "френдлист"
 	},
+	"ruairgift" : {
+		"title": "Вам подарили токены проекта swap.online!",
+		"titleonexit": "Last chance!",
+		"desc": "SWAP.ONLINE - технологическая криптовалютная биржа. Всего будет выпущено 21 million SWAP токенов. Токены используются как внутренняя валюта  (рейтинг, увеличение лимитов, залог для маркетмейкеров). После проверки модератором ваши токены будут видны на главной странице swap.online",
+		"placeholder": "E-mail",
+		"placeholdertext": "Откуда вы узнали о проекте?",
+		"button": "Получить подарок",
+		"closebtn": "Спасибо не надо",
+		"comment": "френдлист"
+	},
 	"bounty" : { 
 		"title": "What do you think about <span>earn a little money?</span>",
 		"titleonexit": "What do you think about <span>earn a little money?</span>",
@@ -62,11 +72,11 @@
 	"rubounty" : { 
 		"title": "Как тебе идея поднять <span>немного деньжат?</span>",
 		"titleonexit": "Как тебе идея поднять <span>немного деньжат?</span>",
-		"desc": "Тебе повезло, что ты попал на эту страницу! Если тебе надоело терять время в школе / университете, или на скучной работе в офисе, присоединяйся к нам и начни зарабатывать деньги!",
+		"desc": "Если вам надоело терять время в школе / университете, или на скучной работе в офисе, присоединяйтесь к нам и начни зарабатывать деньги!",
 		"placeholder": "E-мейл",
-		"placeholdertext": "",
+		"placeholdertext": "Напишите о себе или своем опыте в крипте, как вы можете помоч проекту swap.online или просто укажите ссылки на соц. сети",
 		"button": "Начать делать деньги",
-		"closebtn": "Remind me later",
+		"closebtn": "Нет, спасибо",
 		"comment": "https://swap.online/?utm_term=rubounty"
 	}	
 	
