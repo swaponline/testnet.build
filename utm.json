@@ -9,6 +9,16 @@
 		"closebtn": "Remind me later",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
 	},
+	"test": {
+		"title": "",
+		"titleonexit": "",
+		"desc": "",
+		"placeholder": "",
+		"placeholdertext": "",
+		"button": "",
+		"closebtn": "",
+		"comment": ""
+	},
 	"ru": {
 		"title": "Будь первым, кто получит доступ к <span>Swap.Online</span>",
 		"titleonexit": "Будь первым, кто получит доступ к <span>Swap.Online</span> выход",
