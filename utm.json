@@ -2,7 +2,7 @@
 	"default": {
 		"title": "Be the first with the access to <span>Swap.Online</span>",
 		"titleonexit": "Be the first with the access to <span>Swap.Online</span> exit",
-		"desc": "Swap.Online — decentralized OTC market based on Atomic Swap",
+		"desc": "SWAP.ONLINE - cryptocurrency wallet with 0% exchange based on atomic swaps",
 		"placeholder": "E-mail",
 		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
 		"button": "Start Trading",
@@ -40,9 +40,9 @@
 		"comment": "AIRDROP https://swap.online/?utm_term=airdrop"
 	},
 	"airgift" : {
-		"title": "Someone gave you free access!",
+		"title": "Someone want present you SWAP tokens!",
 		"titleonexit": "Last chance!",
-		"desc": "Someone want present you SWAP tokens, enter your email",
+		"desc": "SWAP.ONLINE - cryptocurrency wallet with 0% exchange based on atomic swaps. A total of 21 million SWAP tokens will be released. Swap tokens are used by customers to raise their system rating, pay for Swap.Online services (raising limits, deposit for marketmakers), and settle up with each other.",
 		"placeholder": "E-mail",
 		"placeholdertext": "",
 		"button": "Open a gift",
