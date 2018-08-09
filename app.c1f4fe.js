@@ -4585,7 +4585,7 @@ exports.default = {
   feed: '/feed',
   affiliate: '/affiliate',
   listing: '/listing',
-  test: 'https:/testnet.swap.online'
+  test: 'https://testnet.swap.online'
 };
 
 /***/ }),
