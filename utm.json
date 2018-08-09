@@ -37,7 +37,7 @@
 		"titleonexit": "Будь первым, кто получит доступ к <span>Swap.Online</span> выход",
 		"desc": "Первые пользователи, которые доверят нам свой е-мейл, будут торговать без комиссии пожизненно",
 		"placeholder": "Е-мейл",
-		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
+		"placeholdertext": "",
 		"button": "Торговать без комиссии всегда",
 		"closebtn": "Remind me later",
 		"redirect": "https://wiki.swap.online",
