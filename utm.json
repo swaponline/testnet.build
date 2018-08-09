@@ -7,6 +7,7 @@
 		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
 		"button": "Start Trading",
 		"closebtn": "Remind me later",
+		"redirect": "https://swap.wpmix.net",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
 	},
 	"test": {
@@ -17,6 +18,7 @@
 		"placeholdertext": "",
 		"button": "",
 		"closebtn": "",
+		"redirect": "",
 		"comment": ""
 	},
 	"ru": {
@@ -27,6 +29,7 @@
 		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
 		"button": "Торговать без комиссии всегда",
 		"closebtn": "Remind me later",
+		"redirect": "https://wiki.swap.online",
 		"comment": "Попап, который выскакивает, если перейти с utm_term меткой ru https://swap.online/?utm_term=ru"
 	},
 	"airdrop" : {
@@ -37,6 +40,7 @@
 		"placeholdertext": "We personally review every Airdrop request, and the decision on how many tokens to provide is made individually. Please send some information about yourself, attach links if possible. Tokens will be sent to your swap online wallet",
 		"button": "Get Swap Tokens Free",
 		"closebtn": "Remind me later",
+		"redirect": "",
 		"comment": "AIRDROP https://swap.online/?utm_term=airdrop"
 	},
 	"airgift" : {
@@ -47,6 +51,7 @@
 		"placeholdertext": "",
 		"button": "Open a gift",
 		"closebtn": "Remind me later",
+		"redirect": "",
 		"comment": "френдлист"
 	},
 	"ruairgift" : {
@@ -57,6 +62,7 @@
 		"placeholdertext": "Откуда вы узнали о проекте?",
 		"button": "Получить подарок",
 		"closebtn": "Спасибо не надо",
+		"redirect": "",
 		"comment": "френдлист"
 	},
 	"bounty" : { 
@@ -67,6 +73,7 @@
 		"placeholdertext": "",
 		"button": "Join To Bounty Program",
 		"closebtn": "Remind me later",
+		"redirect": "",
 		"comment": "https://swap.online/?utm_term=bounty"
 	},
 	"rubounty" : { 
@@ -77,6 +84,7 @@
 		"placeholdertext": "Напишите о себе или своем опыте в крипте, как вы можете помоч проекту swap.online или просто укажите ссылки на соц. сети",
 		"button": "Начать делать деньги",
 		"closebtn": "Нет, спасибо",
+		"redirect": "",
 		"comment": "https://swap.online/?utm_term=rubounty"
 	}	
 	
