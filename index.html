@@ -46,7 +46,7 @@
 
 								<form action="" class="contact_form swap-modal-form">
 									<div class="form-group swap-form-group">
-										<input type="email" name="YOUR_CONTACT"  class="participate__input form-control form-control-lg swap-modal-placeholder swap-validate-email" placeholder="" required>
+										<input type="email" name="YOUR_CONTACT" onchange="var d_changed;if(!d_changed){window.dataLayer.push({'event' : 'contactform-start'});d_changed=1}" class="participate__input form-control form-control-lg swap-modal-placeholder swap-validate-email" placeholder="" required>
 										<input type="hidden" name="ethereum_wallet" value="" id="eth_wallet_input" class="participate__input">
 										<input type="hidden" name="swap_redirect" value="" class="swap-modal-redirect">
 									</div>
