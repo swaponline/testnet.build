@@ -37,10 +37,10 @@
 		"titleonexit": "Будь первым, кто получит доступ к <span>Swap.Online</span> выход",
 		"desc": "Первые пользователи, которые доверят нам свой е-мейл, будут торговать без комиссии пожизненно",
 		"placeholder": "Е-мейл",
-		"placeholdertext": "",
+		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
 		"button": "Торговать без комиссии всегда",
 		"closebtn": "Remind me later",
-		"redirect": "https://wiki.swap.online",
+		"redirect": "",
 		"comment": "Попап, который выскакивает, если перейти с utm_term меткой ru https://swap.online/?utm_term=ru"
 	},
 	"airdrop" : {
