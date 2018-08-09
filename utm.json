@@ -7,7 +7,7 @@
 		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
 		"button": "Start Trading",
 		"closebtn": "Remind me later",
-		"redirect": "https://swap-thank-you.kickoffpages.com/?kolid=QNR06",
+		"redirect": "",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
 	},
 	"test": {
@@ -19,17 +19,6 @@
 		"button": "",
 		"closebtn": "",
 		"redirect": "https://swap.wpmix.net",
-		"comment": ""
-	},
-	"test2": {
-		"title": "",
-		"titleonexit": "",
-		"desc": "",
-		"placeholder": "",
-		"placeholdertext": "",
-		"button": "",
-		"closebtn": "",
-		"redirect": "",
 		"comment": ""
 	},
 	"ru": {
