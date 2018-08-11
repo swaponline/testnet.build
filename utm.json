@@ -83,7 +83,7 @@
 		"placeholdertext": "Откуда вы узнали о проекте?",
 		"button": "Получить подарок",
 		"closebtn": "Спасибо не надо",
-		"redirect": "",
+		"redirect": "https://testnet.swap.online",
 		"comment": "френдлист"
 	},
 	"bounty" : { 
