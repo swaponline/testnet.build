@@ -81,7 +81,7 @@
 		"desc": "SWAP.ONLINE - криптовалютный кошелек с функцией обмена без комиссии. Токены используются как внутренняя валюта  (рейтинг, увеличение лимитов, залог для маркетмейкеров). После проверки модератором ваши токены будут видны на главной странице swap.online, где вы сможете использовать их (или продать). После ввода емейл вы будете перемещены на testnet.swap.online, где продукт запущен в демо режиме (с не настоящими балансами)",
 		"placeholder": "E-mail",
 		"placeholdertext": "",
-		"button": "Получить подарок",
+		"button": "Подписатся на новости и получить подарок",
 		"closebtn": "Спасибо не надо",
 		"redirect": "https://testnet.swap.online",
 		"comment": "френдлист ру"
@@ -95,7 +95,7 @@
 		"button": "Join To Bounty Program",
 		"closebtn": "Remind me later",
 		"redirect": "",
-		"comment": "https://swap.online/?utm_term=bounty"
+		"comment": ""
 	},
 	"rubounty" : { 
 		"title": "Как тебе идея поднять <span>немного деньжат?</span>",
@@ -106,7 +106,7 @@
 		"button": "Начать делать деньги",
 		"closebtn": "Нет, спасибо",
 		"redirect": "",
-		"comment": "https://swap.online/?utm_term=rubounty"
+		"comment": ""
 	},
 	"rutesters" : { 
 		"title": "Finish a short poll, proceed to swap and make <span>money</span>",
@@ -117,7 +117,7 @@
 		"button": "Go to swap",
 		"closebtn": "No, thanks",
 		"redirect": "https://testnet.swap.online/",
-		"comment": "https://swap.online/?utm_term=rubounty"
+		"comment": ""
 	}
 	
 }
