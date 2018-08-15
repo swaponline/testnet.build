@@ -107,6 +107,17 @@
 		"closebtn": "Нет, спасибо",
 		"redirect": "",
 		"comment": "https://swap.online/?utm_term=rubounty"
-	}	
+	},
+	"rutesters" : { 
+		"title": "Привет <span>Андрей</span>",
+		"titleonexit": "Как тебе идея поднять <span>немного деньжат?</span>",
+		"desc": "Если вам надоело терять время в школе / университете, или на скучной работе в офисе, присоединяйтесь к нам и начни зарабатывать деньги!",
+		"placeholder": "E-мейл",
+		"placeholdertext": "Напишите о себе или своем опыте в крипте, как вы можете помоч проекту swap.online или просто укажите ссылки на соц. сети",
+		"button": "Начать делать деньги",
+		"closebtn": "Нет, спасибо",
+		"redirect": "",
+		"comment": "https://swap.online/?utm_term=rubounty"
+	}
 	
 }
