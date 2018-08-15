@@ -78,7 +78,7 @@
 	"ruairgift" : {
 		"title": "Вам подарили токены проекта swap.online!",
 		"titleonexit": "Last chance!",
-		"desc": "SWAP.ONLINE - криптовалютный кошелек с функцией обмена без комиссии. Токены используются как внутренняя валюта  (рейтинг, увеличение лимитов, залог для маркетмейкеров). После проверки модератором ваши токены будут видны на главной странице swap.online, где вы сможете использовать их (или продать). После ввода емейл вы будете перемещены на testnet.swap.online, где продукт запущен в демо режиме (с не настоящими балансами)",
+		"desc": "SWAP.ONLINE - технологическая криптовалютная биржа. Всего будет выпущено 21 million SWAP токенов. Токены используются как внутренняя валюта  (рейтинг, увеличение лимитов, залог для маркетмейкеров). После проверки модератором ваши токены будут видны на главной странице swap.online, где вы сможете использовать их (или продать)",
 		"placeholder": "E-mail",
 		"placeholdertext": "",
 		"button": "Получить подарок",
@@ -109,14 +109,14 @@
 		"comment": "https://swap.online/?utm_term=rubounty"
 	},
 	"rutesters" : { 
-		"title": "Привет <span>Андрей</span>",
-		"titleonexit": "Как тебе идея поднять <span>немного деньжат?</span>",
-		"desc": "Если вам надоело терять время в школе / университете, или на скучной работе в офисе, присоединяйтесь к нам и начни зарабатывать деньги!",
-		"placeholder": "E-мейл",
-		"placeholdertext": "Напишите о себе или своем опыте в крипте, как вы можете помоч проекту swap.online или просто укажите ссылки на соц. сети",
-		"button": "Начать делать деньги",
-		"closebtn": "Нет, спасибо",
-		"redirect": "",
+		"title": "Finish a short poll, proceed to swap and make <span>money</span>",
+		"titleonexit": "Finish a short poll, proceed to swap and make <span>money</span>",
+		"desc": "If you are tired of going to school / university, or your crappy office job, or if you just looking for a new hobby, join us and start making money!",
+		"placeholder": "E-mail",
+		"placeholdertext": "",
+		"button": "Go to swap",
+		"closebtn": "No, thanks",
+		"redirect": "https://testnet.swap.online/",
 		"comment": "https://swap.online/?utm_term=rubounty"
 	}
 	
