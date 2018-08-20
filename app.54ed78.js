@@ -1196,6 +1196,9 @@ var approve = function approve(name, amount) {
                 from: address,
                 gas: '' + _appConfig2.default.services.web3.gas,
                 gasPrice: '' + _appConfig2.default.services.web3.gasPrice
+              }).on('transactionHash', function (hash) {
+                var txId = _appConfig2.default.link.etherscan + '/tx/' + hash;
+                _actions2.default.loader.show(true, true, txId);
               }).on('error', function (err) {
                 reject(err);
               });
@@ -2531,6 +2534,11 @@ var seo = {
     description: 'Noxon',
     h1: 'Noxon Trade'
   }, {
+    uri: '/exchange/jot',
+    title: 'Jot',
+    description: 'Jot',
+    h1: 'Jot Trade'
+  }, {
     uri: '/history',
     title: 'History',
     description: 'History'
@@ -2966,7 +2974,7 @@ exports.default = {
   feed: '/feed',
   affiliate: '/affiliate',
   listing: '/listing',
-  test: 'https:/testnet.swap.online',
+  test: 'https://testnet.swap.online',
   medium: 'https://medium.com/swaponline',
   twitter: 'https://twitter.com/SwapOnlineTeam',
   facebook: 'https://www.facebook.com/pg/Swaponline-637233326642691',
@@ -4915,7 +4923,7 @@ var routes = _react2.default.createElement(
   null,
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.exchange + '/:buy-:sell/:orderId', component: _Home2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.exchange + '/:buy-:sell', component: _Home2.default }),
-  _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.exchange + '/:currency', component: _Currency2.default }),
+  _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.home + ':trade-:currency', component: _Currency2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.exchange, component: _Home2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.affiliate, component: _Affiliate2.default }),
   _react2.default.createElement(_reactRouter.Route, { path: _helpers.links.listing, component: _Listing2.default }),
@@ -6057,6 +6065,11 @@ var initialState = exports.initialState = {
     title: 'SWAP',
     icon: 'swap',
     value: 'swap'
+  }, {
+    name: 'JOT',
+    title: 'JOT',
+    icon: 'jot',
+    value: 'jot'
   }]
 };
 
@@ -6260,7 +6273,9 @@ var swapComponents = {
   'NOXON2BTC': _EthTokenToBtc2.default,
   'BTC2NOXON': _BtcToEthToken2.default,
   'SWAP2BTC': _EthTokenToBtc2.default,
-  'BTC2SWAP': _BtcToEthToken2.default
+  'BTC2SWAP': _BtcToEthToken2.default,
+  'JOT2BTC': _EthTokenToBtc2.default,
+  'BTC2JOT': _BtcToEthToken2.default
 };
 
 var SwapComponent = (_dec = (0, _redaction.connect)({
@@ -6565,6 +6580,7 @@ exports.default = {
 
   // ETH Tokens
   noxon: 'NOXON',
+  jot: 'JOT',
   swap: 'SWAP',
   btrm: 'BTRM'
 };
@@ -14010,24 +14026,30 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
   }
 
   (0, _createClass3.default)(Row, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
+    key: 'componentWillMount',
+    value: function componentWillMount() {
       var _props = this.props,
-          contractAddress = _props.contractAddress,
-          name = _props.name,
-          balance = _props.balance,
           currency = _props.currency,
           currencies = _props.currencies;
 
 
-      if (name !== undefined) {
-        _actions2.default.token.allowance(contractAddress, name);
-      }
       this.setState({
         tradeAllowed: !!currencies.find(function (c) {
           return c.value === currency.toLowerCase();
         })
       });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _props2 = this.props,
+          contractAddress = _props2.contractAddress,
+          name = _props2.name;
+
+
+      if (name !== undefined) {
+        _actions2.default.token.allowance(contractAddress, name);
+      }
     }
   }, {
     key: 'render',
@@ -14038,16 +14060,16 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
           isBalanceFetching = _state.isBalanceFetching,
           viewText = _state.viewText,
           tradeAllowed = _state.tradeAllowed;
-      var _props2 = this.props,
-          currency = _props2.currency,
-          name = _props2.name,
-          balance = _props2.balance,
-          isBalanceFetched = _props2.isBalanceFetched,
-          address = _props2.address,
-          contractAddress = _props2.contractAddress,
-          decimals = _props2.decimals,
-          approve = _props2.approve,
-          unconfirmedBalance = _props2.unconfirmedBalance;
+      var _props3 = this.props,
+          currency = _props3.currency,
+          name = _props3.name,
+          balance = _props3.balance,
+          isBalanceFetched = _props3.isBalanceFetched,
+          address = _props3.address,
+          contractAddress = _props3.contractAddress,
+          decimals = _props3.decimals,
+          approve = _props3.approve,
+          unconfirmedBalance = _props3.unconfirmedBalance;
 
 
       return _react2.default.createElement(
@@ -14065,22 +14087,26 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
         ),
         _react2.default.createElement(
           'td',
-          { style: { minWidth: '80px' } },
+          { style: { minWidth: '120px' } },
           !isBalanceFetched || isBalanceFetching ? _react2.default.createElement(_InlineLoader2.default, null) : _react2.default.createElement(
             _react.Fragment,
             null,
+            _react2.default.createElement('i', { className: 'fas fa-sync-alt', styleName: 'icon', onClick: this.handleReloadBalance }),
             _react2.default.createElement(
               'span',
               null,
               String(balance).length > 5 ? balance.toFixed(5) : balance
             ),
-            ' ',
-            _react2.default.createElement('br', null),
             currency === 'BTC' && unconfirmedBalance !== 0 && _react2.default.createElement(
-              'span',
-              { style: { fontSize: '12px', color: '#c9c9c9' } },
-              'Unconfirmed ',
-              unconfirmedBalance
+              _react.Fragment,
+              null,
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'span',
+                { style: { fontSize: '12px', color: '#c9c9c9' } },
+                'Unconfirmed ',
+                unconfirmedBalance
+              )
             )
           )
         ),
@@ -14090,9 +14116,14 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
               return _this2.textAddress = td;
             } },
           !contractAddress ? _react2.default.createElement(
-            _LinkAcount2.default,
-            { type: currency, address: address },
-            address
+            _react.Fragment,
+            null,
+            currency !== 'EOS' && _react2.default.createElement('i', { className: 'far fa-copy', styleName: 'icon', onClick: this.handleCopiedAddress }),
+            _react2.default.createElement(
+              _LinkAcount2.default,
+              { type: currency, address: address },
+              address
+            )
           ) : !approve ? _react2.default.createElement(
             'button',
             { styleName: 'button', onClick: function onClick() {
@@ -14100,9 +14131,14 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
               } },
             'Approve'
           ) : _react2.default.createElement(
-            _LinkAcount2.default,
-            { type: currency, contractAddress: contractAddress, address: address },
-            address
+            _react.Fragment,
+            null,
+            _react2.default.createElement('i', { className: 'far fa-copy', styleName: 'icon', onClick: this.handleCopiedAddress }),
+            _react2.default.createElement(
+              _LinkAcount2.default,
+              { type: currency, contractAddress: contractAddress, address: address },
+              address
+            )
           ),
           currency === 'EOS' && address === '' && _react2.default.createElement(
             'button',
@@ -14117,12 +14153,6 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
             'div',
             null,
             _react2.default.createElement(
-              'button',
-              { styleName: 'button', onClick: this.handleCopiedAddress },
-              'Copy'
-            ),
-            _react2.default.createElement(_ReloadButton2.default, { styleName: 'marginRight', onClick: this.handleReloadBalance }),
-            _react2.default.createElement(
               _WithdrawButton2.default,
               { onClick: this.handleWithdraw, styleName: 'marginRight' },
               'Withdraw'
@@ -14133,9 +14163,18 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = f
               'Address copied to clipboard'
             ),
             tradeAllowed && _react2.default.createElement(
-              _reactRouterDom.Link,
-              { styleName: 'button', to: '/exchange/' + currency.toLowerCase() },
-              'Trade'
+              _react.Fragment,
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { styleName: 'button', to: '/sell-' + currency.toLowerCase() },
+                'Sell'
+              ),
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { styleName: 'button', to: '/buy-' + currency.toLowerCase() },
+                'Buy'
+              )
             )
           )
         )
@@ -14151,7 +14190,7 @@ exports.default = Row;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"marginRight":"qq8rKP","copied":"_3b4eD1","button":"_3gDOry"};
+module.exports = {"marginRight":"qq8rKP","copied":"_3b4eD1","icon":"_2718ee","button":"_3gDOry"};
 
 /***/ }),
 /* 1117 */
@@ -15964,6 +16003,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _redaction = __webpack_require__(24);
 
+var _Table = __webpack_require__(113);
+
+var _Table2 = _interopRequireDefault(_Table);
+
 var _Title = __webpack_require__(265);
 
 var _Title2 = _interopRequireDefault(_Title);
@@ -15976,10 +16019,6 @@ var _SubTitle = __webpack_require__(96);
 
 var _SubTitle2 = _interopRequireDefault(_SubTitle);
 
-var _Table = __webpack_require__(113);
-
-var _Table2 = _interopRequireDefault(_Table);
-
 var _Row = __webpack_require__(1153);
 
 var _Row2 = _interopRequireDefault(_Row);
@@ -15989,68 +16028,78 @@ var _seo = __webpack_require__(269);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Currency = (_dec = (0, _redaction.connect)(function (_ref) {
-  var currencies = _ref.currencies;
+  var items = _ref.currencies.items;
   return {
-    currencies: currencies.items
+    currencies: items
   };
 }), _dec(_class = function (_Component) {
   (0, _inherits3.default)(Currency, _Component);
 
-  function Currency(props) {
+  function Currency() {
+    var _ref2;
+
+    var _temp, _this, _ret;
+
     (0, _classCallCheck3.default)(this, Currency);
 
-    var _this = (0, _possibleConstructorReturn3.default)(this, (Currency.__proto__ || (0, _getPrototypeOf2.default)(Currency)).call(this, props));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
 
-    _this.getRows = function () {
-      var currencies = _this.props.currencies,
-          currency = _this.state.currency;
+    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref2 = Currency.__proto__ || (0, _getPrototypeOf2.default)(Currency)).call.apply(_ref2, [this].concat(args))), _this), _this.getRows = function () {
+      var _this$props = _this.props,
+          currency = _this$props.match.params.currency,
+          currencies = _this$props.currencies;
 
 
       return currencies.filter(function (c) {
         return c.value !== currency;
       }).reduce(function (previous, current) {
         previous.push({
-          from: _this.pageCurrency,
+          from: _this.state.pageCurrency,
           to: current
         });
         previous.push({
           from: current,
-          to: _this.pageCurrency
+          to: _this.state.pageCurrency
         });
 
         return previous;
       }, []);
-    };
-
-    _this.state = {
-      currency: props.match.params.currency
-    };
-
-    _this.pageCurrency = !!props.match.params.currency && props.currencies.find(function (c) {
-      return c.value === props.match.params.currency;
-    });
-    _this.seoPage = (0, _seo.getSeoPage)(props.location.pathname);
-    return _this;
+    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
   }
 
   (0, _createClass3.default)(Currency, [{
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      if (this.props.match.params.currency !== nextProps.match.params.currency) {
-        this.setState({
-          currency: nextProps.match.params.currency
-        });
-        this.pageCurrency = nextProps.match.params.currency && nextProps.currencies.find(function (c) {
-          return c.value === nextProps.match.params.currency;
-        });
-      }
-      if (this.props.location.pathname !== nextProps.location.pathname) {
-        this.seoPage = (0, _seo.getSeoPage)(nextProps.location.pathname);
-      }
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var _props = this.props,
+          currency = _props.match.params.currency,
+          currencies = _props.currencies,
+          location = _props.location;
+
+
+      var pageCurrency = !!currency && currencies.find(function (c) {
+        return c.value === currency;
+      });
+
+      console.log('location', location.pathname);
+      console.log('getSeoPage', _seo.getSeoPage);
+
+      var seoPage = (0, _seo.getSeoPage)(location.pathname);
+
+      this.setState({
+        seoPage: seoPage,
+        pageCurrency: pageCurrency
+      });
     }
   }, {
     key: 'render',
     value: function render() {
+      var seoPage = this.state.seoPage;
+
+
+      console.log('seo', seoPage);
+
       return _react2.default.createElement(
         'section',
         null,
@@ -16063,12 +16112,12 @@ var Currency = (_dec = (0, _redaction.connect)(function (_ref) {
             _react2.default.createElement(
               _Title2.default,
               null,
-              this.seoPage && this.seoPage.title
+              seoPage && seoPage.title
             ),
             _react2.default.createElement(
               _SubTitle2.default,
               null,
-              this.seoPage && this.seoPage.h1
+              seoPage && seoPage.h1
             )
           )
         ),
@@ -16645,9 +16694,19 @@ var createSwapApp = function createSwapApp() {
       fetchBalance: function fetchBalance(address) {
         return _actions2.default.token.fetchBalance(address, _appConfig2.default.tokens.swap.address, _appConfig2.default.tokens.swap.decimals);
       }
+    }), new _swap9.EthTokenSwap({
+      name: _swap.constants.COINS.jot,
+      address: _appConfig2.default.token.contract,
+      decimals: _appConfig2.default.tokens.jot.decimals,
+      abi: [{ "constant": false, "inputs": [{ "name": "_secret", "type": "bytes32" }, { "name": "_ownerAddress", "type": "address" }], "name": "withdraw", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_participantAddress", "type": "address" }], "name": "getSecret", "outputs": [{ "name": "", "type": "bytes32" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_ratingContractAddress", "type": "address" }], "name": "setReputationAddress", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }, { "name": "", "type": "address" }], "name": "participantSigns", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "owner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_ownerAddress", "type": "address" }], "name": "abort", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }, { "name": "", "type": "address" }], "name": "swaps", "outputs": [{ "name": "token", "type": "address" }, { "name": "secret", "type": "bytes32" }, { "name": "secretHash", "type": "bytes20" }, { "name": "createdAt", "type": "uint256" }, { "name": "balance", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_secretHash", "type": "bytes20" }, { "name": "_participantAddress", "type": "address" }, { "name": "_value", "type": "uint256" }, { "name": "_token", "type": "address" }], "name": "createSwap", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_ownerAddress", "type": "address" }], "name": "checkSign", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_participantAddress", "type": "address" }], "name": "close", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "ratingContractAddress", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_participantAddress", "type": "address" }], "name": "sign", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_ownerAddress", "type": "address" }], "name": "getBalance", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_participantAddress", "type": "address" }], "name": "refund", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [], "name": "Sign", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "createdAt", "type": "uint256" }], "name": "CreateSwap", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Withdraw", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Close", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Refund", "type": "event" }, { "anonymous": false, "inputs": [], "name": "Abort", "type": "event" }],
+      tokenAddress: _appConfig2.default.tokens.jot.address,
+      tokenAbi: [{ "constant": true, "inputs": [], "name": "name", "outputs": [{ "name": "", "type": "string" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_spender", "type": "address" }, { "name": "_amount", "type": "uint256" }], "name": "approve", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "totalSupply", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "_from", "type": "address" }, { "name": "_to", "type": "address" }, { "name": "_amount", "type": "uint256" }], "name": "transferFrom", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [], "name": "getBurnPrice", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "decimals", "outputs": [{ "name": "", "type": "uint8" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "manager", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "unlockEmission", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_owner", "type": "address" }], "name": "balanceOf", "outputs": [{ "name": "balance", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "emissionlocked", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "acceptOwnership", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [], "name": "lockEmission", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "owner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "symbol", "outputs": [{ "name": "", "type": "string" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "burnAll", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "_newManager", "type": "address" }], "name": "changeManager", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "_newOwner", "type": "address" }], "name": "changeOwner", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "_to", "type": "address" }, { "name": "_amount", "type": "uint256" }], "name": "transfer", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "emissionPrice", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "addToReserve", "outputs": [{ "name": "", "type": "bool" }], "payable": true, "stateMutability": "payable", "type": "function" }, { "constant": true, "inputs": [], "name": "burnPrice", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "tokenAddress", "type": "address" }, { "name": "amount", "type": "uint256" }], "name": "transferAnyERC20Token", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [{ "name": "_owner", "type": "address" }, { "name": "_spender", "type": "address" }], "name": "allowance", "outputs": [{ "name": "remaining", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "NoxonInit", "outputs": [{ "name": "", "type": "bool" }], "payable": true, "stateMutability": "payable", "type": "function" }, { "constant": false, "inputs": [], "name": "acceptManagership", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, { "payable": true, "stateMutability": "payable", "type": "fallback" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "buyer", "type": "address" }, { "indexed": false, "name": "ethers", "type": "uint256" }, { "indexed": false, "name": "_emissionedPrice", "type": "uint256" }, { "indexed": false, "name": "amountOfTokens", "type": "uint256" }], "name": "TokenBought", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "buyer", "type": "address" }, { "indexed": false, "name": "ethers", "type": "uint256" }, { "indexed": false, "name": "_burnedPrice", "type": "uint256" }, { "indexed": false, "name": "amountOfTokens", "type": "uint256" }], "name": "TokenBurned", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "etherReserved", "type": "uint256" }], "name": "EtherReserved", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "_from", "type": "address" }, { "indexed": true, "name": "_to", "type": "address" }, { "indexed": false, "name": "_value", "type": "uint256" }], "name": "Transfer", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "_owner", "type": "address" }, { "indexed": true, "name": "_spender", "type": "address" }, { "indexed": false, "name": "_value", "type": "uint256" }], "name": "Approval", "type": "event" }],
+      fetchBalance: function fetchBalance(address) {
+        return _actions2.default.token.fetchBalance(address, _appConfig2.default.tokens.swap.address, _appConfig2.default.tokens.swap.decimals);
+      }
     })],
 
-    flows: [_swap10.ETH2BTC, _swap10.BTC2ETH, (0, _swap10.ETHTOKEN2BTC)(_swap.constants.COINS.noxon), (0, _swap10.BTC2ETHTOKEN)(_swap.constants.COINS.noxon), (0, _swap10.ETHTOKEN2BTC)(_swap.constants.COINS.swap), (0, _swap10.BTC2ETHTOKEN)(_swap.constants.COINS.swap)]
+    flows: [_swap10.ETH2BTC, _swap10.BTC2ETH, (0, _swap10.ETHTOKEN2BTC)(_swap.constants.COINS.noxon), (0, _swap10.BTC2ETHTOKEN)(_swap.constants.COINS.noxon), (0, _swap10.ETHTOKEN2BTC)(_swap.constants.COINS.swap), (0, _swap10.BTC2ETHTOKEN)(_swap.constants.COINS.swap), (0, _swap10.ETHTOKEN2BTC)(_swap.constants.COINS.jot), (0, _swap10.BTC2ETHTOKEN)(_swap.constants.COINS.jot)]
   });
 };
 
@@ -23409,7 +23468,7 @@ var AddOfferButton = (_dec = (0, _reactCssModules2.default)(_AddOfferButton2.def
               return pinkClick();
             }
           },
-          'Sign up'
+          'Subscribe'
         ),
         _react2.default.createElement('div', {
           styleName: 'buttonMobile',
@@ -26481,6 +26540,7 @@ var Offer = (_dec = (0, _reactCssModules2.default)(_Approve2.default), _dec(_cla
           name = _this$props$data.name;
 
       var message = 'Your approve ' + amount + ' tokens on contract address ' + contractAddress;
+      var error = 'Please again later';
 
       if (amount <= 0 || !amount) {
         _this.setState({
@@ -26489,11 +26549,13 @@ var Offer = (_dec = (0, _reactCssModules2.default)(_Approve2.default), _dec(_cla
         return;
       }
 
-      _actions2.default.loader.show(true, true);
-
       _actions2.default.token.approve(name, amount).then(function () {
         _actions2.default.loader.hide();
         _actions2.default.notifications.show(_helpers.constants.notifications.Message, { message: message });
+        _actions2.default.modals.close(_helpers.constants.modals.Approve);
+      }).catch(function () {
+        _actions2.default.loader.hide();
+        _actions2.default.notifications.show(_helpers.constants.notifications.Message, { error: error });
         _actions2.default.modals.close(_helpers.constants.modals.Approve);
       });
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
