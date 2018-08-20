@@ -25001,13 +25001,7 @@ var AddOffer = (_dec = (0, _redaction.connect)(function (_ref) {
           min = _state2.min;
 
       var linked = _swValuelink2.default.all(this, 'exchangeRate', 'buyAmount', 'sellAmount');
-      var isDisabled = !exchangeRate || !buyAmount && !sellAmount || sellAmount < balance || sellAmount > min;
-
-      console.log('exchangeRate', exchangeRate);
-      console.log('buyAmount', buyAmount);
-      console.log('sellAmount', sellAmount);
-      console.log('balance', balance);
-      console.log('min', min);
+      var isDisabled = !exchangeRate || !buyAmount && !sellAmount || sellAmount > balance || sellAmount < min;
 
       if (sellCurrency === 'btc') {
         linked.sellAmount.check(function (value) {
