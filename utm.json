@@ -118,6 +118,17 @@
 		"closebtn": "No, thanks",
 		"redirect": "https://testnet.swap.online/",
 		"comment": ""
-	}
+	},
+	"tether" : {
+		"title": "мы тезер запустили на <span>swaponline</span>",
+		"titleonexit": "Take part in <span>Smart Airdrop 2</span>",
+		"desc": "вы сможете менять любые токены не тезер USD, подпишитесь чтоб узнать что то там",
+		"placeholder": "E-mail",
+		"placeholdertext": "",
+		"button": "subscribe",
+		"closebtn": "Remind me later",
+		"redirect": "https://swap.online/",
+		"comment": ""
+	},
 	
 }
