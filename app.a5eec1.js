@@ -5584,9 +5584,8 @@ var SwapComponent = (_dec = (0, _redaction.connect)({
           orderId = _props.match.params.orderId,
           history = _props.history;
 
-      var data = _swap4.default.services.orders.getByKey(orderId);
 
-      if (!data || !orderId) {
+      if (!orderId) {
         history.push(_helpers.links.exchange);
       }
 
