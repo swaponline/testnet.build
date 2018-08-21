@@ -5,7 +5,7 @@
 		"desc": "SWAP.ONLINE - cryptocurrency wallet with 0% exchange based on atomic swaps",
 		"placeholder": "E-mail",
 		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
-		"button": "Start Trading",
+		"button": "Subscribe to news",
 		"closebtn": "Remind me later",
 		"redirect": "",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
@@ -67,18 +67,18 @@
 	"airgift" : {
 		"title": "Someone want present you SWAP tokens!",
 		"titleonexit": "Last chance!",
-		"desc": "SWAP.ONLINE - cryptocurrency wallet with 0% exchange based on atomic swaps. A total of 21 million SWAP tokens will be released. Swap tokens are used by customers to raise their system rating, pay for Swap.Online services (raising limits, deposit for marketmakers), and settle up with each other.",
+		"desc": "Enter your email",
 		"placeholder": "E-mail",
 		"placeholdertext": "",
 		"button": "Open a gift",
-		"closebtn": "Remind me later",
+		"closebtn": "No",
 		"redirect": "",
 		"comment": "френдлист"
 	},
 	"ruairgift" : {
 		"title": "Вам подарили токены проекта swap.online!",
 		"titleonexit": "Last chance!",
-		"desc": "SWAP.ONLINE - криптовалютный кошелек с функцией обмена без комиссии. Токены используются как внутренняя валюта  (рейтинг, увеличение лимитов, залог для маркетмейкеров). После проверки модератором ваши токены будут видны на главной странице swap.online, где вы сможете использовать их (или продать). После ввода емейл вы будете перемещены на testnet.swap.online, где продукт запущен в демо режиме (с не настоящими балансами)",
+		"desc": "SWAP.ONLINE - криптовалютный кошелек с функцией обмена без комиссии. Введите e-mail",
 		"placeholder": "E-mail",
 		"placeholdertext": "",
 		"button": "Подписатся на новости и получить подарок",
