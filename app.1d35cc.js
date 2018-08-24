@@ -222,7 +222,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 // resolve object in webpack
-exports.default = {"propENV":"mainnet.prod","paths":{},"referral":{"url":"https://wiki.swap.online/affiliate.php"},"publicPath":"https://swap.online/","http":{"host":"localhost","port":9001},"i18nDate":{"month":"long","day":"numeric","hour":"numeric","minute":"numeric"},"exchangeRates":{"swapeth":1,"ethswap":1,"swapnoxon":1,"noxonswap":1,"swapbtc":0.07,"btcswap":0.07,"etheth":1,"ethbtc":0.07,"btceth":14,"ethnoxon":1,"noxoneth":1,"btcnoxon":0.07,"noxonbtc":0.07},"env":"production","entry":"mainnet","base":"https://swap.online/","services":{"web3":{"provider":"https://mainnet.infura.io/5lcMmHUURYg8F20GLGSr","rate":0.1,"gas":100000,"gasPrice":"20000000000"},"eos":{"chainId":"","httpEndpoint":""}},"ipfs":{"swarm":"/dns4/discovery.libp2p.array.io/tcp/9091/wss/p2p-websocket-star/","server":"discovery.libp2p.array.io"},"token":{"contract":"0x85F806b0df30709886C22ed1be338d2c647Abd6B"},"eth":{"contract":"0x843FcaAeb0Cce5FFaf272F5F2ddFFf3603F9c2A0"},"tokens":{"swap":{"address":"0x14a52cf6B4F68431bd5D9524E4fcD6F41ce4ADe9","decimals":18},"noxon":{"address":"0x9E4AD79049282F942c1b4c9b418F0357A0637017","decimals":0},"jot":{"address":"0xdb455c71c1bc2de4e80ca451184041ef32054001","decimals":18},"btrm":{"address":"0xae72146eb535607Ee79f5D8834303ea18751845f","decimals":18},"omgtoken":{"address":"0xd26114cd6EE289AccF82350c8d8487fedB8A0C07","decimals":18},"DRT":{"address":"0x9af4f26941677c706cfecf6d3379ff01bb85d5ab","decimals":8},"SENC":{"address":"0xa13f0743951b4f6e3e3aa039f682e17279f52bc3","decimals":18},"INSTAR":{"address":"0xc72fe8e3dd5bef0f9f31f259399f301272ef2a2d","decimals":18},"UTNP":{"address":"0x9e3319636e2126e3c0bc9e3134aec5e1508a46c7","decimals":18},"TNT":{"address":"0x08f5a9235b08173b7569f83645d2c7fb55e8ccd8","decimals":8},"POE":{"address":"0x0e0989b1f9b8a38983c2ba8053269ca62ec9b195","decimals":8},"FIL":{"address":"0xb8b01cec5ced05c457654fc0fda0948f859883ca","decimals":2},"PPP":{"address":"0xc42209aCcC14029c1012fB5680D95fBd6036E2a0","decimals":18},"QASH":{"address":"0x618e75ac90b12c6049ba3b27f5d5f8651b0037f6","decimals":6},"ELI":{"address":"0xc7c03b8a3fc5719066e185ea616e87b88eba44a3","decimals":18},"GEN":{"address":"0x543ff227f64aa17ea132bf9886cab5db55dcaddf","decimals":18},"RKT":{"address":"0x106aa49295b525fcf959aa75ec3f7dcbf5352f1c","decimals":18},"RFR":{"address":"0xd0929d411954c47438dc1d871dd6081f5c5e149c","decimals":4},"STORM":{"address":"0xd0a4b8946cb52f0661273bfbc6fd0e0c75fc6433","decimals":18},"HBT":{"address":"0xdd6c68bb32462e01705011a4e2ad1a60740f217f","decimals":15},"IND":{"address":"0xf8e386eda857484f5a12e4b5daa9984e06e73705","decimals":18},"HOLD":{"address":"0xd6e1401a079922469e9b965cb090ea6ff64c6839","decimals":18},"CFI":{"address":"0x12fef5e57bf45873cd9b62e9dbd7bfb99e32d73e","decimals":18},"DACC":{"address":"0x6310e4523ae82c0b6307ccf68708fd6055784b87","decimals":2},"LEV":{"address":"0x0f4ca92660efad97a9a70cb0fe969c755439772c","decimals":9},"AVT":{"address":"0x0d88ed6e74bbfd96b831231638b66c05571e824f","decimals":18},"POWR":{"address":"0x595832f8fc6bf59c85c527fec3740a1b7a361269","decimals":6},"AIR":{"address":"0x27dce1ec4d3f72c3e457cc50354f1f975ddef488","decimals":8},"J8T":{"address":"0x0d262e5dc4a06a0f1c90ce79c7a60c09dfc884e4","decimals":8},"DATx":{"address":"0xabbbb6447b68ffd6141da77c18c7b5876ed6c5ab","decimals":18},"ATMI":{"address":"0x4114fb8b1879f61b18f7d2e623569a847a03e15a","decimals":18},"HYB":{"address":"0x6059f55751603ead7dc6d280ad83a7b33d837c90","decimals":18},"SHIP":{"address":"0xe25b0bba01dc5630312b6a21927e578061a13f55","decimals":18},"CRPT":{"address":"0x80a7e048f37a50500351c204cb407766fa3bae7f","decimals":18},"DXT":{"address":"0x8db54ca569d3019a2ba126d03c37c44b5ef81ef6","decimals":8},"CRED":{"address":"0x672a1ad4f667fb18a333af13667aa0af1f5b5bdd","decimals":18},"DX":{"address":"0x70c19e79e8611ed9dd566165647e78dd2bf71764","decimals":8},"VIB":{"address":"0x2c974b2d0ba1716e644c1fc59982a89ddd2ff724","decimals":18},"RCN":{"address":"0xf970b8e36e23f7fc3fd752eea86f8be8d83375a6","decimals":18},"SKM":{"address":"0xd99b8a7fa48e25cce83b81812220a3e03bf64e5f","decimals":18},"LBA":{"address":"0xf67da90c14c9176b8e572cb93cf8c847d28602a8","decimals":18},"ZCO":{"address":"0x2008e3057bd734e10ad13c9eae45ff132abc1722","decimals":8},"IPSX":{"address":"0x001f0aa5da15585e5b2305dbab2bac425ea71007","decimals":18},"fdX":{"address":"0x52a7cb918c11a16958be40cba7e31e32a499a465","decimals":18},"THRT":{"address":"0x4f27053f32eda8af84956437bc00e5ffa7003287","decimals":18},"MVP":{"address":"0x8a77e40936bbc27e80e9a3f526368c967869c86d","decimals":18},"PAL":{"address":"0xfedae5642668f8636a11987ff386bfd215f942ee","decimals":18},"ZXC":{"address":"0xc4fccdf067129a4d0909555c7e6d894b2b39efeb","decimals":18},"THETA":{"address":"0x3883f5e181fccaF8410FA61e12b59BAd963fb645","decimals":18},"ZIL":{"address":"0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27","decimals":12},"TIO":{"address":"0x80bc5512561c7f85a3a9508c7df7901b370fa1df","decimals":18},"ZIPT":{"address":"0xedd7c94fd7b4971b916d15067bc454b9e1bad980","decimals":18},"ABT":{"address":"0xb98d4c97425d9908e66e53a6fdf673acca0be986","decimals":18},"SMT":{"address":"0x55f93985431fc9304077687a35a1ba103dc1e081","decimals":18},"CHX":{"address":"0x1460a58096d80a50a2F1f956DDA497611Fa4f165","decimals":18}},"link":{"bitpay":"https://insight.bitpay.com","etherscan":"https://etherscan.io","eos":"","omniexplorer":"https://www.omniexplorer.info"},"api":{"blocktrail":"https://api.blocktrail.com/v1/BTC","bitpay":"https://insight.bitpay.com/api","etherscan":"https://api.etherscan.io/api"},"apiAlternatives":{"bitpay":["https://insight.bitpay.com/api"]},"apiKeys":{"etherscan":"RHHFPNMAZMD6I4ZWBZBF6FA11CMW9AXZNM","blocktrail":"1835368c0fa8e71907ca26f3c978ab742a7db42e"}};
+exports.default = {"propENV":"mainnet.prod","paths":{},"referral":{"url":"https://wiki.swap.online/affiliate.php"},"publicPath":"https://swap.online/","http":{"host":"localhost","port":9001},"i18nDate":{"month":"long","day":"numeric","hour":"numeric","minute":"numeric"},"exchangeRates":{"swapeth":1,"ethswap":1,"swapnoxon":1,"noxonswap":1,"swapbtc":0.07,"btcswap":0.07,"etheth":1,"ethbtc":0.07,"btceth":14,"ethnoxon":1,"noxoneth":1,"btcnoxon":0.07,"noxonbtc":0.07},"env":"production","entry":"mainnet","base":"https://swap.online/","services":{"web3":{"provider":"https://mainnet.infura.io/5lcMmHUURYg8F20GLGSr","rate":0.1,"gas":100000,"gasPrice":"20000000000"},"eos":{"chainId":"","httpEndpoint":""}},"ipfs":{"swarm":"/dns4/discovery.libp2p.array.io/tcp/9091/wss/p2p-websocket-star/","server":"discovery.libp2p.array.io"},"token":{"contract":"0x85F806b0df30709886C22ed1be338d2c647Abd6B"},"eth":{"contract":"0x843FcaAeb0Cce5FFaf272F5F2ddFFf3603F9c2A0"},"tokens":{"swap":{"address":"0x14a52cf6B4F68431bd5D9524E4fcD6F41ce4ADe9","decimals":18},"BEE":{"address":"0x4d8fc1453a0f359e99c9675954e656d80d996fbf","decimals":18},"noxon":{"address":"0x9E4AD79049282F942c1b4c9b418F0357A0637017","decimals":0},"jot":{"address":"0xdb455c71c1bc2de4e80ca451184041ef32054001","decimals":18},"btrm":{"address":"0xae72146eb535607Ee79f5D8834303ea18751845f","decimals":18},"omgtoken":{"address":"0xd26114cd6EE289AccF82350c8d8487fedB8A0C07","decimals":18},"DRT":{"address":"0x9af4f26941677c706cfecf6d3379ff01bb85d5ab","decimals":8},"SENC":{"address":"0xa13f0743951b4f6e3e3aa039f682e17279f52bc3","decimals":18},"INSTAR":{"address":"0xc72fe8e3dd5bef0f9f31f259399f301272ef2a2d","decimals":18},"UTNP":{"address":"0x9e3319636e2126e3c0bc9e3134aec5e1508a46c7","decimals":18},"TNT":{"address":"0x08f5a9235b08173b7569f83645d2c7fb55e8ccd8","decimals":8},"POE":{"address":"0x0e0989b1f9b8a38983c2ba8053269ca62ec9b195","decimals":8},"FIL":{"address":"0xb8b01cec5ced05c457654fc0fda0948f859883ca","decimals":2},"PPP":{"address":"0xc42209aCcC14029c1012fB5680D95fBd6036E2a0","decimals":18},"QASH":{"address":"0x618e75ac90b12c6049ba3b27f5d5f8651b0037f6","decimals":6},"ELI":{"address":"0xc7c03b8a3fc5719066e185ea616e87b88eba44a3","decimals":18},"GEN":{"address":"0x543ff227f64aa17ea132bf9886cab5db55dcaddf","decimals":18},"RKT":{"address":"0x106aa49295b525fcf959aa75ec3f7dcbf5352f1c","decimals":18},"RFR":{"address":"0xd0929d411954c47438dc1d871dd6081f5c5e149c","decimals":4},"STORM":{"address":"0xd0a4b8946cb52f0661273bfbc6fd0e0c75fc6433","decimals":18},"HBT":{"address":"0xdd6c68bb32462e01705011a4e2ad1a60740f217f","decimals":15},"IND":{"address":"0xf8e386eda857484f5a12e4b5daa9984e06e73705","decimals":18},"HOLD":{"address":"0xd6e1401a079922469e9b965cb090ea6ff64c6839","decimals":18},"CFI":{"address":"0x12fef5e57bf45873cd9b62e9dbd7bfb99e32d73e","decimals":18},"DACC":{"address":"0x6310e4523ae82c0b6307ccf68708fd6055784b87","decimals":2},"LEV":{"address":"0x0f4ca92660efad97a9a70cb0fe969c755439772c","decimals":9},"AVT":{"address":"0x0d88ed6e74bbfd96b831231638b66c05571e824f","decimals":18},"POWR":{"address":"0x595832f8fc6bf59c85c527fec3740a1b7a361269","decimals":6},"AIR":{"address":"0x27dce1ec4d3f72c3e457cc50354f1f975ddef488","decimals":8},"J8T":{"address":"0x0d262e5dc4a06a0f1c90ce79c7a60c09dfc884e4","decimals":8},"DATx":{"address":"0xabbbb6447b68ffd6141da77c18c7b5876ed6c5ab","decimals":18},"ATMI":{"address":"0x4114fb8b1879f61b18f7d2e623569a847a03e15a","decimals":18},"HYB":{"address":"0x6059f55751603ead7dc6d280ad83a7b33d837c90","decimals":18},"SHIP":{"address":"0xe25b0bba01dc5630312b6a21927e578061a13f55","decimals":18},"CRPT":{"address":"0x80a7e048f37a50500351c204cb407766fa3bae7f","decimals":18},"DXT":{"address":"0x8db54ca569d3019a2ba126d03c37c44b5ef81ef6","decimals":8},"CRED":{"address":"0x672a1ad4f667fb18a333af13667aa0af1f5b5bdd","decimals":18},"DX":{"address":"0x70c19e79e8611ed9dd566165647e78dd2bf71764","decimals":8},"VIB":{"address":"0x2c974b2d0ba1716e644c1fc59982a89ddd2ff724","decimals":18},"RCN":{"address":"0xf970b8e36e23f7fc3fd752eea86f8be8d83375a6","decimals":18},"SKM":{"address":"0xd99b8a7fa48e25cce83b81812220a3e03bf64e5f","decimals":18},"LBA":{"address":"0xf67da90c14c9176b8e572cb93cf8c847d28602a8","decimals":18},"ZCO":{"address":"0x2008e3057bd734e10ad13c9eae45ff132abc1722","decimals":8},"IPSX":{"address":"0x001f0aa5da15585e5b2305dbab2bac425ea71007","decimals":18},"fdX":{"address":"0x52a7cb918c11a16958be40cba7e31e32a499a465","decimals":18},"THRT":{"address":"0x4f27053f32eda8af84956437bc00e5ffa7003287","decimals":18},"MVP":{"address":"0x8a77e40936bbc27e80e9a3f526368c967869c86d","decimals":18},"PAL":{"address":"0xfedae5642668f8636a11987ff386bfd215f942ee","decimals":18},"ZXC":{"address":"0xc4fccdf067129a4d0909555c7e6d894b2b39efeb","decimals":18},"THETA":{"address":"0x3883f5e181fccaF8410FA61e12b59BAd963fb645","decimals":18},"ZIL":{"address":"0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27","decimals":12},"TIO":{"address":"0x80bc5512561c7f85a3a9508c7df7901b370fa1df","decimals":18},"ZIPT":{"address":"0xedd7c94fd7b4971b916d15067bc454b9e1bad980","decimals":18},"ABT":{"address":"0xb98d4c97425d9908e66e53a6fdf673acca0be986","decimals":18},"SMT":{"address":"0x55f93985431fc9304077687a35a1ba103dc1e081","decimals":18},"CHX":{"address":"0x1460a58096d80a50a2F1f956DDA497611Fa4f165","decimals":18}},"link":{"bitpay":"https://insight.bitpay.com","etherscan":"https://etherscan.io","eos":"","omniexplorer":"https://www.omniexplorer.info"},"api":{"blocktrail":"https://api.blocktrail.com/v1/BTC","bitpay":"https://insight.bitpay.com/api","etherscan":"https://api.etherscan.io/api"},"apiAlternatives":{"bitpay":["https://insight.bitpay.com/api"]},"apiKeys":{"etherscan":"RHHFPNMAZMD6I4ZWBZBF6FA11CMW9AXZNM","blocktrail":"1835368c0fa8e71907ca26f3c978ab742a7db42e"}};
 
 /***/ }),
 /* 22 */,
@@ -465,7 +465,7 @@ var _Flip = __webpack_require__(379);
 
 var _Flip2 = _interopRequireDefault(_Flip);
 
-var _ReloadButton = __webpack_require__(1002);
+var _ReloadButton = __webpack_require__(1003);
 
 var _ReloadButton2 = _interopRequireDefault(_ReloadButton);
 
@@ -511,7 +511,7 @@ var _toConsumableArray2 = __webpack_require__(65);
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
-var _tags = __webpack_require__(1018);
+var _tags = __webpack_require__(1019);
 
 Object.defineProperty(exports, 'Input', {
   enumerable: true,
@@ -550,7 +550,7 @@ Object.defineProperty(exports, 'Select', {
   }
 });
 
-var _valuelink = __webpack_require__(1021);
+var _valuelink = __webpack_require__(1022);
 
 var _valuelink2 = _interopRequireDefault(_valuelink);
 
@@ -1571,7 +1571,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _WidthContainer = __webpack_require__(1127);
+var _WidthContainer = __webpack_require__(1128);
 
 var _WidthContainer2 = _interopRequireDefault(_WidthContainer);
 
@@ -1747,7 +1747,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Href = __webpack_require__(1010);
+var _Href = __webpack_require__(1011);
 
 var _Href2 = _interopRequireDefault(_Href);
 
@@ -1799,7 +1799,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _FieldLabel = __webpack_require__(1017);
+var _FieldLabel = __webpack_require__(1018);
 
 var _FieldLabel2 = _interopRequireDefault(_FieldLabel);
 
@@ -1879,7 +1879,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Input = __webpack_require__(1024);
+var _Input = __webpack_require__(1025);
 
 var _Input2 = _interopRequireDefault(_Input);
 
@@ -2023,7 +2023,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Modal = __webpack_require__(1146);
+var _Modal = __webpack_require__(1147);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -2031,7 +2031,7 @@ var _WidthContainer = __webpack_require__(123);
 
 var _WidthContainer2 = _interopRequireDefault(_WidthContainer);
 
-var _CloseIcon = __webpack_require__(1147);
+var _CloseIcon = __webpack_require__(1148);
 
 var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
 
@@ -2185,7 +2185,7 @@ var _ModalConductor = __webpack_require__(403);
 
 var _ModalConductor2 = _interopRequireDefault(_ModalConductor);
 
-var _ModalContainer = __webpack_require__(1176);
+var _ModalContainer = __webpack_require__(1177);
 
 var _ModalContainer2 = _interopRequireDefault(_ModalContainer);
 
@@ -2513,7 +2513,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Loader = __webpack_require__(1140);
+var _Loader = __webpack_require__(1141);
 
 var _Loader2 = _interopRequireDefault(_Loader);
 
@@ -2569,7 +2569,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Row = __webpack_require__(1155);
+var _Row = __webpack_require__(1156);
 
 var _Row2 = _interopRequireDefault(_Row);
 
@@ -2615,7 +2615,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Value = __webpack_require__(1156);
+var _Value = __webpack_require__(1157);
 
 var _Value2 = _interopRequireDefault(_Value);
 
@@ -3052,6 +3052,10 @@ var _eos = __webpack_require__(971);
 
 var _eos2 = _interopRequireDefault(_eos);
 
+var _bee = __webpack_require__(972);
+
+var _bee2 = _interopRequireDefault(_bee);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var icons = {
@@ -3061,6 +3065,7 @@ var icons = {
   icx: _icx2.default,
   waves: _waves2.default,
   xrp: _xrp2.default,
+  bee: _bee2.default,
   usdt: _usdt2.default,
   nim: _nim2.default
 };
@@ -3116,11 +3121,11 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _RemoveButton = __webpack_require__(974);
+var _RemoveButton = __webpack_require__(975);
 
 var _RemoveButton2 = _interopRequireDefault(_RemoveButton);
 
-var _RemoveIcon = __webpack_require__(975);
+var _RemoveIcon = __webpack_require__(976);
 
 var _RemoveIcon2 = _interopRequireDefault(_RemoveIcon);
 
@@ -3158,7 +3163,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Flip = __webpack_require__(986);
+var _Flip = __webpack_require__(987);
 
 var _Flip2 = _interopRequireDefault(_Flip);
 
@@ -3191,15 +3196,15 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _CurrencySelect = __webpack_require__(987);
+var _CurrencySelect = __webpack_require__(988);
 
 var _CurrencySelect2 = _interopRequireDefault(_CurrencySelect);
 
-var _Option = __webpack_require__(988);
+var _Option = __webpack_require__(989);
 
 var _Option2 = _interopRequireDefault(_Option);
 
-var _DropDown = __webpack_require__(990);
+var _DropDown = __webpack_require__(991);
 
 var _DropDown2 = _interopRequireDefault(_DropDown);
 
@@ -3253,7 +3258,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _ButtonsInRow = __webpack_require__(1001);
+var _ButtonsInRow = __webpack_require__(1002);
 
 var _ButtonsInRow2 = _interopRequireDefault(_ButtonsInRow);
 
@@ -3298,7 +3303,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _WithdrawButton = __webpack_require__(1006);
+var _WithdrawButton = __webpack_require__(1007);
 
 var _WithdrawButton2 = _interopRequireDefault(_WithdrawButton);
 
@@ -3367,7 +3372,7 @@ var _propTypes = __webpack_require__(8);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _autosize = __webpack_require__(1025);
+var _autosize = __webpack_require__(1026);
 
 var _autosize2 = _interopRequireDefault(_autosize);
 
@@ -3518,15 +3523,15 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Logo = __webpack_require__(1124);
+var _Logo = __webpack_require__(1125);
 
 var _Logo2 = _interopRequireDefault(_Logo);
 
-var _logo = __webpack_require__(1125);
+var _logo = __webpack_require__(1126);
 
 var _logo2 = _interopRequireDefault(_logo);
 
-var _logoColored = __webpack_require__(1126);
+var _logoColored = __webpack_require__(1127);
 
 var _logoColored2 = _interopRequireDefault(_logoColored);
 
@@ -3608,7 +3613,7 @@ var _redaction = __webpack_require__(22);
 
 var _helpers = __webpack_require__(11);
 
-var _modals = __webpack_require__(1143);
+var _modals = __webpack_require__(1144);
 
 var _modals2 = _interopRequireDefault(_modals);
 
@@ -3616,7 +3621,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _ModalConductor = __webpack_require__(1187);
+var _ModalConductor = __webpack_require__(1188);
 
 var _ModalConductor2 = _interopRequireDefault(_ModalConductor);
 
@@ -3745,7 +3750,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Overlay = __webpack_require__(1149);
+var _Overlay = __webpack_require__(1150);
 
 var _Overlay2 = _interopRequireDefault(_Overlay);
 
@@ -3805,7 +3810,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Center = __webpack_require__(1150);
+var _Center = __webpack_require__(1151);
 
 var _Center2 = _interopRequireDefault(_Center);
 
@@ -3858,7 +3863,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Group = __webpack_require__(1166);
+var _Group = __webpack_require__(1167);
 
 var _Group2 = _interopRequireDefault(_Group);
 
@@ -3963,7 +3968,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Notification = __webpack_require__(1192);
+var _Notification = __webpack_require__(1193);
 
 var _Notification2 = _interopRequireDefault(_Notification);
 
@@ -4095,7 +4100,7 @@ var _store = __webpack_require__(201);
 
 var _store2 = _interopRequireDefault(_store);
 
-var _Root = __webpack_require__(1043);
+var _Root = __webpack_require__(1044);
 
 var _Root2 = _interopRequireDefault(_Root);
 
@@ -4151,27 +4156,27 @@ var _Home = __webpack_require__(955);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Wallet = __webpack_require__(994);
+var _Wallet = __webpack_require__(995);
 
 var _Wallet2 = _interopRequireDefault(_Wallet);
 
-var _Listing = __webpack_require__(1011);
+var _Listing = __webpack_require__(1012);
 
 var _Listing2 = _interopRequireDefault(_Listing);
 
-var _History = __webpack_require__(1026);
+var _History = __webpack_require__(1027);
 
 var _History2 = _interopRequireDefault(_History);
 
-var _NotFound = __webpack_require__(1038);
+var _NotFound = __webpack_require__(1039);
 
 var _NotFound2 = _interopRequireDefault(_NotFound);
 
-var _Affiliate = __webpack_require__(1039);
+var _Affiliate = __webpack_require__(1040);
 
 var _Affiliate2 = _interopRequireDefault(_Affiliate);
 
-var _Currency = __webpack_require__(1040);
+var _Currency = __webpack_require__(1041);
 
 var _Currency2 = _interopRequireDefault(_Currency);
 
@@ -6712,7 +6717,7 @@ var init = function () {
             }
 
             _context.next = 3;
-            return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 1203));
+            return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 1204));
 
           case 3:
             EOSLibrary = _context.sent;
@@ -11096,11 +11101,11 @@ var _Table3 = __webpack_require__(97);
 
 var _Table4 = _interopRequireDefault(_Table3);
 
-var _MyOrders = __webpack_require__(977);
+var _MyOrders = __webpack_require__(978);
 
 var _MyOrders2 = _interopRequireDefault(_MyOrders);
 
-var _SearchSwap = __webpack_require__(984);
+var _SearchSwap = __webpack_require__(985);
 
 var _SearchSwap2 = _interopRequireDefault(_SearchSwap);
 
@@ -11271,7 +11276,7 @@ var _Coins = __webpack_require__(119);
 
 var _Coins2 = _interopRequireDefault(_Coins);
 
-var _RequestButton = __webpack_require__(972);
+var _RequestButton = __webpack_require__(973);
 
 var _RequestButton2 = _interopRequireDefault(_RequestButton);
 
@@ -11516,6 +11521,12 @@ module.exports = "https://swap.online/images/eos_a9a7a2.svg";
 
 /***/ }),
 /* 972 */
+/***/ (function(module, exports) {
+
+module.exports = "https://swap.online/images/bee_c4f905.svg";
+
+/***/ }),
+/* 973 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11533,7 +11544,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _RequestButton = __webpack_require__(973);
+var _RequestButton = __webpack_require__(974);
 
 var _RequestButton2 = _interopRequireDefault(_RequestButton);
 
@@ -11547,21 +11558,21 @@ var RequestButton = function RequestButton(_ref) {
 exports.default = (0, _reactCssModules2.default)(RequestButton, _RequestButton2.default, { allowMultiple: true });
 
 /***/ }),
-/* 973 */
+/* 974 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"button":"_2R1jZb"};
 
 /***/ }),
-/* 974 */
+/* 975 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"removeButton":"_1Vm5zB","icon":"_1b1kpz"};
 
 /***/ }),
-/* 975 */
+/* 976 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11575,7 +11586,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _delete = __webpack_require__(976);
+var _delete = __webpack_require__(977);
 
 var _delete2 = _interopRequireDefault(_delete);
 
@@ -11589,13 +11600,13 @@ var RemoveIcon = function RemoveIcon(_ref) {
 exports.default = RemoveIcon;
 
 /***/ }),
-/* 976 */
+/* 977 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/delete_6ab99e.svg";
 
 /***/ }),
-/* 977 */
+/* 978 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11642,7 +11653,7 @@ var _Table3 = __webpack_require__(97);
 
 var _Table4 = _interopRequireDefault(_Table3);
 
-var _RowFeeds = __webpack_require__(978);
+var _RowFeeds = __webpack_require__(979);
 
 var _RowFeeds2 = _interopRequireDefault(_RowFeeds);
 
@@ -11723,7 +11734,7 @@ var MyOrders = function (_PureComponent) {
 exports.default = MyOrders;
 
 /***/ }),
-/* 978 */
+/* 979 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11772,7 +11783,7 @@ var _reactCopyToClipboard = __webpack_require__(378);
 
 var _reactCopyToClipboard2 = _interopRequireDefault(_reactCopyToClipboard);
 
-var _RowFeeds = __webpack_require__(982);
+var _RowFeeds = __webpack_require__(983);
 
 var _RowFeeds2 = _interopRequireDefault(_RowFeeds);
 
@@ -11780,7 +11791,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _shareAltSolid = __webpack_require__(983);
+var _shareAltSolid = __webpack_require__(984);
 
 var _shareAltSolid2 = _interopRequireDefault(_shareAltSolid);
 
@@ -11932,23 +11943,23 @@ var RowFeeds = (_dec = (0, _reactCssModules2.default)(_RowFeeds2.default, { allo
 exports.default = RowFeeds;
 
 /***/ }),
-/* 979 */,
 /* 980 */,
 /* 981 */,
-/* 982 */
+/* 982 */,
+/* 983 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"userTooltip":"_3fhX3C","buy":"_2e83r_","accept":"_2ClHjy","sell":"_3kCurQ","delete":"_1RcmYq","currency":"_3St5DH","coin":"_1b2RPo","buttons":"_3L8CPG","arrow":"_1U9SQc","img":"p_tiXr","share":"_2dhcGr"};
 
 /***/ }),
-/* 983 */
+/* 984 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/share-alt-solid_2c226f.svg";
 
 /***/ }),
-/* 984 */
+/* 985 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11995,7 +12006,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _SearchSwap = __webpack_require__(985);
+var _SearchSwap = __webpack_require__(986);
 
 var _SearchSwap2 = _interopRequireDefault(_SearchSwap);
 
@@ -12096,27 +12107,27 @@ var CreateOfferButton = (_dec = (0, _reactCssModules2.default)(_SearchSwap2.defa
 exports.default = CreateOfferButton;
 
 /***/ }),
-/* 985 */
+/* 986 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"currencySelect":"_3zIboc","choice":"_1TXLKZ","row":"_2lapE0","text":"_11f2Sj"};
 
 /***/ }),
-/* 986 */
+/* 987 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"trade-panel__change":"_2LOdkU"};
 
 /***/ }),
-/* 987 */
+/* 988 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 988 */
+/* 989 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12134,7 +12145,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Option = __webpack_require__(989);
+var _Option = __webpack_require__(990);
 
 var _Option2 = _interopRequireDefault(_Option);
 
@@ -12158,14 +12169,14 @@ var Option = function Option(_ref) {
 exports.default = (0, _reactCssModules2.default)(Option, _Option2.default);
 
 /***/ }),
-/* 989 */
+/* 990 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"icon":"wo-HER"};
 
 /***/ }),
-/* 990 */
+/* 991 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12210,7 +12221,7 @@ var _classnames = __webpack_require__(43);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _reactClickOutside = __webpack_require__(991);
+var _reactClickOutside = __webpack_require__(992);
 
 var _reactClickOutside2 = _interopRequireDefault(_reactClickOutside);
 
@@ -12218,11 +12229,11 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _DropDown = __webpack_require__(992);
+var _DropDown = __webpack_require__(993);
 
 var _DropDown2 = _interopRequireDefault(_DropDown);
 
-var _toggle = __webpack_require__(993);
+var _toggle = __webpack_require__(994);
 
 var _toggle2 = _interopRequireDefault(_toggle);
 
@@ -12382,15 +12393,15 @@ var DropDown = (_dec = (0, _toggle2.default)(), _dec2 = (0, _reactCssModules2.de
 exports.default = DropDown;
 
 /***/ }),
-/* 991 */,
-/* 992 */
+/* 992 */,
+/* 993 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"dropDown":"_3TGsDm","active":"_241k3D","arrow":"_4VDBhE","selectedItem":"_30-6Oj","select":"_2ukQw7","option":"_1fOZbQ"};
 
 /***/ }),
-/* 993 */
+/* 994 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12495,7 +12506,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 994 */
+/* 995 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12556,11 +12567,11 @@ var _Table3 = __webpack_require__(97);
 
 var _Table4 = _interopRequireDefault(_Table3);
 
-var _Confirm = __webpack_require__(995);
+var _Confirm = __webpack_require__(996);
 
 var _Confirm2 = _interopRequireDefault(_Confirm);
 
-var _SaveKeys = __webpack_require__(997);
+var _SaveKeys = __webpack_require__(998);
 
 var _SaveKeys2 = _interopRequireDefault(_SaveKeys);
 
@@ -12574,7 +12585,7 @@ var _SubTitle2 = _interopRequireDefault(_SubTitle);
 
 var _controls = __webpack_require__(67);
 
-var _Row = __webpack_require__(1007);
+var _Row = __webpack_require__(1008);
 
 var _Row2 = _interopRequireDefault(_Row);
 
@@ -12720,7 +12731,7 @@ var Wallet = (_dec = (0, _redaction.connect)(function (_ref) {
 exports.default = Wallet;
 
 /***/ }),
-/* 995 */
+/* 996 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12738,7 +12749,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Confirm = __webpack_require__(996);
+var _Confirm = __webpack_require__(997);
 
 var _Confirm2 = _interopRequireDefault(_Confirm);
 
@@ -12785,14 +12796,14 @@ var Confirm = function Confirm(_ref) {
 exports.default = (0, _reactCssModules2.default)(Confirm, _Confirm2.default, { allowMultiple: true });
 
 /***/ }),
-/* 996 */
+/* 997 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"confirm":"_3hz-0j","animation":"_2QfucO","open":"_1BY5jO","row":"_3sMVTN"};
 
 /***/ }),
-/* 997 */
+/* 998 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12835,11 +12846,11 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _SaveKeys = __webpack_require__(998);
+var _SaveKeys = __webpack_require__(999);
 
 var _SaveKeys2 = _interopRequireDefault(_SaveKeys);
 
-var _Field = __webpack_require__(999);
+var _Field = __webpack_require__(1000);
 
 var _Field2 = _interopRequireDefault(_Field);
 
@@ -12925,14 +12936,14 @@ var SaveKeys = (_dec = (0, _redaction.connect)(function (_ref) {
 exports.default = SaveKeys;
 
 /***/ }),
-/* 998 */
+/* 999 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"title":"_34whwW","row":"_1iYant","cell":"_3ZIa3Z","linked":"_1wQQoQ"};
 
 /***/ }),
-/* 999 */
+/* 1000 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12950,7 +12961,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Field = __webpack_require__(1000);
+var _Field = __webpack_require__(1001);
 
 var _Field2 = _interopRequireDefault(_Field);
 
@@ -12976,21 +12987,21 @@ var Field = function Field(_ref) {
 exports.default = (0, _reactCssModules2.default)(Field, _Field2.default);
 
 /***/ }),
-/* 1000 */
+/* 1001 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"row":"_37f8Rw"};
 
 /***/ }),
-/* 1001 */
+/* 1002 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"twoButtonsInRow":"_2KYO-l"};
 
 /***/ }),
-/* 1002 */
+/* 1003 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13008,11 +13019,11 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _ReloadButton = __webpack_require__(1003);
+var _ReloadButton = __webpack_require__(1004);
 
 var _ReloadButton2 = _interopRequireDefault(_ReloadButton);
 
-var _ReloadIcon = __webpack_require__(1004);
+var _ReloadIcon = __webpack_require__(1005);
 
 var _ReloadIcon2 = _interopRequireDefault(_ReloadIcon);
 
@@ -13031,14 +13042,14 @@ var ReloadButton = function ReloadButton(_ref) {
 exports.default = (0, _reactCssModules2.default)(ReloadButton, _ReloadButton2.default);
 
 /***/ }),
-/* 1003 */
+/* 1004 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"reloadButton":"_2NgnzZ","icon":"tps3tZ"};
 
 /***/ }),
-/* 1004 */
+/* 1005 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13052,7 +13063,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reload = __webpack_require__(1005);
+var _reload = __webpack_require__(1006);
 
 var _reload2 = _interopRequireDefault(_reload);
 
@@ -13066,20 +13077,20 @@ var ReloadIcon = function ReloadIcon(_ref) {
 exports.default = ReloadIcon;
 
 /***/ }),
-/* 1005 */
+/* 1006 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/reload_d8d88b.svg";
 
 /***/ }),
-/* 1006 */
+/* 1007 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"withdrawButton":"_2yf2Si"};
 
 /***/ }),
-/* 1007 */
+/* 1008 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13134,7 +13145,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Row = __webpack_require__(1008);
+var _Row = __webpack_require__(1009);
 
 var _Row2 = _interopRequireDefault(_Row);
 
@@ -13154,7 +13165,7 @@ var _WithdrawButton = __webpack_require__(382);
 
 var _WithdrawButton2 = _interopRequireDefault(_WithdrawButton);
 
-var _LinkAcount = __webpack_require__(1009);
+var _LinkAcount = __webpack_require__(1010);
 
 var _LinkAcount2 = _interopRequireDefault(_LinkAcount);
 
@@ -13455,14 +13466,14 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), (0, _reactRoute
 exports.default = Row;
 
 /***/ }),
-/* 1008 */
+/* 1009 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"marginRight":"qq8rKP","copied":"_3b4eD1","icon":"_2718ee","button":"_3gDOry"};
 
 /***/ }),
-/* 1009 */
+/* 1010 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13525,14 +13536,14 @@ var LinkAccount = function LinkAccount(_ref) {
 exports.default = LinkAccount;
 
 /***/ }),
-/* 1010 */
+/* 1011 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"link":"_1bLBL3"};
 
 /***/ }),
-/* 1011 */
+/* 1012 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13546,7 +13557,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Listing = __webpack_require__(1012);
+var _Listing = __webpack_require__(1013);
 
 var _Listing2 = _interopRequireDefault(_Listing);
 
@@ -13554,7 +13565,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _listingScreen = __webpack_require__(1013);
+var _listingScreen = __webpack_require__(1014);
 
 var _listingScreen2 = _interopRequireDefault(_listingScreen);
 
@@ -13564,7 +13575,7 @@ var _Href2 = _interopRequireDefault(_Href);
 
 var _controls = __webpack_require__(67);
 
-var _FeedBack = __webpack_require__(1014);
+var _FeedBack = __webpack_require__(1015);
 
 var _FeedBack2 = _interopRequireDefault(_FeedBack);
 
@@ -13712,20 +13723,20 @@ var Listing = function Listing() {
 exports.default = (0, _reactCssModules2.default)(Listing, _Listing2.default);
 
 /***/ }),
-/* 1012 */
+/* 1013 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"listingImg":"_11f0U6","listingForm":"_2o0mJW","listingBtn":"_3y6L25","container":"_1QAUub"};
 
 /***/ }),
-/* 1013 */
+/* 1014 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/listing-screen_fc16f6.png";
 
 /***/ }),
-/* 1014 */
+/* 1015 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13739,7 +13750,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _FeedBack = __webpack_require__(1015);
+var _FeedBack = __webpack_require__(1016);
 
 var _FeedBack2 = _interopRequireDefault(_FeedBack);
 
@@ -13747,7 +13758,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _telegram = __webpack_require__(1016);
+var _telegram = __webpack_require__(1017);
 
 var _telegram2 = _interopRequireDefault(_telegram);
 
@@ -13798,27 +13809,27 @@ var FeedBack = function FeedBack(_ref) {
 exports.default = (0, _reactCssModules2.default)(FeedBack, _FeedBack2.default);
 
 /***/ }),
-/* 1015 */
+/* 1016 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"feedback":"_2qwouh","heading":"_1kFWUv","text":"_4ViCT0","contact":"_10Uaos"};
 
 /***/ }),
-/* 1016 */
+/* 1017 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/telegram_ebde6d.png";
 
 /***/ }),
-/* 1017 */
+/* 1018 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"label":"_1AbkiC","inRow":"_2Hoger"};
 
 /***/ }),
-/* 1018 */
+/* 1019 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13869,7 +13880,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactInputMask = __webpack_require__(1019);
+var _reactInputMask = __webpack_require__(1020);
 
 var _reactInputMask2 = _interopRequireDefault(_reactInputMask);
 
@@ -14158,20 +14169,20 @@ exports.Checkbox = Checkbox;
 exports.NumberInput = NumberInput;
 
 /***/ }),
-/* 1019 */,
 /* 1020 */,
 /* 1021 */,
 /* 1022 */,
 /* 1023 */,
-/* 1024 */
+/* 1024 */,
+/* 1025 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"root":"_1aWblp","inputContainer":"_2di3Mb","disabled":"_3u8Uu2","withError":"_3RwSrH","input":"_3T0zd_","label":"_3xlNvF","error":"_3LmV0i"};
 
 /***/ }),
-/* 1025 */,
-/* 1026 */
+/* 1026 */,
+/* 1027 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14222,11 +14233,11 @@ var _actions = __webpack_require__(12);
 
 var _actions2 = _interopRequireDefault(_actions);
 
-var _Row = __webpack_require__(1027);
+var _Row = __webpack_require__(1028);
 
 var _Row2 = _interopRequireDefault(_Row);
 
-var _SwapsHistory = __webpack_require__(1031);
+var _SwapsHistory = __webpack_require__(1032);
 
 var _SwapsHistory2 = _interopRequireDefault(_SwapsHistory);
 
@@ -14234,7 +14245,7 @@ var _Table = __webpack_require__(97);
 
 var _Table2 = _interopRequireDefault(_Table);
 
-var _Filter = __webpack_require__(1034);
+var _Filter = __webpack_require__(1035);
 
 var _Filter2 = _interopRequireDefault(_Filter);
 
@@ -14242,7 +14253,7 @@ var _PageHeadline = __webpack_require__(95);
 
 var _PageHeadline2 = _interopRequireDefault(_PageHeadline);
 
-var _InfiniteScrollTable = __webpack_require__(1036);
+var _InfiniteScrollTable = __webpack_require__(1037);
 
 var _InfiniteScrollTable2 = _interopRequireDefault(_InfiniteScrollTable);
 
@@ -14355,7 +14366,7 @@ var History = (_dec = (0, _redaction.connect)(function (_ref3) {
 exports.default = History;
 
 /***/ }),
-/* 1027 */
+/* 1028 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14401,7 +14412,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Row = __webpack_require__(1029);
+var _Row = __webpack_require__(1030);
 
 var _Row2 = _interopRequireDefault(_Row);
 
@@ -14409,7 +14420,7 @@ var _Coin = __webpack_require__(217);
 
 var _Coin2 = _interopRequireDefault(_Coin);
 
-var _LinkTransaction = __webpack_require__(1030);
+var _LinkTransaction = __webpack_require__(1031);
 
 var _LinkTransaction2 = _interopRequireDefault(_LinkTransaction);
 
@@ -14496,15 +14507,15 @@ var Row = function (_React$PureComponent) {
 exports.default = (0, _reactCssModules2.default)(Row, _Row2.default, { allowMultiple: true });
 
 /***/ }),
-/* 1028 */,
-/* 1029 */
+/* 1029 */,
+/* 1030 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"status":"B1fidj","in":"_2WudR1","out":"_3MGYaP","cell":"_3iy6qi","confirm":"_38S3z2","unconfirmed":"_2NV1PP","date":"_3qRLEP","address":"qb31A4","amount":"z9ksse"};
 
 /***/ }),
-/* 1030 */
+/* 1031 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14561,7 +14572,7 @@ var LinkTransaction = function LinkTransaction(_ref) {
 exports.default = LinkTransaction;
 
 /***/ }),
-/* 1031 */
+/* 1032 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14604,7 +14615,7 @@ var _Table3 = __webpack_require__(97);
 
 var _Table4 = _interopRequireDefault(_Table3);
 
-var _RowHistory = __webpack_require__(1032);
+var _RowHistory = __webpack_require__(1033);
 
 var _RowHistory2 = _interopRequireDefault(_RowHistory);
 
@@ -14657,7 +14668,7 @@ var SwapsHistory = function (_PureComponent) {
 exports.default = SwapsHistory;
 
 /***/ }),
-/* 1032 */
+/* 1033 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14683,7 +14694,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _RowHistory = __webpack_require__(1033);
+var _RowHistory = __webpack_require__(1034);
 
 var _RowHistory2 = _interopRequireDefault(_RowHistory);
 
@@ -14783,14 +14794,14 @@ RowHistory.propTypes = {
 exports.default = (0, _reactCssModules2.default)(RowHistory, _RowHistory2.default, { allowMultiple: true });
 
 /***/ }),
-/* 1033 */
+/* 1034 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"userTooltip":"_2Z_jhL","delete":"eDuZ67","currency":"_2vYSxF","coin":"_17Dby6","buy":"_35V0oz","sell":"_3BVZDc","buttons":"Plxv_t","arrow":"poSVpG"};
 
 /***/ }),
-/* 1034 */
+/* 1035 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14845,7 +14856,7 @@ var _Filter = __webpack_require__(384);
 
 var _Filter2 = _interopRequireDefault(_Filter);
 
-var _FilterLink = __webpack_require__(1035);
+var _FilterLink = __webpack_require__(1036);
 
 var _FilterLink2 = _interopRequireDefault(_FilterLink);
 
@@ -14918,7 +14929,7 @@ var Filter = (_dec = (0, _redaction.connect)(function (_ref) {
 exports.default = Filter;
 
 /***/ }),
-/* 1035 */
+/* 1036 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14968,7 +14979,7 @@ FilterLink.propTypes = {
 exports.default = (0, _reactCssModules2.default)(FilterLink, _Filter2.default, { allowMultiple: true });
 
 /***/ }),
-/* 1036 */
+/* 1037 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15017,7 +15028,7 @@ var _Table = __webpack_require__(96);
 
 var _Table2 = _interopRequireDefault(_Table);
 
-var _withInfiniteScroll = __webpack_require__(1037);
+var _withInfiniteScroll = __webpack_require__(1038);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15045,7 +15056,7 @@ var InfiniteScrollTable = (_dec = (0, _withInfiniteScroll.withInfiniteScroll)(),
 exports.default = InfiniteScrollTable;
 
 /***/ }),
-/* 1037 */
+/* 1038 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15159,7 +15170,7 @@ var withInfiniteScroll = function withInfiniteScroll() {
 exports.withInfiniteScroll = withInfiniteScroll;
 
 /***/ }),
-/* 1038 */
+/* 1039 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15189,7 +15200,7 @@ function NotFound() {
 }
 
 /***/ }),
-/* 1039 */
+/* 1040 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15240,7 +15251,7 @@ exports.default = (0, _redaction.connect)(function (state) {
 })(Affiliate);
 
 /***/ }),
-/* 1040 */
+/* 1041 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15299,7 +15310,7 @@ var _Table = __webpack_require__(96);
 
 var _Table2 = _interopRequireDefault(_Table);
 
-var _Row = __webpack_require__(1041);
+var _Row = __webpack_require__(1042);
 
 var _Row2 = _interopRequireDefault(_Row);
 
@@ -15401,7 +15412,7 @@ var Currency = (_dec = (0, _redaction.connect)(function (_ref) {
 exports.default = Currency;
 
 /***/ }),
-/* 1041 */
+/* 1042 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15448,7 +15459,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Row = __webpack_require__(1042);
+var _Row = __webpack_require__(1043);
 
 var _Row2 = _interopRequireDefault(_Row);
 
@@ -15513,14 +15524,14 @@ var Row = (_dec = (0, _reactCssModules2.default)(_Row2.default), _dec(_class = (
 exports.default = Row;
 
 /***/ }),
-/* 1042 */
+/* 1043 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"coins":"_1Wexht","reloadButton":"_3ixjtr","copied":"_3V2rdt","button":"_2_YN3T"};
 
 /***/ }),
-/* 1043 */
+/* 1044 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15565,7 +15576,7 @@ var _reactRedux = __webpack_require__(330);
 
 var _reactRouterRedux = __webpack_require__(326);
 
-var _App = __webpack_require__(1044);
+var _App = __webpack_require__(1045);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -15611,7 +15622,7 @@ var Root = (_temp = _class = function (_React$PureComponent) {
 exports.default = Root;
 
 /***/ }),
-/* 1044 */
+/* 1045 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15670,23 +15681,23 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _App = __webpack_require__(1045);
+var _App = __webpack_require__(1046);
 
 var _App2 = _interopRequireDefault(_App);
 
-__webpack_require__(1046);
+__webpack_require__(1047);
 
-var _newSwap = __webpack_require__(1047);
+var _newSwap = __webpack_require__(1048);
 
-var _Core = __webpack_require__(1107);
+var _Core = __webpack_require__(1108);
 
 var _Core2 = _interopRequireDefault(_Core);
 
-var _Header = __webpack_require__(1108);
+var _Header = __webpack_require__(1109);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(1128);
+var _Footer = __webpack_require__(1129);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -15694,11 +15705,11 @@ var _Loader = __webpack_require__(226);
 
 var _Loader2 = _interopRequireDefault(_Loader);
 
-var _PreventMultiTabs = __webpack_require__(1141);
+var _PreventMultiTabs = __webpack_require__(1142);
 
 var _PreventMultiTabs2 = _interopRequireDefault(_PreventMultiTabs);
 
-var _RequestLoader = __webpack_require__(1142);
+var _RequestLoader = __webpack_require__(1143);
 
 var _RequestLoader2 = _interopRequireDefault(_RequestLoader);
 
@@ -15710,11 +15721,11 @@ var _WidthContainer = __webpack_require__(123);
 
 var _WidthContainer2 = _interopRequireDefault(_WidthContainer);
 
-var _NotificationConductor = __webpack_require__(1188);
+var _NotificationConductor = __webpack_require__(1189);
 
 var _NotificationConductor2 = _interopRequireDefault(_NotificationConductor);
 
-var _Seo = __webpack_require__(1196);
+var _Seo = __webpack_require__(1197);
 
 var _Seo2 = _interopRequireDefault(_Seo);
 
@@ -15830,21 +15841,21 @@ var App = (_dec = (0, _redaction.connect)({
 exports.default = App;
 
 /***/ }),
-/* 1045 */
+/* 1046 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"main":"_3gjuKq"};
 
 /***/ }),
-/* 1046 */
+/* 1047 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"modal":"UVZ-gM","btn":"_2xXs60"};
 
 /***/ }),
-/* 1047 */
+/* 1048 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15863,7 +15874,7 @@ var _bitcoinjsLib = __webpack_require__(55);
 
 var _bitcoinjsLib2 = _interopRequireDefault(_bitcoinjsLib);
 
-var _ipfsPubsubRoom = __webpack_require__(1048);
+var _ipfsPubsubRoom = __webpack_require__(1049);
 
 var _ipfsPubsubRoom2 = _interopRequireDefault(_ipfsPubsubRoom);
 
@@ -15889,13 +15900,13 @@ var _swap5 = __webpack_require__(395);
 
 var _swap6 = _interopRequireDefault(_swap5);
 
-var _swap7 = __webpack_require__(1081);
+var _swap7 = __webpack_require__(1082);
 
 var _swap8 = _interopRequireDefault(_swap7);
 
-var _swap9 = __webpack_require__(1092);
+var _swap9 = __webpack_require__(1093);
 
-var _swap10 = __webpack_require__(1100);
+var _swap10 = __webpack_require__(1101);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15995,7 +16006,6 @@ var createSwapApp = function createSwapApp() {
 exports.createSwapApp = createSwapApp;
 
 /***/ }),
-/* 1048 */,
 /* 1049 */,
 /* 1050 */,
 /* 1051 */,
@@ -16054,7 +16064,8 @@ exports.createSwapApp = createSwapApp;
 /* 1104 */,
 /* 1105 */,
 /* 1106 */,
-/* 1107 */
+/* 1107 */,
+/* 1108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16171,7 +16182,7 @@ var Core = function (_Component) {
 exports.default = Core;
 
 /***/ }),
-/* 1108 */
+/* 1109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16216,19 +16227,19 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Header = __webpack_require__(1109);
+var _Header = __webpack_require__(1110);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Nav = __webpack_require__(1110);
+var _Nav = __webpack_require__(1111);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
-var _User = __webpack_require__(1112);
+var _User = __webpack_require__(1113);
 
 var _User2 = _interopRequireDefault(_User);
 
-var _NavMobile = __webpack_require__(1122);
+var _NavMobile = __webpack_require__(1123);
 
 var _NavMobile2 = _interopRequireDefault(_NavMobile);
 
@@ -16281,14 +16292,14 @@ var Header = (_dec = (0, _redaction.connect)(function (_ref) {
 exports.default = Header;
 
 /***/ }),
-/* 1109 */
+/* 1110 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"header":"qZaPkJ","container":"_1AYBnf"};
 
 /***/ }),
-/* 1110 */
+/* 1111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16337,7 +16348,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Nav = __webpack_require__(1111);
+var _Nav = __webpack_require__(1112);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -16418,14 +16429,14 @@ var Nav = (_dec = (0, _reactCssModules2.default)(_Nav2.default), _dec(_class = (
 exports.default = Nav;
 
 /***/ }),
-/* 1111 */
+/* 1112 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"nav":"_34R6Y0","link":"_16Gtic","active":"_2Mv-fo"};
 
 /***/ }),
-/* 1112 */
+/* 1113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16472,7 +16483,7 @@ var _redaction = __webpack_require__(22);
 
 var _helpers = __webpack_require__(11);
 
-var _User = __webpack_require__(1113);
+var _User = __webpack_require__(1114);
 
 var _User2 = _interopRequireDefault(_User);
 
@@ -16484,15 +16495,15 @@ var _Sound = __webpack_require__(399);
 
 var _Sound2 = _interopRequireDefault(_Sound);
 
-var _UserAvatar = __webpack_require__(1114);
+var _UserAvatar = __webpack_require__(1115);
 
 var _UserAvatar2 = _interopRequireDefault(_UserAvatar);
 
-var _UserTooltip = __webpack_require__(1117);
+var _UserTooltip = __webpack_require__(1118);
 
 var _UserTooltip2 = _interopRequireDefault(_UserTooltip);
 
-var _AddOfferButton = __webpack_require__(1120);
+var _AddOfferButton = __webpack_require__(1121);
 
 var _AddOfferButton2 = _interopRequireDefault(_AddOfferButton);
 
@@ -16578,14 +16589,14 @@ var User = (_dec = (0, _redaction.connect)({
 exports.default = User;
 
 /***/ }),
-/* 1113 */
+/* 1114 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"user-cont":"_33Ia7P","hidden":"_3MuJfF"};
 
 /***/ }),
-/* 1114 */
+/* 1115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16622,11 +16633,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _UserAvatar = __webpack_require__(1115);
+var _UserAvatar = __webpack_require__(1116);
 
 var _UserAvatar2 = _interopRequireDefault(_UserAvatar);
 
-var _avatar = __webpack_require__(1116);
+var _avatar = __webpack_require__(1117);
 
 var _avatar2 = _interopRequireDefault(_avatar);
 
@@ -16710,20 +16721,20 @@ var UserAvatar = (_dec = (0, _reactCssModules2.default)(_UserAvatar2.default, { 
 exports.default = UserAvatar;
 
 /***/ }),
-/* 1115 */
+/* 1116 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"user":"_3R8ezp","bell":"_18U74M","status":"_1EDMx_","new":"_3UWWZN","shake":"_3RMI-t"};
 
 /***/ }),
-/* 1116 */
+/* 1117 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/avatar_e241ff.svg";
 
 /***/ }),
-/* 1117 */
+/* 1118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16751,11 +16762,11 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _UserTooltip = __webpack_require__(1118);
+var _UserTooltip = __webpack_require__(1119);
 
 var _UserTooltip2 = _interopRequireDefault(_UserTooltip);
 
-var _arrowRight = __webpack_require__(1119);
+var _arrowRight = __webpack_require__(1120);
 
 var _arrowRight2 = _interopRequireDefault(_arrowRight);
 
@@ -16870,20 +16881,20 @@ UserTooltip.propTypes = {
 exports.default = (0, _reactCssModules2.default)(UserTooltip, _UserTooltip2.default, { allowMultiple: true });
 
 /***/ }),
-/* 1118 */
+/* 1119 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"column":"_1gVhNf","feed":"_2nP3zE","userTooltip":"ZUrxv8","title":"_3Wmf4W","currency":"n4WzMO","coin":"FTx5Zs","arrow":"_1HGghg","checked":"Rrpe2k","decline":"_1oOc8J","icon":"hRKJDr"};
 
 /***/ }),
-/* 1119 */
+/* 1120 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/arrow-right_861e95.svg";
 
 /***/ }),
-/* 1120 */
+/* 1121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16926,7 +16937,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _AddOfferButton = __webpack_require__(1121);
+var _AddOfferButton = __webpack_require__(1122);
 
 var _AddOfferButton2 = _interopRequireDefault(_AddOfferButton);
 
@@ -16970,14 +16981,14 @@ var AddOfferButton = (_dec = (0, _reactCssModules2.default)(_AddOfferButton2.def
 exports.default = AddOfferButton;
 
 /***/ }),
-/* 1121 */
+/* 1122 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"button":"_3-kNLg","buttonMobile":"_3jxypg"};
 
 /***/ }),
-/* 1122 */
+/* 1123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17030,7 +17041,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _NavMobile = __webpack_require__(1123);
+var _NavMobile = __webpack_require__(1124);
 
 var _NavMobile2 = _interopRequireDefault(_NavMobile);
 
@@ -17115,40 +17126,40 @@ var NavMobile = (_dec = (0, _reactCssModules2.default)(_NavMobile2.default), _de
 exports.default = NavMobile;
 
 /***/ }),
-/* 1123 */
+/* 1124 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"navMobile":"_1ZWzG3","hamburger":"_1YFFZ6","hamburgerBox":"bfhEPu","hamburgerInner":"_1Cvk5b","hamburgerInnerActive":"_3rVZcf","navMenuContent":"_2BF-q5","linkMobile":"_3lu4hS","active":"_3eJxZS"};
 
 /***/ }),
-/* 1124 */
+/* 1125 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"logo":"kQLHsU","mobile":"_1fQO7J"};
 
 /***/ }),
-/* 1125 */
+/* 1126 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/logo_3436dc.svg";
 
 /***/ }),
-/* 1126 */
+/* 1127 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/logo-colored_eb1f60.svg";
 
 /***/ }),
-/* 1127 */
+/* 1128 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"widthContainer":"_3BXipS","widthContainerIn":"_3Igl7j","relative":"_3gxpYb","fullHeight":"_1GF4SW","centeringContent":"_3RUiHP","main":"_3aO2EZ"};
 
 /***/ }),
-/* 1128 */
+/* 1129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17189,11 +17200,11 @@ var _redaction = __webpack_require__(22);
 
 var _reactRouterDom = __webpack_require__(36);
 
-var _Footer = __webpack_require__(1129);
+var _Footer = __webpack_require__(1130);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _logo = __webpack_require__(1130);
+var _logo = __webpack_require__(1131);
 
 var _logo2 = _interopRequireDefault(_logo);
 
@@ -17201,15 +17212,15 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Info = __webpack_require__(1131);
+var _Info = __webpack_require__(1132);
 
 var _Info2 = _interopRequireDefault(_Info);
 
-var _SocialMenu = __webpack_require__(1136);
+var _SocialMenu = __webpack_require__(1137);
 
 var _SocialMenu2 = _interopRequireDefault(_SocialMenu);
 
-var _Links = __webpack_require__(1138);
+var _Links = __webpack_require__(1139);
 
 var _Links2 = _interopRequireDefault(_Links);
 
@@ -17294,20 +17305,20 @@ var Footer = (_dec = (0, _redaction.connect)(function (_ref) {
 exports.default = Footer;
 
 /***/ }),
-/* 1129 */
+/* 1130 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"footer":"_3I8ngW","information-footer":"_3vZL5k","text":"_2mlrGY","container":"_19TQvN","container--copyright":"_3g2PS3","container--social":"Q3swHS","default-footer":"_1et5bP","copyright":"_1D7G47","copyright-logo":"_1Z1Unz","copyright-text":"_2_l7sw"};
 
 /***/ }),
-/* 1130 */
+/* 1131 */
 /***/ (function(module, exports) {
 
 module.exports = "https://swap.online/images/logo_f8bdcb.svg";
 
 /***/ }),
-/* 1131 */
+/* 1132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17341,13 +17352,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _rcProgress = __webpack_require__(1132);
+var _rcProgress = __webpack_require__(1133);
 
 var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Info = __webpack_require__(1135);
+var _Info = __webpack_require__(1136);
 
 var _Info2 = _interopRequireDefault(_Info);
 
@@ -17423,17 +17434,17 @@ var Info = function (_React$Component) {
 exports.default = (0, _reactCssModules2.default)(Info, _Info2.default, { allowMultiple: true });
 
 /***/ }),
-/* 1132 */,
 /* 1133 */,
 /* 1134 */,
-/* 1135 */
+/* 1135 */,
+/* 1136 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"title":"_1C587Y","connect":"_34nV3E","disconnect":"_2UdlK9"};
 
 /***/ }),
-/* 1136 */
+/* 1137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17474,7 +17485,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _SocialMenu = __webpack_require__(1137);
+var _SocialMenu = __webpack_require__(1138);
 
 var _SocialMenu2 = _interopRequireDefault(_SocialMenu);
 
@@ -17551,14 +17562,14 @@ var SocialMenu = (_dec = (0, _reactCssModules2.default)(_SocialMenu2.default), _
 exports.default = SocialMenu;
 
 /***/ }),
-/* 1137 */
+/* 1138 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"social-menu":"eSQrZX","icon":"_1aBVqk"};
 
 /***/ }),
-/* 1138 */
+/* 1139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17576,7 +17587,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Links = __webpack_require__(1139);
+var _Links = __webpack_require__(1140);
 
 var _Links2 = _interopRequireDefault(_Links);
 
@@ -17712,21 +17723,21 @@ var Links = function Links() {
 exports.default = (0, _reactCssModules2.default)(_Links2.default)(Links);
 
 /***/ }),
-/* 1139 */
+/* 1140 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"links":"XBi5CM","column":"vRPQ8C"};
 
 /***/ }),
-/* 1140 */
+/* 1141 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"overlay":"_3V4vPK","loader":"_37qfX_","small":"_1Cc0hi","center":"_3wUrWW","loader1":"B8rIc7","loader2":"_2dF68e","loader3":"_1fAQsv","text":"_2mdCx-","link":"_1pQH11"};
 
 /***/ }),
-/* 1141 */
+/* 1142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17757,7 +17768,7 @@ var PreventMultiTabs = function PreventMultiTabs() {
 exports.default = PreventMultiTabs;
 
 /***/ }),
-/* 1142 */
+/* 1143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17798,7 +17809,7 @@ exports.default = (0, _redaction.connect)({
 })(RequestLoader);
 
 /***/ }),
-/* 1143 */
+/* 1144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17808,31 +17819,31 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _OfferModal = __webpack_require__(1144);
+var _OfferModal = __webpack_require__(1145);
 
 var _OfferModal2 = _interopRequireDefault(_OfferModal);
 
-var _WithdrawModal = __webpack_require__(1169);
+var _WithdrawModal = __webpack_require__(1170);
 
 var _WithdrawModal2 = _interopRequireDefault(_WithdrawModal);
 
-var _PrivateKeysModal = __webpack_require__(1171);
+var _PrivateKeysModal = __webpack_require__(1172);
 
 var _PrivateKeysModal2 = _interopRequireDefault(_PrivateKeysModal);
 
-var _EosModal = __webpack_require__(1175);
+var _EosModal = __webpack_require__(1176);
 
 var _EosModal2 = _interopRequireDefault(_EosModal);
 
-var _Approve = __webpack_require__(1179);
+var _Approve = __webpack_require__(1180);
 
 var _Approve2 = _interopRequireDefault(_Approve);
 
-var _ImportKeys = __webpack_require__(1181);
+var _ImportKeys = __webpack_require__(1182);
 
 var _ImportKeys2 = _interopRequireDefault(_ImportKeys);
 
-var _EthChecker = __webpack_require__(1185);
+var _EthChecker = __webpack_require__(1186);
 
 var _EthChecker2 = _interopRequireDefault(_EthChecker);
 
@@ -17849,7 +17860,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 1144 */
+/* 1145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17898,7 +17909,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _OfferModal = __webpack_require__(1145);
+var _OfferModal = __webpack_require__(1146);
 
 var _OfferModal2 = _interopRequireDefault(_OfferModal);
 
@@ -17906,11 +17917,11 @@ var _Modal = __webpack_require__(160);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _ConfirmOffer = __webpack_require__(1151);
+var _ConfirmOffer = __webpack_require__(1152);
 
 var _ConfirmOffer2 = _interopRequireDefault(_ConfirmOffer);
 
-var _AddOffer = __webpack_require__(1160);
+var _AddOffer = __webpack_require__(1161);
 
 var _AddOffer2 = _interopRequireDefault(_AddOffer);
 
@@ -17975,21 +17986,21 @@ var Offer = (_dec = (0, _reactCssModules2.default)(_OfferModal2.default), _dec(_
 exports.default = Offer;
 
 /***/ }),
-/* 1145 */
+/* 1146 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"content":"_2EHTMr"};
 
 /***/ }),
-/* 1146 */
+/* 1147 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"modal":"_3d-lMl","header":"utYl-8","headerContent":"_2FzjWy","title":"_1H7w4U","uppercase":"_1XykmZ","closeButton":"_3UgYwG","contentContainer":"_2OSr4P","content":"_2SEeRQ"};
 
 /***/ }),
-/* 1147 */
+/* 1148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18023,7 +18034,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _CloseIcon = __webpack_require__(1148);
+var _CloseIcon = __webpack_require__(1149);
 
 var _CloseIcon2 = _interopRequireDefault(_CloseIcon);
 
@@ -18054,28 +18065,28 @@ CloseIcon.propTypes = {
 exports.default = (0, _reactCssModules2.default)(CloseIcon, _CloseIcon2.default, { allowMultiple: true });
 
 /***/ }),
-/* 1148 */
+/* 1149 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"button":"_3KAFwf","whiteColor":"_1qVzDl","icon":"_2g6BBl","brandColor":"_1ZJhlM"};
 
 /***/ }),
-/* 1149 */
+/* 1150 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"overlay":"a_1CO5"};
 
 /***/ }),
-/* 1150 */
+/* 1151 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"centringContainer":"_1uK09U","scrollable":"_1K6mUM","centringContent":"_1xMZgg"};
 
 /***/ }),
-/* 1151 */
+/* 1152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18124,7 +18135,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _ConfirmOffer = __webpack_require__(1152);
+var _ConfirmOffer = __webpack_require__(1153);
 
 var _ConfirmOffer2 = _interopRequireDefault(_ConfirmOffer);
 
@@ -18140,15 +18151,15 @@ var _Coins = __webpack_require__(119);
 
 var _Coins2 = _interopRequireDefault(_Coins);
 
-var _Amounts = __webpack_require__(1153);
+var _Amounts = __webpack_require__(1154);
 
 var _Amounts2 = _interopRequireDefault(_Amounts);
 
-var _ExchangeRate = __webpack_require__(1157);
+var _ExchangeRate = __webpack_require__(1158);
 
 var _ExchangeRate2 = _interopRequireDefault(_ExchangeRate);
 
-var _Fee = __webpack_require__(1159);
+var _Fee = __webpack_require__(1160);
 
 var _Fee2 = _interopRequireDefault(_Fee);
 
@@ -18238,14 +18249,14 @@ var ConfirmOffer = (_dec = (0, _reactCssModules2.default)(_ConfirmOffer2.default
 exports.default = ConfirmOffer;
 
 /***/ }),
-/* 1152 */
+/* 1153 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"coins":"_2SFTdv","buttonsInRow":"_3Z13ki","button":"_1IOrqN","link":"ilIyX_"};
 
 /***/ }),
-/* 1153 */
+/* 1154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18263,7 +18274,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Amounts = __webpack_require__(1154);
+var _Amounts = __webpack_require__(1155);
 
 var _Amounts2 = _interopRequireDefault(_Amounts);
 
@@ -18294,28 +18305,28 @@ var Amounts = function Amounts(_ref) {
 exports.default = (0, _reactCssModules2.default)(Amounts, _Amounts2.default);
 
 /***/ }),
-/* 1154 */
+/* 1155 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"arrow":"_1JeVyh"};
 
 /***/ }),
-/* 1155 */
+/* 1156 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"row":"_3kZbpm","title":"_2-aWLd","content":"_2ALy7S"};
 
 /***/ }),
-/* 1156 */
+/* 1157 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"value":"_1MvMZq","currency":"ka6sxH"};
 
 /***/ }),
-/* 1157 */
+/* 1158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18333,7 +18344,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _ExchangeRate = __webpack_require__(1158);
+var _ExchangeRate = __webpack_require__(1159);
 
 var _ExchangeRate2 = _interopRequireDefault(_ExchangeRate);
 
@@ -18367,14 +18378,14 @@ var ExchangeRate = function ExchangeRate(_ref) {
 exports.default = (0, _reactCssModules2.default)(ExchangeRate, _ExchangeRate2.default);
 
 /***/ }),
-/* 1158 */
+/* 1159 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"equal":"_62CYy3"};
 
 /***/ }),
-/* 1159 */
+/* 1160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18411,7 +18422,7 @@ var Fee = function Fee(_ref) {
 exports.default = Fee;
 
 /***/ }),
-/* 1160 */
+/* 1161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18474,7 +18485,7 @@ var _helpers = __webpack_require__(11);
 
 var _bignumber = __webpack_require__(39);
 
-var _AddOffer = __webpack_require__(1161);
+var _AddOffer = __webpack_require__(1162);
 
 var _AddOffer2 = _interopRequireDefault(_AddOffer);
 
@@ -18482,15 +18493,15 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Select = __webpack_require__(1162);
+var _Select = __webpack_require__(1163);
 
 var _Select2 = _interopRequireDefault(_Select);
 
-var _ExchangeRateGroup = __webpack_require__(1164);
+var _ExchangeRateGroup = __webpack_require__(1165);
 
 var _ExchangeRateGroup2 = _interopRequireDefault(_ExchangeRateGroup);
 
-var _SelectGroup = __webpack_require__(1167);
+var _SelectGroup = __webpack_require__(1168);
 
 var _SelectGroup2 = _interopRequireDefault(_SelectGroup);
 
@@ -18847,14 +18858,14 @@ var AddOffer = (_dec = (0, _redaction.connect)(function (_ref) {
 exports.default = AddOffer;
 
 /***/ }),
-/* 1161 */
+/* 1162 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"sellGroup":"EElyaT","button":"_3riRsA","error":"oiWUOF"};
 
 /***/ }),
-/* 1162 */
+/* 1163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18868,7 +18879,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Select = __webpack_require__(1163);
+var _Select = __webpack_require__(1164);
 
 var _Select2 = _interopRequireDefault(_Select);
 
@@ -18939,14 +18950,14 @@ var Select = function Select(_ref) {
 exports.default = (0, _reactCssModules2.default)(Select, _Select2.default);
 
 /***/ }),
-/* 1163 */
+/* 1164 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"groupField":"_1TBx4e","cell":"_1fGtMw"};
 
 /***/ }),
-/* 1164 */
+/* 1165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18960,7 +18971,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _ExchangeRateGroup = __webpack_require__(1165);
+var _ExchangeRateGroup = __webpack_require__(1166);
 
 var _ExchangeRateGroup2 = _interopRequireDefault(_ExchangeRateGroup);
 
@@ -19003,21 +19014,21 @@ var ExchangeRateGroup = function ExchangeRateGroup(_ref) {
 exports.default = (0, _reactCssModules2.default)(ExchangeRateGroup, _ExchangeRateGroup2.default);
 
 /***/ }),
-/* 1165 */
+/* 1166 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"currencyRatio":"_3uQetM"};
 
 /***/ }),
-/* 1166 */
+/* 1167 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"groupField":"_2QVvGM","inputRoot":"_2gYR9R","inputContainer":"zgZs0H"};
 
 /***/ }),
-/* 1167 */
+/* 1168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19031,7 +19042,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _SelectGroup = __webpack_require__(1168);
+var _SelectGroup = __webpack_require__(1169);
 
 var _SelectGroup2 = _interopRequireDefault(_SelectGroup);
 
@@ -19078,14 +19089,14 @@ var SelectGroup = function SelectGroup(_ref) {
 exports.default = (0, _reactCssModules2.default)(SelectGroup, _SelectGroup2.default);
 
 /***/ }),
-/* 1168 */
+/* 1169 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"currencySelect":"gFvyga"};
 
 /***/ }),
-/* 1169 */
+/* 1170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19140,7 +19151,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _WithdrawModal = __webpack_require__(1170);
+var _WithdrawModal = __webpack_require__(1171);
 
 var _WithdrawModal2 = _interopRequireDefault(_WithdrawModal);
 
@@ -19300,14 +19311,14 @@ var WithdrawModal = (_dec = (0, _reactCssModules2.default)(_WithdrawModal2.defau
 exports.default = WithdrawModal;
 
 /***/ }),
-/* 1170 */
+/* 1171 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"note":"_rh3p5","button":"_36O4pp"};
 
 /***/ }),
-/* 1171 */
+/* 1172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19368,11 +19379,11 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _PrivateKeysModal = __webpack_require__(1172);
+var _PrivateKeysModal = __webpack_require__(1173);
 
 var _PrivateKeysModal2 = _interopRequireDefault(_PrivateKeysModal);
 
-var _Field = __webpack_require__(1173);
+var _Field = __webpack_require__(1174);
 
 var _Field2 = _interopRequireDefault(_Field);
 
@@ -19536,14 +19547,14 @@ var PrivateKeysModal = (_dec = (0, _redaction.connect)({
 exports.default = PrivateKeysModal;
 
 /***/ }),
-/* 1172 */
+/* 1173 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"modal":"_3ixJuZ","content":"_3o3Tl_","title":"_1HvQwA","subTitle":"_2vKFTm","button":"_19cTFn"};
 
 /***/ }),
-/* 1173 */
+/* 1174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19592,7 +19603,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Field = __webpack_require__(1174);
+var _Field = __webpack_require__(1175);
 
 var _Field2 = _interopRequireDefault(_Field);
 
@@ -19706,14 +19717,14 @@ var Field2 = (_dec = (0, _reactCssModules2.default)(_Field2.default), _dec(_clas
 exports.default = Field2;
 
 /***/ }),
-/* 1174 */
+/* 1175 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"container":"_2VJQBX","section":"_3kogcs","label":"_2soNit","input":"BtOAgk","button":"guRICj","error":"vB1kUx"};
 
 /***/ }),
-/* 1175 */
+/* 1176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19778,7 +19789,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _EosModal = __webpack_require__(1178);
+var _EosModal = __webpack_require__(1179);
 
 var _EosModal2 = _interopRequireDefault(_EosModal);
 
@@ -19905,7 +19916,7 @@ var EosModal = (_dec = (0, _reactCssModules2.default)(_EosModal2.default), _dec(
 exports.default = EosModal;
 
 /***/ }),
-/* 1176 */
+/* 1177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19956,7 +19967,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _ModalContainer = __webpack_require__(1177);
+var _ModalContainer = __webpack_require__(1178);
 
 var _ModalContainer2 = _interopRequireDefault(_ModalContainer);
 
@@ -20046,21 +20057,21 @@ var ModalContainer = (_dec = (0, _reactCssModules2.default)(_ModalContainer2.def
 exports.default = ModalContainer;
 
 /***/ }),
-/* 1177 */
+/* 1178 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"modalContainer":"_5wv85l","fullWidth":"_3v15t0","mounted":"_2elaml"};
 
 /***/ }),
-/* 1178 */
+/* 1179 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"button":"_3EXSN4","error":"vZrYLm"};
 
 /***/ }),
-/* 1179 */
+/* 1180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20115,7 +20126,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Approve = __webpack_require__(1180);
+var _Approve = __webpack_require__(1181);
 
 var _Approve2 = _interopRequireDefault(_Approve);
 
@@ -20228,14 +20239,14 @@ var Offer = (_dec = (0, _reactCssModules2.default)(_Approve2.default), _dec(_cla
 exports.default = Offer;
 
 /***/ }),
-/* 1180 */
+/* 1181 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"button":"_2sLZn8","content":"_153K8d"};
 
 /***/ }),
-/* 1181 */
+/* 1182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20286,11 +20297,11 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _ImportKeys = __webpack_require__(1182);
+var _ImportKeys = __webpack_require__(1183);
 
 var _ImportKeys2 = _interopRequireDefault(_ImportKeys);
 
-var _Group = __webpack_require__(1183);
+var _Group = __webpack_require__(1184);
 
 var _Group2 = _interopRequireDefault(_Group);
 
@@ -20459,14 +20470,14 @@ var ImportKeys = (_dec = (0, _reactCssModules2.default)(_ImportKeys2.default), _
 exports.default = ImportKeys;
 
 /***/ }),
-/* 1182 */
+/* 1183 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"modal":"_25Ymyf","button":"_2VqYnV"};
 
 /***/ }),
-/* 1183 */
+/* 1184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20484,7 +20495,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Group = __webpack_require__(1184);
+var _Group = __webpack_require__(1185);
 
 var _Group2 = _interopRequireDefault(_Group);
 
@@ -20514,14 +20525,14 @@ var Group = function Group(_ref) {
 exports.default = (0, _reactCssModules2.default)(Group, _Group2.default);
 
 /***/ }),
-/* 1184 */
+/* 1185 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"group":"_3in6cA","input":"fWnzpt","button":"_2aNnxu"};
 
 /***/ }),
-/* 1185 */
+/* 1186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20570,7 +20581,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _EthChecker = __webpack_require__(1186);
+var _EthChecker = __webpack_require__(1187);
 
 var _EthChecker2 = _interopRequireDefault(_EthChecker);
 
@@ -20630,21 +20641,21 @@ var Offer = (_dec = (0, _reactCssModules2.default)(_EthChecker2.default), _dec(_
 exports.default = Offer;
 
 /***/ }),
-/* 1186 */
+/* 1187 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"button":"_2BSqVp","content":"_2ve1EH"};
 
 /***/ }),
-/* 1187 */
+/* 1188 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"modalConductor":"qe8yZ6"};
 
 /***/ }),
-/* 1188 */
+/* 1189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20691,7 +20702,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _redaction = __webpack_require__(22);
 
-var _notifications = __webpack_require__(1189);
+var _notifications = __webpack_require__(1190);
 
 var _notifications2 = _interopRequireDefault(_notifications);
 
@@ -20699,7 +20710,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _NotificationConductor = __webpack_require__(1195);
+var _NotificationConductor = __webpack_require__(1196);
 
 var _NotificationConductor2 = _interopRequireDefault(_NotificationConductor);
 
@@ -20750,7 +20761,7 @@ var NotificationConductor = (_dec = (0, _redaction.connect)({
 exports.default = NotificationConductor;
 
 /***/ }),
-/* 1189 */
+/* 1190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20760,11 +20771,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _SuccessWithdraw = __webpack_require__(1190);
+var _SuccessWithdraw = __webpack_require__(1191);
 
 var _SuccessWithdraw2 = _interopRequireDefault(_SuccessWithdraw);
 
-var _Message = __webpack_require__(1193);
+var _Message = __webpack_require__(1194);
 
 var _Message2 = _interopRequireDefault(_Message);
 
@@ -20776,7 +20787,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 1190 */
+/* 1191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20817,7 +20828,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _SuccessWithdraw = __webpack_require__(1191);
+var _SuccessWithdraw = __webpack_require__(1192);
 
 var _SuccessWithdraw2 = _interopRequireDefault(_SuccessWithdraw);
 
@@ -20867,21 +20878,21 @@ var SuccessWithdraw = (_dec = (0, _reactCssModules2.default)(_SuccessWithdraw2.d
 exports.default = SuccessWithdraw;
 
 /***/ }),
-/* 1191 */
+/* 1192 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"value":"_3M190E"};
 
 /***/ }),
-/* 1192 */
+/* 1193 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"container":"_1rGs3i","mounted":"_3e2bwy","removed":"_359s7d","notification":"_2HVVjT","content":"_2sHyls"};
 
 /***/ }),
-/* 1193 */
+/* 1194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20922,7 +20933,7 @@ var _reactCssModules = __webpack_require__(3);
 
 var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-var _Message = __webpack_require__(1194);
+var _Message = __webpack_require__(1195);
 
 var _Message2 = _interopRequireDefault(_Message);
 
@@ -20964,21 +20975,21 @@ var Message = (_dec = (0, _reactCssModules2.default)(_Message2.default), _dec(_c
 exports.default = Message;
 
 /***/ }),
-/* 1194 */
+/* 1195 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"value":"xt8YYA"};
 
 /***/ }),
-/* 1195 */
+/* 1196 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"notificationConductor":"_8T39zz"};
 
 /***/ }),
-/* 1196 */
+/* 1197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21019,11 +21030,11 @@ var _propTypes = __webpack_require__(8);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactDocumentMeta = __webpack_require__(1197);
+var _reactDocumentMeta = __webpack_require__(1198);
 
 var _reactDocumentMeta2 = _interopRequireDefault(_reactDocumentMeta);
 
-var _JsonLd = __webpack_require__(1202);
+var _JsonLd = __webpack_require__(1203);
 
 var _JsonLd2 = _interopRequireDefault(_JsonLd);
 
@@ -21090,12 +21101,12 @@ var Seo = (_temp = _class = function (_Component) {
 exports.default = Seo;
 
 /***/ }),
-/* 1197 */,
 /* 1198 */,
 /* 1199 */,
 /* 1200 */,
 /* 1201 */,
-/* 1202 */
+/* 1202 */,
+/* 1203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
