@@ -129,6 +129,17 @@
 		"closebtn": "No, thanks",
 		"redirect": "https://swap.online/",
 		"comment": ""
+	},
+	"founders" : {
+		"title": "List your TOKEN on swap.online",
+		"titleonexit": "Last chance!",
+		"desc": "Swap.Online is a cross-chain cryptocurrency wallet. We perform Atomic Swaps with BTC, ETH, ERC20, EOS and Tether USD",
+		"placeholder": "Enter your e-mail",
+		"placeholdertext": "Enter site URL and ERC20 address",
+		"button": "Next",
+		"closebtn": "No, thanks",
+		"redirect": "https://swap.online/",
+		"comment": ""
 	}
 	
 }
