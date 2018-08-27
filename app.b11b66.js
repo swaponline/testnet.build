@@ -6540,7 +6540,7 @@ var SwapComponent = (_dec = (0, _redaction.connect)({
         return item === orderId;
       });
 
-      if (!Boolean.apply(undefined, (0, _toConsumableArray3.default)(boolean))) {
+      if (Boolean.apply(undefined, (0, _toConsumableArray3.default)(boolean))) {
         swapsId.push(orderId);
       }
 
