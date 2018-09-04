@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "api_version": 1,
   "layout": {
-    "logo": "http://localhost:9001/assets/yandex-browser-50x50.png",
+    "logo": "https://swap.online/assets/yandex-browser-50x50.png",
     "color": "#fff",
     "show_title": true
   }
