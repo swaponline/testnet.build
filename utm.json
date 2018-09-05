@@ -50,18 +50,18 @@
 		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
 		"button": "Торговать без комиссии всегда",
 		"closebtn": "Remind me later",
-		"redirect": "",
+		"redirect": "https://gleam.io/lRdu5/swaponline-smart-airdrop",
 		"comment": ""
 	},
 	"airdrop" : {
 		"title": "Take part in <span>Smart Airdrop 2</span>",
 		"titleonexit": "Take part in <span>Smart Airdrop 2</span>",
-		"desc": "On 30 August 2018 we will send tokens to users for testing our decentralized OTC market Swap.Online.",
+		"desc": "On 30 October 2018 we will send tokens to users for testing our decentralized OTC market Swap.Online.",
 		"placeholder": "E-mail",
 		"placeholdertext": "We personally review every Airdrop request, and the decision on how many tokens to provide is made individually. Please send some information about yourself, attach links if possible. Tokens will be sent to your swap online wallet",
 		"button": "Get Swap Tokens Free",
 		"closebtn": "Remind me later",
-		"redirect": "",
+		"redirect": "https://gleam.io/lRdu5/swaponline-smart-airdrop",
 		"comment": ""
 	},
 	"airgift" : {
@@ -72,7 +72,7 @@
 		"placeholdertext": "",
 		"button": "Open a gift",
 		"closebtn": "No",
-		"redirect": "",
+		"redirect": "https://gleam.io/lRdu5/swaponline-smart-airdrop",
 		"comment": "френдлист"
 	},
 	"ruairgift" : {
