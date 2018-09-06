@@ -7,7 +7,7 @@
 		"placeholdertext": "",
 		"button": "Subscribe to news",
 		"closebtn": "Remind me later",
-		"redirect": "",
+		"redirect": "https://join.swap.online/",
 		"comment": "стандартный попап который выскакивает если перейти без utm_term метки https://swap.online/"
 	},
 	"test": {
@@ -50,7 +50,7 @@
 		"placeholdertext": "Write a little about yourself, point out the links to social networks, CV or github",
 		"button": "Торговать без комиссии всегда",
 		"closebtn": "Remind me later",
-		"redirect": "https://gleam.io/lRdu5/swaponline-smart-airdrop",
+		"redirect": "https://join.swap.online/",
 		"comment": ""
 	},
 	"airdrop" : {
@@ -60,8 +60,8 @@
 		"placeholder": "E-mail",
 		"placeholdertext": "We personally review every Airdrop request, and the decision on how many tokens to provide is made individually. Please send some information about yourself, attach links if possible. Tokens will be sent to your swap online wallet",
 		"button": "Get Swap Tokens Free",
-		"closebtn": "Remind me later",
-		"redirect": "https://gleam.io/lRdu5/swaponline-smart-airdrop",
+		"closebtn": "..",
+		"redirect": "https://join.swap.online/",
 		"comment": ""
 	},
 	"airgift" : {
@@ -71,8 +71,8 @@
 		"placeholder": "E-mail",
 		"placeholdertext": "",
 		"button": "Open a gift",
-		"closebtn": "No",
-		"redirect": "https://gleam.io/lRdu5/swaponline-smart-airdrop",
+		"closebtn": "Hide",
+		"redirect": "https://join.swap.online/",
 		"comment": "френдлист"
 	},
 	"ruairgift" : {
@@ -83,7 +83,7 @@
 		"placeholdertext": "",
 		"button": "Подписатся на новости и получить подарок",
 		"closebtn": "Спасибо не надо",
-		"redirect": "https://testnet.swap.online",
+		"redirect": "https://join.swap.online/",
 		"comment": "френдлист ру"
 	},
 	"bounty" : { 
@@ -93,8 +93,8 @@
 		"placeholder": "E-mail",
 		"placeholdertext": "",
 		"button": "Join To Bounty Program",
-		"closebtn": "Remind me later",
-		"redirect": "",
+		"closebtn": "f",
+		"redirect": "https://join.swap.online/",
 		"comment": ""
 	},
 	"rubounty" : { 
@@ -138,7 +138,7 @@
 		"placeholdertext": "Enter site URL and ERC20 address",
 		"button": "Next",
 		"closebtn": "No, thanks",
-		"redirect": "https://swap.online/",
+		"redirect": "https://swap.online/listing",
 		"comment": ""
 	}
 	
