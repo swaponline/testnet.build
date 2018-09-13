@@ -100,4 +100,14 @@
 </div>
  </body>
   
+  <script>
+    //промотокены
+  $.getJSON("/promos.json", function (data) {
+console.log(data)
+    $.each(data, function (key, val) {
+        $('table > tbody > tr').eq(2).after('<tr><td><div class="_3pg4lS"><div class="_1wYXYN" style="width: 40px;"><span role="letter" class="_1Nd751 _3WoNsh" style="line-height: 40px; font-size: 20px;">N</span></div><div class="_2U_lOU"><img src="https://swap.online/images/hide_81b0cc.svg"></div></div></td><td>'+key+'</td><td><i class="fas fa-sync-alt _2718ee"></i><span>0</span></td><td style="position: relative;"><i class="far fa-copy _2718ee"></i><a href="https://etherscan.io/token/0x9af4f26941677c706cfecf6d3379ff01bb85d5ab?a=0xC9FC225794876429ac3d826308B3D1BE21110143" target="_blank" class="_1bLBL3">0xC9FC225794876429ac3d826308B3D1BE21110143</a></td><td><div><button class="qq8rKP _2yf2Si"><i class="fas fa-arrow-alt-circle-up"></i><span>Send</span></button><button class="_2yf2Si"><i class="fas fa-exchange-alt"></i><a href="/promo-'+key+'">Swap</a></button></div></td></tr>');
+    });
+   
+})
+  </script>
 </html>
