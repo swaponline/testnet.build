@@ -1,4 +1,7 @@
-SHLIAPA: {
-      name: 'SHLIAPA'
-      
-    }
+{
+  "SHL": {
+    "Title": "ShiapaCoin",
+    "site": "https://ya.ru",
+    "icon": "G"
+  }
+}
