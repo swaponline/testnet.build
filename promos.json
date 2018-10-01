@@ -3,5 +3,10 @@
     "Title": "ShiapaCoin",
     "site": "https://ya.ru",
     "icon": "G"
+  },
+  "EMB": {
+    "Title": "Embers",
+    "site": "https://www.embermine.com/",
+    "icon": "https://etherscan.io/token/images/embers_28.png"
   }
 }
