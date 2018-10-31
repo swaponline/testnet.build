@@ -3,9 +3,9 @@
   "name": "swap.online",
   "description": "swap.online",
   "icons": {
-    "60": "http://localhost:9001/assets/firefox_app_60x60.png",
-    "128": "http://localhost:9001/assets/firefox_app_128x128.png",
-    "512": "http://localhost:9001/assets/firefox_app_512x512.png"
+    "60": "https://swap.online/assets/firefox_app_60x60.png",
+    "128": "https://swap.online/assets/firefox_app_128x128.png",
+    "512": "https://swap.online/assets/firefox_app_512x512.png"
   },
   "developer": {
     "name": "@nikdementev",
