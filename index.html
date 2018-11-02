@@ -27,13 +27,13 @@
 
 					<div class="modal-step active" id="modal-step-1">
 						<h2 class="swap-modal-title swap-modal-title-purple-span"><span>Congratulations!</span> Your online cryptocurrency wallets are almost ready</h2>
-						<p>Welcome to Swap.Online — free decentralized online cross-chain wallet based on Atomic Swaps technology (peer-to-peer exchange between two blockchains with no third parties).</p>
+						<p>Welcome to Swap.Online — free decentralized online cross-chain wallet based on Atomic Swaps technology (0 fees!).</p>
 						<div class="embed-responsive embed-responsive-16by9">
 							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Jhrb7xOT_7s?loop=0&showinfo=0&modestbranding=1&fs=0&iv_load_policy=3&wmode=transparent&rel=0" allowfullscreen></iframe>
 						</div>
 							
 						<div class="swap-modal-nav d-flex justify-content-end">
-							<a href="#modal-step-3" class="swap-btn-step">Create wallets <i class="fas fa-arrow-right"></i></a>
+							<a href="#modal-step-3" onclick="window.location.reload();" class="swap-btn-step">Create wallets <i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div><!-- .modal-step-1 -->
 					
@@ -42,9 +42,11 @@
 					<div class="modal-step" id="modal-step-3">
 						<h2 class="swap-modal-title swap-modal-title-purple-span">Your wallets was created</h2>
 						<p>
-						Do not forget to save your private keys
+						Do not forget to save your private keys. 
+							
 						</p>
 						<div class="swap-modal-nav d-flex justify-content-between">
+							<a href="#modal-step-1" class="swap-btn-step"><i class="fas fa-arrow-left"></i> What is Swap.Online?</a>
 							<a href="#" onclick="window.location.reload();" data-dismiss="modal" class="swap-btn-step">I'm ready to start <i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div><!-- .modal-step-3 -->
