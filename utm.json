@@ -1,7 +1,7 @@
 {
 	"default": {
-		"title": "<span>Congratulations!</span> Your online cryptocurrency wallets are almost ready",
-		"titleonexit": "<span>Congratulations!</span> Your online cryptocurrency wallets are almost ready exit",
+		"title": "Your online cryptocurrency wallets are almost ready",
+		"titleonexit": "Your online cryptocurrency wallets are almost ready exit",
 		"desc": "SWAP.ONLINE - cryptocurrency wallet with 0% exchange based on atomic swaps",
 		"placeholder": "E-mail",
 		"placeholdertext": "",
