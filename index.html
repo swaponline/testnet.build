@@ -30,21 +30,23 @@
 						</div>
 							
 						<div class="swap-modal-nav d-flex justify-content-center">
-							<a href="#modal-step-3" onclick="window.ga.getAll()[0].send({ hitType: 'event', eventCategory: 'onboarding', eventAction: 'passed' });window.location.reload();" class="swap-btn-step btn btn-lg btn-swap">Create wallets <i class="fas fa-arrow-right"></i></a>
+							<a href="#modal-step-3" onclick="window.ga.getAll()[0].send({ hitType: 'event', eventCategory: 'onboarding', eventAction: 'next' });" class="swap-btn-step btn btn-lg btn-swap">Create wallets <i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div><!-- .modal-step-1 -->
 					
 					
 					
 					<div class="modal-step" id="modal-step-3">
-						<h2 class="swap-modal-title swap-modal-title-purple-span">Your wallets was created</h2>
+						<h2 class="swap-modal-title swap-modal-title-purple-span">Ваши кошельки созданы!</h2>
 						<p>
-						Do not forget to save your private keys. 
-							
+						1. Ваш браузер будет хранить ваши приватные ключи, у нас нет доступа к ним. <br>
+						2. Вы можете закрывать браузер, ваши ключи не пропадут, даже после перезагрузки. <br>
+						3. Но на всякий мы просим сохранить файл с ключами. <br>
+						4. Закройте это окно, что бы увидеть ваши уникальные адреса для пополнения BTC, ETH и другим.<br>
 						</p>
 						<div class="swap-modal-nav d-flex justify-content-between">
 							<a href="#modal-step-1" class="swap-btn-step"><i class="fas fa-arrow-left"></i> What is Swap.Online?</a>
-							<a href="#" onclick="window.location.reload();" data-dismiss="modal" class="swap-btn-step">I'm ready to start <i class="fas fa-arrow-right"></i></a>
+							<a href="#" onclick="window.location.reload();" data-dismiss="modal" class="swap-btn-step">Start using swap.online <i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div><!-- .modal-step-3 -->
 
