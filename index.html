@@ -15,5 +15,129 @@
 <body>
   <div id="root"></div>
   <div id="portal"></div>
+  
+   <noindex>
+  <!-- Begin Modal -->
+	<div class="modal swap-modal swap-modal-full">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<div class="modal-step active" id="modal-step-1">
+						<h3 >Your cryptocurrency wallet is ready to use! Only one step left!</h3>
+						<p>Welcome to Swap.Online - decentralized cross-chain wallet with built-in Atomic Swap exchange</p>
+						
+						<li>Why should I use Swap.Online instead of other wallets?</li>
+						<li> We do not store your private keys. Everything is being kept in your browser. No server, no back-end, completely decentralized</li>
+						<li> You can close your browser, reboot your computer, but your funds will be safe in Swap.Online</li>
+						<li> You can store crypto of different blockcahins including Bitcoin, Ethereum, EOS, Bitcoin Cash, Litecoin and various tokens.</li>
+						<li> Peer-to-peer exchange available in our wallet. You can perfrom Atomic Swaps with any crypto listed in our wallet. </li>
+							
+						<div class="swap-modal-nav d-flex justify-content-center">
+							<a href="#" onclick="window.ga.getAll()[0].send({ hitType: 'event', eventCategory: 'onboarding', eventAction: 'proceed' });" data-dismiss="modal" class="swap-btn-step btn btn-lg btn-swap">Proceed to your wallet <i class="fas fa-arrow-right"></i></a>
+						</div>
+					</div><!-- .modal-step-1 -->
+					
+					
+					
+					<div class="modal-step" id="modal-step-3">
+						<h2 class="swap-modal-title swap-modal-title-purple-span">Ваши кошельки созданы!</h2>
+						<p>
+						Loading...
+						</p>
+						<div class="swap-modal-nav d-flex justify-content-between">
+							<a href="#modal-step-1" class="swap-btn-step"><i class="fas fa-arrow-left"></i> What is Swap.Online?</a>
+							<a href="#" onclick="window.location.reload();" data-dismiss="modal" class="swap-btn-step">Start using swap.online <i class="fas fa-arrow-right"></i></a>
+						</div>
+					</div><!-- .modal-step-3 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- End Modal -->
+  
+  
+  <!-- Modal airdrop -->
+  <div class="modal swap-modal modal-airdrop">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <h2 class="swap-modal-title swap-modal-title-purple-span"></h2>
+                              <p class="swap-modal-desc"></p>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="participate__form" id="step-1" >
+                                  <form action="" class="contact_form swap-modal-form">
+                                      <div class="form-group swap-form-group">
+                                          <input type="email" name="YOUR_CONTACT" onchange="var d_changed;if(!d_changed){window.dataLayer.push({'event' : 'contactform-start'});d_changed=1}" class="participate__input form-control form-control-lg swap-modal-placeholder swap-validate-email" placeholder="" required>
+                                          <input type="hidden" name="ethereum_wallet" value="" id="eth_wallet_input" class="participate__input">
+                                          <input type="hidden" name="swap_redirect" value="" class="swap-modal-redirect">
+                                          <input type="hidden" name="ref" class="swap-input-ref">
+                                          <input type="text" name="your-name" style="display:none;">
+                                      </div>
+                                      <div class="form-group text-mobile-center">
+                                   
+                                        <input type="submit" class="onesignal-customlink-container btn btn-lg btn-swap swap-modal-submit participate__submit form-submit btn-contact_form" value="">
+                                        <button type="button" class="btn btn-lg btn-link btn-link-swap" data-dismiss="modal">Remind me later</button>
+                                      </div>
+                                      <input type="hidden" value="" name="CAMPAIGN" />
+                                      <input type="hidden" value="" name="UTM_MEDIUM" />
+                                      <input type="hidden" value="" name="UTM_SOURCE" />
+                                      <input type="hidden" value="" name="UTM_TERM" />
+                                      <input type="hidden" value="" name="GAID" />
+                                      <input type="hidden" value="" name="CITY" />
+                                      <input type="hidden" value="" name="kid" />
+                                      <input type="hidden" value="" name="r" />
+                                  </form>
+                              </div>
+                              <div class="participate__form " style="display: none;" id="step-2"  >
+                                  <form action="" id="about_me" class="swap-modal-form">
+                                      <input type="hidden" value="" id="eth_wallet_hidden_input" name="hidden_ethereum_wallet" />
+                                      <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter email">
+                                          <input type="text" name="your-name" style="display:none;">
+                                          <input type="hidden" name="ref" class="swap-input-ref">
+                                      </div>
+                                      <div class="form-group">
+                                          <textarea name="info" required id="" class="form-control form-control-lg" cols="30" placeholder="" rows="7"></textarea>
+                                      </div>
+                                      <div class="form-group text-mobile-center">
+                                          <button type="submit"  class="btn form-submit btn-swap btn-lg btn-contact_form participate__submit">Send</button>
+                                          <button type="button" class="btn btn-lg btn-link btn-link-swap" data-dismiss="modal">Remind me later</button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- .row -->
+                  </div>
+                  <!-- .container -->
+<!-- hellonoxon -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="display: none;">
+      <form class="form1" action="">
+          <input type="hidden" class="form-email" value="" />
+      </form>
+</div>
+  <!-- End Modal airdrop -->
+  
+    <script src="//wiki.swap.online/assets/js/jquery.min.js"></script>
+  <script src="//wiki.swap.online/assets/js/bootstrap.min.js"></script>
+  <script src="//wiki.swap.online/assets/js/geoip2.js"></script>
+  <script src="//wiki.swap.online/assets/js/swap.js?ver=2.0.1"></script>
+  <script src="https://wiki.swap.online/assets/js/swap-modal-full.js?v=2.0.1"></script>
+  <script src="//wiki.swap.online/assets/js/validate.js?ver=2.0.1"></script>
+  <script src="//wiki.swap.online/assets/js/main.js?ver=2.0.1"></script>
+<script src="//wiki.swap.online/assets/js/modal-airdrop.js?ver=2.0.1"></script>
+ </noindex>
+  
 <script type="text/javascript" src="https://swap.online/vendor.8c9b3b.js"></script><script type="text/javascript" src="https://swap.online/app.8c9b3b.js"></script></body>
 </html>
