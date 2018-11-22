@@ -21742,6 +21742,18 @@ var PartialClosure = (_dec = (0, _redaction.connect)(function (_ref) {
               { styleName: 'button', brand: true, fullWidth: true, onClick: this.sendRequest, disabled: isNonOffers },
               'Start'
             )
+          ),_react2.default.createElement(
+            'div',
+            { styleName: 'block' },
+            _react2.default.createElement('iframe', {
+              title: 'swap online video',
+              width: '100%',
+              height: '1000px',
+              src: 'https://swap.wpmix.net',
+              frameBorder: '0',
+              allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture',
+              allowFullScreen: true
+            })
           )
         )
       );
