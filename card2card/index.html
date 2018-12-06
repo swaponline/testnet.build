@@ -1,1 +1,491 @@
-sub
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- # CSS # -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Полностью децентрализованный обменник криптовалюты.</title>
+    </head>
+    <body>
+
+        <!-- # ШАПКА # -->
+        <header style="display:none" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-6">
+                        <div class="header-row row flex-nowrap no-gutters align-items-center">
+                            <div class="logo">
+                                <a href="">
+                                    <img src="images/logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="menu hidden-sm hidden-xs" id="menu">
+                                <nav>
+                                    <ul class="list-unstyled flex-nowrap row no-gutters">
+                                        <li><a href="https://swap.online/" class="active">Wallet</a></li>  
+                                        <li><a href="https://testnet.swap.online/">Testnet</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                        <div class="header-row align-items-center justify-content-end row row-mgn-5 flex-nowrap">
+                            <div class="col-pdg-5 visible-sm visible-xs">
+                                <div class="menu-toggle">
+                                    <div class="one"></div>
+                                    <div class="two"></div>
+                                    <div class="three"></div>
+                                </div>
+                            </div>
+                            <div class="col-pdg-5 hidden-xs hidden-sm">
+                                <a href="" class="btn btn-sm btn-circle">SUBSCRIBE</a>
+                            </div>
+                            <div class="col-pdg-5">
+                                <a href="" class="questions control-btn row no-gutters align-items-center justify-content-center">
+                                    ?
+                                </a>
+                            </div>
+                            <div class="col-pdg-5">
+                                <a href="" class="notifications control-btn row no-gutters align-items-center justify-content-center">
+                                    <img src="images/notifications.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-pdg-5">
+                                <a href="" class="user-picture control-btn row no-gutters align-items-center justify-content-center">
+                                    <span>
+                                        <img src="images/user-picture.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- # Мобильная меню # -->
+            <div class="mobileBar visible-sm visible-xs">
+                <div class="mobileBar-menu">
+                    <nav>
+                        <ul class="list-unstyled">
+                            <li><a href="https://swap.online/" class="active">Wallet</a></li>
+                            <li><a href="https://swap.online/exchange">Exchange</a></li>
+                            <li><a href="https://swap.online/history">History</a></li>
+                            <li><a href="https://swap.online/affiliate">Affiliate</a></li>
+                            <li><a href="https://swap.online/listing">Listing</a></li>
+                            <li><a href="https://testnet.swap.online/">Testnet</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <a href="" class="btn btn-block btn-subscribe">SUBSCRIBE</a>
+            </div>
+        </header>
+
+        <!-- # КОНТЕНТ # -->
+        <main id="main">
+            <div class="container">
+                <section class="greeting" id="greeting">
+                    <div class="section-title txt-center">
+                        <h2>Полностью децентрализованный обменник криптовалюты.<p>Обмен без посредников.</p></h2>
+                        <div>
+                            <p class="atomicSwap">(технология atomic swap <span class="info info-blue" data-toggle="tooltip" data-placement="bottom" data-title="<div class='row no-gutters flex-nowrap'> <div class='icon'> <img src='images/tooltips/1.png' alt=''></div> <div class='txt'><p>Мы получаем определение атомарного свопа как серии операций над двумя блокчейнами, которые либо ведут к успешному обмену криптовалютами, либо они откатываются назад, и обмен не происходит. Ситуация, когда одна сторона получила криптовалюту, а другая нет, невозможна.</p></div> </div>">?</span> )</p>
+                        </div>
+                        <h4 class="marker"> На наш сервер не отправляются абсолютно никакие данные.</h4>
+                        <div class="section-txt">
+                            <p class="lend">
+                                Мы — группа энтузиастов, которая поддерживает идею абсолютной децентрализации. Мы разработали для обменник, который позволяет обмениваться криптовалютой (BTC - ETH, ERC20 - EOS и т.п.) путём P2P взаимодействия блокчейнов.
+                            </p>
+                        </div>
+                        <h4>UPD: Наша биржа реализовала первый в мире обмен USDT</h4>
+                    </div>
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="advantages">
+                                    <div class="advantages-title txt-center">
+                                        <h3>Чем мы отличаемся от бирж</h3>
+                                    </div>
+                                    <div class="advantages-content">
+                                        <div class="advantages-row row justify-content-center">
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="advantage txt-center">
+                                                    <div class="advantage-icon">
+                                                        <img src="images/advantages/1.png" alt="">
+                                                    </div>
+                                                    <div class="advantage-title">
+                                                        <h5>0% комиссия</h5>
+                                                    </div>
+                                                    <div class="advantage-txt">
+                                                        <p>
+                                                            Обмен происходит между Вами и другими холдерами (peer-2-peer). Процент с транзакции не взимается.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="advantage txt-center">
+                                                    <div class="advantage-icon">
+                                                        <img src="images/advantages/2.png" alt="">
+                                                    </div>
+                                                    <div class="advantage-title">
+                                                        <h5>Без KYC</h5>
+                                                    </div>
+                                                    <div class="advantage-txt">
+                                                        <p>
+                                                            Мы не требуем регистрации и подтверждения личности (да и вообще каких-либо данных).
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="advantage txt-center">
+                                                    <div class="advantage-icon">
+                                                        <img src="images/advantages/3.png" alt="">
+                                                    </div>
+                                                    <div class="advantage-title">
+                                                        <h5>Без 3-й стороны</h5>
+                                                    </div>
+                                                    <div class="advantage-txt">
+                                                        <p>
+                                                            В процесс обмена вообще никто не может вмешаться.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="advantages-row row justify-content-center">
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="advantage txt-center">
+                                                    <div class="advantage-icon">
+                                                        <img src="images/advantages/4.png" alt="">
+                                                    </div>
+                                                    <div class="advantage-title">
+                                                        <h5>Очень быстро</h5>
+                                                    </div>
+                                                    <div class="advantage-txt">
+                                                        <p>
+                                                            Вы можете совершить обмен прямо сейчас. Операция происходит напрямую, поэтому происходит в течении 2-х минут.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="advantage txt-center">
+                                                    <div class="advantage-icon">
+                                                        <img src="images/advantages/5.png" alt="">
+                                                    </div>
+                                                    <div class="advantage-title">
+                                                        <h5>Высокая безопасность</h5>
+                                                    </div>
+                                                    <div class="advantage-txt">
+                                                        <p>
+                                                            Мы не храним ваши деньги или ключи. Соответственно никто их не может украсть. Обмен происходит peer-2-peer напрямую.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="advantage txt-center">
+                                                    <div class="advantage-icon">
+                                                        <img src="images/advantages/6.png" alt="">
+                                                    </div>
+                                                    <div class="advantage-title">
+                                                        <h5>Истинная анонимность</h5>
+                                                    </div>
+                                                    <div class="advantage-txt">
+                                                        <p>
+                                                            Никаких данных заполнять не нужно, никакого трейсинга. Всё работает на предельной анонимности.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="calculate">
+                                    <div class="calculate-title txt-center">
+                                        <h4>Быстрый обмен</h4>
+                                    </div>
+                                    <div class="calculate-form">
+                                      <div class="form-group">
+                                            <label for="id1">Отдaаёте</label>
+                                            <div class="form-double row no-gutters">
+                                                <div class="col-6">
+                                                    <input type="text" class="form-control form-border first-input" id="id1">
+                                                </div>
+                                                <div class="col-6">
+                                                    <select class="giveAway last-input">
+                                                        <option value="0" data-imagesrc="images/icons/bitcoin.svg">VISA/MС</option>
+                                                        <option value="0" data-imagesrc="images/icons/eth.svg">QIWI</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-info"><small>min 100. руб</small></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="id2">Получаете</label>
+                                            <div class="form-double row no-gutters">
+                                                <div class="col-6">
+                                                    <input type="text" class="form-control form-border first-input" id="id2">
+                                                </div>
+                                                <div class="col-6">
+                                                    <select class="areGetting last-input">
+                                                        <option value="0" data-imagesrc="images/icons/bitcoin.svg">BTC</option>
+                                                        <option value="0" data-imagesrc="images/icons/eth.svg">ETH</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-bonus txt-right">
+                                                <p><strong>+ Бонус 3000 SWAP <span class="info info-green" data-toggle="tooltip" data-placement="bottom" data-title="<div class='row no-gutters flex-nowrap'> <div class='icon'> <img src='images/tooltips/2.png' alt=''></div> <div class='txt'><p>SWAP is ERC-20 token listed on Swap.Online and can be added to plenty of hot crypto wallets. The total SWAP supply is 21M with neither ICO nor mining procedures planned. We avoided the traditional hype-based model of initial coin offering. The value of the SWAP token will depend on its features and functionality.</p></div> </div>">?</span></strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="id3">Ваш bitcoin адрес (<A href="https://swap.online/" target="_blank">получить bitcoin address</a>)</label>
+                                            <div class="form-double row no-gutters">
+                                                <div class="col-2">
+                                                    <img style="margin-left:20px;margin:16px;margin-bottom:5px;filter: invert(1);" src="images/icons/bitcoin.svg">
+                                                </div>
+                                                <div class="col-10">
+                                                    <input type="text" class="form-control last-input" id="id3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-checkbox form-group">
+                                            <input type="checkbox" id="checkbox" class="checkbox-input">
+                                            <label for="checkbox" class="checkbox-label"><small>Я подтверждаю, что являюсь физическим лицом, резидентом РФ .</small></label>
+                                        </div>
+                                        <div class="form-btn">
+                                            <a href="" onclick="sendall()" class="btn btn-block btn-shadow"><strong>Обменять</strong></a> <br>
+											Обработка карт происходит через сервис https://www.net2pay.ru/
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+			
+                <div class="videoPreview txt-center">
+                    <div class="videoPreview-btn" id="videoPreview">
+                        <div class="videoPreview-heading">
+                            <h4>Как это работает?</h4>
+                        </div>
+                        <p>(смотреть видео)</p>
+                    </div>
+                </div>
+                <p><small>P2P + протокол atomic swap позволяет обмениваться криптовалютой абсолютно безопасно благодаря функции принудительного замораживания хеша (Алиса не может обмануть Боба, а Боб Алису).</small></p>
+            </div>
+        </main>
+
+        <!-- # ФУТЕР # -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-title">
+                                <h3>Company</h3>
+                            </div>
+                            <div class="footer-list">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="https://wiki.swap.online/careers-swap-online/" target="_blank" rel="noopener noreferrer">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://wiki.swap.online/about-swap-online/#b2b" target="_blank" rel="noopener noreferrer">Use swap.button</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://etherdelta.com/#0x14a52cf6b4f68431bd5d9524e4fcd6f41ce4ade9-ETH" target="_blank" rel="noopener noreferrer">Buy&amp;Sell Token</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://wiki.swap.online/about-swap-online/" target="_blank" rel="noopener noreferrer">About Us</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-title">
+                                <h3>Documentation</h3>
+                            </div>
+                            <div class="footer-list">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="https://wiki.swap.online/en.pdf" target="_blank" rel="noopener noreferrer">Concept (PDF)</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://docs.google.com/document/d/1XNLzmNXkFeJWveJp62vFPQdjH8xabpeSm6ifbgj4MeM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Technical Description</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.reuters.com/brandfeatures/venture-capital/article?id=37488" target="_blank" rel="noopener noreferrer">Details of Our DEX</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://docs.google.com/spreadsheets/d/1qWFLK2y8oMH5Gfam-iwqXPzLtwNabzp_EL6QFxjSBc0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">DEX Trend Research</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-title">
+                                <h3>Resources</h3>
+                            </div>
+                            <div class="footer-list">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="https://wiki.swap.online" target="_blank" rel="noopener noreferrer">Wiki</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://bitcointalk.org/index.php?topic=1938621.0" target="_blank" rel="noopener noreferrer">Send Bitcoin Transacton</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/swaponline/swap.core" target="_blank" rel="noopener noreferrer">github/swap.core</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/swaponline/swap.button" target="_blank" rel="noopener noreferrer">github/swap.button </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-title">
+                                <h3>Legal</h3>
+                            </div>
+                            <div class="footer-list">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="https://drive.google.com/file/d/0Bz2ZwZCmFtj_Nm9qSm0tUm9Ia1kwVGhWRlVlVXRJTGZtYW5N/view?usp=sharing" target="_blank" rel="noopener noreferrer">Terms</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/file/d/1LdsCOfX_pOJAMqlL4g6DfUpZrGF5eRe9/view?usp=sharing" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://wiki.swap.online/contacts-swap-online/" target="_blank" rel="noopener noreferrer">Contacts</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.google.com/file/d/0Bz2ZwZCmFtj_WlNkY0ZYN0ZpNUo2VFVEeW9rWEVoTlNja0VZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Legal Opinion</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-social txt-center">
+                    <nav>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://medium.com/swaponline" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/SwapOnlineTeam" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/pg/Swaponline-637233326642691" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/swaponline" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://bitcointalk.org/index.php?topic=4636633.0" target="_blank"><i class="fa fa-btc" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- # Video # -->
+        <div id="player">
+            <div class="player row no-gutters align-items-center justify-content-center">
+                <div class="player-content col">
+                    <div class="player-close" id="player-close">&#215;</div>
+                    <iframe src="https://www.youtube.com/embed/1G-U5Sh7pQk?rel=0&amp;showinfo=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom-select.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter51447395 = new Ya.Metrika2({
+                    id:51447395,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+
+	<script>
+				
+				function sendall() {
+					yaCounter48876458.reachGoal('BuyAmount',goalParams =
+					{
+					   order_price:$("#id1").val(),
+					   currency: "RUB"
+					},function(){
+					  // window.location="http://net2pay.o.atwinta.ru/sender?hash=7820fd9605a133f389bd5ddccd9c0ddaa254829c&validyty=3&amount="+order_price;
+						
+					});
+					
+					window.location="http://net2pay.o.atwinta.ru/sender?hash=7820fd9605a133f389bd5ddccd9c0ddaa254829c&validyty=3&amount="+order_price;
+						
+				}
+				let price;
+				$.getJSON("https://noxon.io/cursAll.php",function(d){
+					 price = d[0].price_usd*66;
+				});
+				
+				$("#id1").on("keyup",function(){
+					$("#id2").val(Math.round($("#id1").val()/price*100000)/100000);
+					
+				})
+				
+				
+				
+				</script>
+				
+<noscript><div><img src="https://mc.yandex.ru/watch/50727511" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+	<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?159",t.onload=function(){VK.Retargeting.Init("VK-RTRG-293569-2YEJy"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-293569-2YEJy" style="position:fixed; left:-999px;" alt=""/></noscript>
+
+</html>
