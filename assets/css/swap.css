@@ -1,1 +1,61 @@
+/**
+ * Alert
+ * =========================================== */
+.swap-alert {
+	margin-bottom: 0;
+	background-color: #0099ff;
+	color: #fff;
+	border: 0;
+	border-radius: 0;
+	z-index: 1001;
+	position: relative;
+	display: none;
+	padding: 10px 15px;
+	text-align: center;
+}
+.swap-alert .btn {
+	margin-left: 15px;
+}
+.swap-alert .close {
+	top: 50%;
+	right: 20px;
+	display: block;
+	line-height: 1;
+	margin-top: -12px;
+	color: #333;
+	opacity: 1;
+	text-shadow: none;
+}
+.swap-alert .close:hover {
+	color: #000;
+}
+.swap-alert .close .span {
+	display: block;
+	line-height: 1;
+}
+@media (max-width: 991px) {
+	.swap-alert .btn {
+		padding: 0 5px;
+	}
+}
+@media (min-width: 768px) {
+	.swap-alert {
+		display: block;
+	}
+}
 
+/**
+ * Custom Temp Style
+ * =========================================== */
+._30-6Oj {
+	white-space: nowrap;
+}
+.qZaPkJ {
+	position: relative;
+}
+._3gjuKq main {
+	margin-top: initial;
+}
+._2X4LM9 {
+	margin-top: initial;
+}
