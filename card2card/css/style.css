@@ -164,10 +164,14 @@ ul.list-inline li{
 	-moz-border-radius: 6px;
 }
 .form-group-exchange {
-	text-aling: right;
+	text-align: right;
+	position: relative;
+	top: -13px;
+	padding-right: 8px;
 }
 .form-group-exchange > .fa {
 	transform: rotate(90deg);
+	font-size: 22px;
 }
 .form-control{
 	width: 100%;
@@ -690,7 +694,7 @@ input[type="radio"]{
 	}
 
 	.calculate{
-		margin-top: 35px;
+		margin-bottom: 35px;
 		height: inherit;
 	}
 
