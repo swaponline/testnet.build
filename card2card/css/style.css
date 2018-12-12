@@ -159,14 +159,23 @@ ul.list-inline li{
 .btn-exchange-reverse {
 	display: inline-block;
 	padding: 0 7px;
-	font-size: 22px;
-	color: #000;
+	font-size: 15px;
+	color: #7371ff;
 }
 .btn-exchange-reverse:hover {
-	color: #e72bb3;
+	color: #e91db4;
+	text-decoration: none;
+}
+.btn-exchange-reverse > span {
+	transform: rotate(90deg);
+	display: inline-block;
+	vertical-align: middle;
 }
 .btn-exchange-reverse > .fa {
 	transform: rotate(90deg);
+	font-size: 22px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 /* # Формы # */
