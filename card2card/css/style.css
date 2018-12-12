@@ -167,7 +167,6 @@ ul.list-inline li{
 	text-decoration: none;
 }
 .btn-exchange-reverse > span {
-	transform: rotate(90deg);
 	display: inline-block;
 	vertical-align: middle;
 }
