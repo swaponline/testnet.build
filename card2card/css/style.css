@@ -156,22 +156,24 @@ ul.list-inline li{
 	text-align: center;
 	padding: 0px;
 }
+.btn-exchange-reverse {
+	display: inline-block;
+	padding: 0 7px;
+	font-size: 22px;
+	color: #000;
+}
+.btn-exchange-reverse:hover {
+	color: #e72bb3;
+}
+.btn-exchange-reverse > .fa {
+	transform: rotate(90deg);
+}
 
 /* # Формы # */
 .form-group{
 	margin-bottom: 30px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
-}
-.form-group-exchange {
-	text-align: right;
-	position: relative;
-	top: -13px;
-	padding-right: 8px;
-}
-.form-group-exchange > .fa {
-	transform: rotate(90deg);
-	font-size: 22px;
 }
 .form-control{
 	width: 100%;
@@ -219,7 +221,6 @@ ul.list-inline li{
 	-moz-border-radius: 0px 3px 3px 0;
 	border-radius: 0px 3px 3px 0;
 }
-
 
 /*select*/
 .dd-container,.dd-select{
@@ -792,4 +793,12 @@ input[type="radio"]{
 	.player-content{
 		height: 250px;
 	}
+}
+
+/* Custom */
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+.text-right {
+	text-align: right;
 }
