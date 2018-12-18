@@ -107,13 +107,14 @@
 	justify-content: center;
 }
 .starter-modal-left > .starter-modal-logo {
-	margin-right: 15px;
+	height: 64px;
+	width: auto;
 }
 .starter-modal-left > h2 {
 	margin-bottom: 0;
 	color: #fff;
 	max-width: 500px;
-	margin: 15px 15px 30px;
+	margin: 15px 15px 45px;
 	text-align: center;
 }
 .btn-swap {
@@ -133,7 +134,7 @@
 }
 .number-one-icon {
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 .number-one-item {
 	text-align: center;
