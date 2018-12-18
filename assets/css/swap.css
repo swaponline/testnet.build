@@ -61,8 +61,6 @@
 	visibility: hidden;
 	transition: all .3s;
 }
-.starter-modal-container {
-}
 .starter-modal.show {
 	opacity: 1;
 	visibility: visible;
@@ -93,31 +91,16 @@
 .starter-modal.loading .fa-spinner {
 	display: block;
 }
-.starter-modal-left {
-	background-color: #510ed8;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.starter-modal-right {
-	background-color: #fff;
-	width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.starter-modal-left > .starter-modal-logo {
+.starter-modal .starter-modal-logo {
 	height: 64px;
 	width: auto;
+	display: 
 }
-.starter-modal-left > h2 {
-	margin-bottom: 0;
+.starter-modal h2 {
 	color: #fff;
-	max-width: 500px;
-	margin: 15px 15px 45px;
-	text-align: center;
+	margin-bottom: 45px;
+    	max-width: 560px;
+    	text-align: center;
 }
 .btn-swap {
 	background-color: #e91db4;
@@ -140,8 +123,6 @@
 }
 .number-one-item {
 	text-align: center;
-	color: #fff;
-	padding: 0 15px !important;
 	margin-bottom: 30px;
 }
 .number-one-icon img {
