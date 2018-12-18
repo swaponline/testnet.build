@@ -77,6 +77,7 @@ var swapGetHourSec  = 60 * 60,
 var swapDisalbeStarter = getCookie('swapDisalbeStarter');
 if( swapDisalbeStarter != 'true' ){
 	document.getElementById('starter-modal').classList.remove('d-none');
+	document.body.classList.add('overflow-hidden);
 }
 document.getElementById('swap-create-wallet').addEventListener('click', function(e){
 	e.preventDefault();
@@ -84,12 +85,14 @@ document.getElementById('swap-create-wallet').addEventListener('click', function
 	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
 	setTimeout( function() {
 		document.getElementById('starter-modal').classList.add('d-none');
+		document.body.classList.remove('overflow-hidden);
 	}, 3000 );
 });
 document.getElementById('swap-has-wallet').addEventListener('click', function(e){
 	e.preventDefault();
 	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
 	document.getElementById('starter-modal').classList.add('d-none');
+	document.body.classList.remove('overflow-hidden);
 });
 
 /**
