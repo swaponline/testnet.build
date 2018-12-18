@@ -61,6 +61,8 @@
 	visibility: hidden;
 	transition: all .3s;
 }
+.starter-modal-container {
+}
 .starter-modal.show {
 	opacity: 1;
 	visibility: visible;
@@ -147,6 +149,16 @@
 	height: 80px;
 	width: auto;
 	margin: 0 auto;
+}
+.number-one-title {
+	display: block;
+	max-width: 280px;
+	margin: 0 auto;
+}
+@media (max-width:991px) {
+	.number-one-icon img {
+		height: 60px;
+	}
 }
 @media (max-width: 767px) {
 	.starter-modal-left,
