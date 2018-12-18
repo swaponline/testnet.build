@@ -87,6 +87,14 @@ document.getElementById('swap-create-wallet').addEventListener('click', function
 		document.getElementById('starter-modal').classList.add('d-none');
 		document.body.classList.remove('overflow-hidden');
 	}, 3000 );
+	if (typeof ga != undefined){
+		ga('send', {
+			hitType: 'event',
+			eventCategory: 'Splash',
+			eventAction: 'CreateWallet',
+			eventLabel: 'CreateWallet'
+		});
+	}
 });
 document.getElementById('swap-has-wallet').addEventListener('click', function(e){
 	e.preventDefault();
