@@ -102,7 +102,7 @@
 									<div class="calculate-form">
 										<div class="form-group mb-0">
 											<label for="id1">Отдаёте</label>
-											<div class="form-double row no-gutters">
+											<div onclick="ym(51622001, 'reachGoal', 'ideslect'); alert(1);" class="form-double row no-gutters">
 												<div class="col-6">
 													<input type="text" class="form-control form-border first-input" id="id1">
 												</div>
@@ -140,7 +140,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="id3">Ваш bitcoin адрес (<A href="https://swap.online/" target="_blank">получить bitcoin address</a>)</label>
+											<label for="id3">Ваш bitcoin адрес (<A href="https://swap.online/" target="_blank" onclick="ym(51622001, 'reachGoal', 'idadress'); return true;" >получить bitcoin address</a>)</label>
 											<div class="form-double row no-gutters">
 												<div class="col-2">
 													<img style="margin-left:20px;margin:16px;margin-bottom:5px;filter: invert(1);" src="images/icons/bitcoin.svg">
@@ -456,14 +456,7 @@
 	<script>
 				
 				function sendall() {
-					yaCounter51447395.reachGoal('BuyAmount',goalParams =
-					{
-					   order_price:$("#id1").val(),
-					   currency: "RUB"
-					},function(){
-					  // window.location="http://net2pay.o.atwinta.ru/sender?hash=7820fd9605a133f389bd5ddccd9c0ddaa254829c&validyty=3&amount="+order_price;
-						
-					});
+					ym(51622001, 'reachGoal', 'idobmet'); 
 					
 					window.location="https://listing.swap.online/formdata3.php?amount="+$("#id1").val();
 						
