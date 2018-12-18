@@ -54,7 +54,7 @@
 	right: 0;
 	bottom: 0;
 	background-color: #fff;
-	z-index: 1002;
+	z-index: 10002;
 	display: flex;
 	flex-wrap: wrap;
 	opacity: 0;
