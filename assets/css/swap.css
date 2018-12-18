@@ -156,6 +156,9 @@
 /**
  * Custom Temp Style
  * =========================================== */
+.overflow-hidden {
+	overflow: hidden !important;
+}
 ._30-6Oj {
 	white-space: nowrap;
 }
