@@ -153,6 +153,9 @@
 		left: 0;
 		text-align: center;
 	}
+	.starter-modal h2 {
+		font-size: 24px;
+	}
 }
 
 /**
