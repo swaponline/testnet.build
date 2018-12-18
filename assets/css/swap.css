@@ -113,7 +113,8 @@
 	margin-bottom: 0;
 	color: #fff;
 	max-width: 500px;
-	margin: 15px;
+	margin: 15px 15px 30px;
+	text-align: center;
 }
 .btn-swap {
 	background-color: #e91db4;
@@ -133,6 +134,12 @@
 .number-one-icon {
 	display: block;
 	margin-bottom: 15px;
+}
+.number-one-item {
+	text-align: center;
+	color: #fff;
+	padding: 0 15px !important;
+	margin-bottom: 30px;
 }
 .number-one-icon img {
 	display: block;
