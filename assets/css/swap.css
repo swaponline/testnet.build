@@ -95,6 +95,7 @@
 	background-color: #510ed8;
 	width: 50%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -111,6 +112,8 @@
 .starter-modal-left > h2 {
 	margin-bottom: 0;
 	color: #fff;
+	max-width: 500px;
+	margin: 15px;
 }
 .btn-swap {
 	background-color: #e91db4;
@@ -122,10 +125,28 @@
 	background-color: #510ed8;
 	color: #fff;
 }
+#swap-has-wallet {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.number-one-icon {
+	display: block;
+	margin-bottom: 15px;
+}
+.number-one-icon img {
+	display: block;
+	height: 80px;
+	width: auto;
+	margin: 0 auto;
+}
 @media (max-width: 767px) {
 	.starter-modal-left,
 	.starter-modal-right {
 		width: 100%;
+	}
+	#swap-has-wallet {
+		color: #fff;
 	}
 }
 
