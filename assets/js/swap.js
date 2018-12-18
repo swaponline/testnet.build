@@ -70,18 +70,6 @@ var swapGetHourSec  = 60 * 60,
 	swapGetWeekSec  = swapGetDaySec * 7,
 	swapGetMonthSec = swapGetDaySec * 30,
 	swapGetYearSec  = swapGetMonthSec * 12;
-	
-/**
- * Swap Alert
- */
-var swapDisalbeAlert = getCookie('swapDisalbeAlert');
-if( swapDisalbeAlert != 'true' ){
-	document.getElementById('swap-alert').classList.add('d-md-block');
-}
-document.getElementById('swap-alert-close').addEventListener('click', function(){
-	document.getElementById('swap-alert').classList.remove('d-md-block');
-	setCookie('swapDisalbeAlert', 'true', { expires: swapGetYearSec } );
-});
 
 /**
  * Swap Modal
@@ -102,4 +90,16 @@ document.getElementById('swap-has-wallet').addEventListener('click', function(e)
 	e.preventDefault();
 	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
 	document.getElementById('starter-modal').classList.add('d-none');
+});
+
+/**
+ * Swap Alert
+ */
+var swapDisalbeAlert = getCookie('swapDisalbeAlert');
+if( swapDisalbeAlert != 'true' ){
+	document.getElementById('swap-alert').classList.add('d-md-block');
+}
+document.getElementById('swap-alert-close').addEventListener('click', function(){
+	document.getElementById('swap-alert').classList.remove('d-md-block');
+	setCookie('swapDisalbeAlert', 'true', { expires: swapGetYearSec } );
 });
