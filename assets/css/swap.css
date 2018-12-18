@@ -140,26 +140,18 @@
 .starter-modal-row {
 	margin-bottom: 30px;
 }
-@media (max-width:991px) {
-	.number-one-icon img {
-		height: 60px;
-	}
-}
 @media (max-width: 767px) {
-	.starter-modal-left,
-	.starter-modal-right {
-		width: 100%;
-	}
-	#swap-has-wallet {
-		color: #fff;
-	}
 	.starter-modal-container {
 		display: block;
-		padding-top: 25px;
+		padding-top: 35px;
 		padding-bottom: 25px;
 	}
 	.starter-modal > .container {
 		height: auto;
+	}
+	#swap-has-wallet {
+		left: 0;
+		text-align: center;
 	}
 }
 
