@@ -56,6 +56,7 @@
 	background-color: #fff;
 	z-index: 1002;
 	display: flex;
+	flex-wrap: wrap;
 	opacity: 0;
 	visibility: hidden;
 	transition: all .3s;
@@ -121,7 +122,12 @@
 	background-color: #510ed8;
 	color: #fff;
 }
-
+@media (max-width: 767px) {
+	.starter-modal-left,
+	.starter-modal-right {
+		width: 100%;
+	}
+}
 
 /**
  * Custom Temp Style
