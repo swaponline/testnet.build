@@ -84,7 +84,8 @@
 	display: none;
 }
 .starter-modal > .container {
-	min-height: 100%;
+	min-height: 550px;
+	height: 100%;
 }
 .starter-modal.loading .fa-spinner {
 	display: block;
@@ -92,7 +93,8 @@
 .starter-modal .starter-modal-logo {
 	height: 64px;
 	width: auto;
-	display: 
+	display: block;
+	margin: 0 auto 20px;
 }
 .starter-modal h2 {
 	margin-bottom: 45px;
@@ -150,6 +152,14 @@
 	}
 	#swap-has-wallet {
 		color: #fff;
+	}
+	.starter-modal-container {
+		display: block;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.starter-modal > .container {
+		height: auto;
 	}
 }
 
