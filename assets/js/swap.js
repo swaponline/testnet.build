@@ -92,7 +92,7 @@ document.getElementById('swap-has-wallet').addEventListener('click', function(e)
 	e.preventDefault();
 	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
 	document.getElementById('starter-modal').classList.add('d-none');
-	document.body.classList.remove('overflow-hidden);
+	document.body.classList.remove('overflow-hidden');
 });
 
 /**
