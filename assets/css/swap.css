@@ -136,6 +136,9 @@
 	max-width: 280px;
 	margin: 0 auto;
 }
+.starter-modal-row {
+	margin-bottom: 30px;
+}
 @media (max-width:991px) {
 	.number-one-icon img {
 		height: 60px;
