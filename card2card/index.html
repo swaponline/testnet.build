@@ -485,7 +485,7 @@
 				
 				$("#id1").on("keyup",function(){
 					$("#id2").val(Math.round($("#id1").val()/price*100000)/100000);
-					
+					if ($(".dd-selected-text").html()=="BTC") $("#id2").val($("#id1").val()*price);
 				})
 				
 				
