@@ -86,9 +86,14 @@ document.getElementById('swap-alert-close').addEventListener('click', function()
 /**
  * Swap Modal
  */
+var swapDisalbeStarter = getCookie('swapDisalbeStarter');
+if( swapDisalbeStarter != 'true' ){
+	document.getElementById('starter-modal').classList.add('show');
+}
 document.getElementById('swap-create-wallet').addEventListener('click', function(e){
 	e.preventDefault();
 	document.getElementById('starter-modal').classList.add('loading');
+	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
 	setTimeout( function() {
 		document.getElementById('starter-modal').classList.remove('show');
 	}, 3000 );
