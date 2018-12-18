@@ -54,6 +54,8 @@
 	right: 0;
 	bottom: 0;
 	background-color: #fff;
+	height: 100%;
+	overflow: auto;
 	z-index: 999999999999999999;
 }
 .starter-modal.loading:before {
@@ -81,6 +83,9 @@
 	margin-top: 30px;
 	display: none;
 }
+.starter-modal > .container {
+	min-height: 100%;
+}
 .starter-modal.loading .fa-spinner {
 	display: block;
 }
@@ -93,6 +98,8 @@
 	margin-bottom: 45px;
     	max-width: 560px;
     	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 .btn-swap {
 	background-color: #e91db4;
