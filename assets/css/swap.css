@@ -96,10 +96,11 @@
 	height: 64px;
 	width: auto;
 	display: block;
-	margin: 0 auto 30px;
+	margin: 15px auto;
 }
 .starter-modal h2 {
-	margin-bottom: 70px;
+	margin: 0;
+	padding: 15px 0;
     	max-width: 560px;
     	text-align: center;
 	margin-left: auto;
@@ -140,7 +141,7 @@
 	margin: 0 auto;
 }
 .starter-modal-row {
-	margin-bottom: 10px;
+	padding: 15px 0 10pxp;
 }
 @media (max-width: 767px) {
 	.starter-modal-container {
