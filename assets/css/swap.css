@@ -55,7 +55,7 @@
 	bottom: 0;
 	background-color: #fff;
 	height: 100%;
-	padding: 50px 0;
+	padding: 70px 0;
 	overflow: auto;
 	z-index: 999999999999999999;
 }
@@ -96,10 +96,10 @@
 	height: 64px;
 	width: auto;
 	display: block;
-	margin: 0 auto 50px;
+	margin: 0 auto 70px;
 }
 .starter-modal h2 {
-	margin-bottom: 50px;
+	margin-bottom: 70px;
     	max-width: 560px;
     	text-align: center;
 	margin-left: auto;
@@ -140,7 +140,7 @@
 	margin: 0 auto;
 }
 .starter-modal-row {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 @media (max-width: 767px) {
 	.starter-modal-container {
