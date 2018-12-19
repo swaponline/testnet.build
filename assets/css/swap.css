@@ -86,6 +86,7 @@
 .starter-modal > .container {
 	min-height: 550px;
 	height: 100%;
+	max-width: 960px;
 }
 .starter-modal.loading .fa-spinner {
 	display: block;
@@ -94,10 +95,10 @@
 	height: 64px;
 	width: auto;
 	display: block;
-	margin: 0 auto 20px;
+	margin: 0 auto 50px;
 }
 .starter-modal h2 {
-	margin-bottom: 45px;
+	margin-bottom: 50px;
     	max-width: 560px;
     	text-align: center;
 	margin-left: auto;
@@ -138,7 +139,7 @@
 	margin: 0 auto;
 }
 .starter-modal-row {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 @media (max-width: 767px) {
 	.starter-modal-container {
