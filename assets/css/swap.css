@@ -55,6 +55,7 @@
 	bottom: 0;
 	background-color: #fff;
 	height: 100%;
+	padding: 50px 0;
 	overflow: auto;
 	z-index: 999999999999999999;
 }
