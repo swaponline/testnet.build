@@ -145,9 +145,8 @@
 }
 @media (max-width: 767px) {
 	.starter-modal-container {
-		display: block !important;
-		padding-top: 50px;
-		padding-bottom: 25px;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	.starter-modal > .container {
 		height: auto;
