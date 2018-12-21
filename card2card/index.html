@@ -102,7 +102,7 @@
 									<div class="calculate-form">
 										<div class="form-group mb-0">
 											<label for="id1">Отдаёте</label>
-											<div onclick="ym(51622001, 'reachGoal', 'ideslect'); alert(1);" class="form-double row no-gutters">
+											<div onclick="ym(51622001, 'reachGoal', 'ideslect');" class="form-double row no-gutters">
 												<div class="col-6">
 													<input type="text" class="form-control form-border first-input" id="id1">
 												</div>
@@ -467,8 +467,8 @@
 				});
 				
 				$("#id1").on("keyup",function(){
-					$("#id2").val(Math.round($("#id1").val()/price*100000)/100000);
-					if ($(".dd-selected-text").html()=="BTC") $("#id2").val($("#id1").val()*price);
+					$("#id2").val(Math.round($("#id1").val()/price*100000)/100000*1.05);
+					if ($(".dd-selected-text").html()=="BTC") $("#id2").val($("#id1").val()*price*0.95);
 				})
 				
 				
