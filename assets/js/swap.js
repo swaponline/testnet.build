@@ -115,3 +115,10 @@ document.getElementById('swap-alert-close').addEventListener('click', function()
 	setCookie('swapDisalbeAlert', 'true', { expires: swapGetYearSec } );
 });
 
+console.log(localStorage.getItem('mainnet:telos:activationFlag'));
+
+window.addEventListener('storage', function(e) {  
+  console.log('storage changed');
+  console.log(localStorage.getItem('mainnet:telos:activationFlag'));
+});
+
