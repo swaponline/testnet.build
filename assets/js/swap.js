@@ -114,11 +114,3 @@ document.getElementById('swap-alert-close').addEventListener('click', function()
 	document.getElementById('swap-alert').classList.remove('d-md-block');
 	setCookie('swapDisalbeAlert', 'true', { expires: swapGetYearSec } );
 });
-
-console.log(localStorage.getItem('mainnet:telos:activationFlag'));
-
-window.addEventListener('storage', function(e) {  
-  console.log('storage changed');
-  console.log(localStorage.getItem('mainnet:telos:activationFlag'));
-});
-
