@@ -456,8 +456,9 @@
 	<script>
 				
 				function sendall() {
-					ym(51622001, 'reachGoal', 'idobmet'); 
 					
+					if (!$("#id3").val()) { alert("Заполните все поля"); return false; }
+					ym(51622001, 'reachGoal', 'idobmet'); 
 					window.location="https://noxon.io/net2pay/invoice.php?sell="+$(".dd-selected-text").html()+"&amount1="+$("#id1").val()+"&amount2="+$("#id2").val()+"&destbtc="+$("#id3").val();
 						
 				}
@@ -467,8 +468,8 @@
 				});
 				
 				$("#id1").on("keyup",function(){
-					$("#id2").val(Math.round($("#id1").val()/price*100000)/100000*1.05);
-					if ($(".dd-selected-text").html()=="BTC") $("#id2").val($("#id1").val()*price*0.95);
+					$("#id2").val(Math.round($("#id1").val()/price*100000)/100000*0.97);
+					if ($(".dd-selected-text").html()=="BTC") $("#id2").val($("#id1").val()*price*0.97);
 				})
 				
 				
