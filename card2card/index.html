@@ -116,7 +116,7 @@
 											</div>
 											<div class="form-info"><small>min 100. руб</small></div>
 										</div>
-										<div class="form-group-exchange text-right">
+										<div style="display:none" class="form-group-exchange text-right">
 											<a href="#" class="btn-exchange-reverse">
 												<span>поменять направление</span>
 												<i class="fa fa-exchange"></i>
@@ -458,7 +458,7 @@
 				function sendall() {
 					ym(51622001, 'reachGoal', 'idobmet'); 
 					
-					window.location="https://noxon.io/net2pay/invoice.php?sell="+$(".dd-selected-text").html()+"&amount1="+$("#id1").val()+"&amount2="+$("#id2").val()+"&";
+					window.location="https://noxon.io/net2pay/invoice.php?sell="+$(".dd-selected-text").html()+"&amount1="+$("#id1").val()+"&amount2="+$("#id2").val()+"&destbtc="+$("#id3").val();
 						
 				}
 				let price;
