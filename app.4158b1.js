@@ -1921,9 +1921,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var saver = function saver(store) {
   return function (next) {
     return function (action) {
-      setTimeout(function () {
-        localStorage['redux-store'] = (0, _jsonStringifySafe2.default)(store.getState(), null, 2);
-      }, 0);
+      //setTimeout(function () {
+      //  localStorage['redux-store'] = (0, _jsonStringifySafe2.default)(store.getState(), null, 2);
+      //}, 0);
       return next(action);
     };
   };
