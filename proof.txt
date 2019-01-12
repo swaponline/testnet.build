@@ -1,5 +1,7 @@
-telegram: ildario_n - our marketer; 
-telegram: sashanoxon - ceo
+telegram: sashanoxon - ceo, co-founder
 telegram: caffeinum - cto
-0x873351e707257C28eC6fAB1ADbc850480f6e0633 - our Ethereum hot wallet
+telegram: Vladiuz - co-founder, investor
+
+Ethereum hot wallet: 0xe81e4C10aF27C7631Ea28499a77Bd68387de9926
+
 
