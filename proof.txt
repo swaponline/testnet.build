@@ -1,7 +1,9 @@
-telegram: sashanoxon - ceo, co-founder
-telegram: caffeinum - cto
-telegram: Vladiuz - co-founder, investor
+https://t.me/sashanoxon - CEO, co-founder
+https://t.me/caffeinum - CTO
+https://t.me/Vladiuz - co-founder, investor
+https://t.me/swaponline - community chat
 
 Ethereum hot wallet: 0xe81e4C10aF27C7631Ea28499a77Bd68387de9926
+Bitcoin: 1DVC5SrPjXkkcCUbBwQcTsrBprXJEpEneG
 
 
