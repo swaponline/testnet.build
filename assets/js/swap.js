@@ -138,15 +138,15 @@ var swap_l10n = {
 			"ru": "У меня уже есть кошелек",
 		},
 		"desc" : {
-			"1" : {
+			"one" : {
 				"en": "Multiple blockchains - multiple opportunities for profit",
 				"ru": "Поддерживает множество блокчейнов",
 			},
-			"2" : {
+			"two" : {
 				"en": "Instant exchange:<br> no confirmation required",
 				"ru": "Быстрый обмен между разными валютами",
 			},
-			"3" : {
+			"three" : {
 				"en": "No middlemen, direct<br> wallet-to-wallet exchange",
 				"ru": "Без посредника, обмен происходит между пользователями",
 			},
@@ -158,5 +158,11 @@ var swap_l10n = {
 	},
 };
 console.log(swap_l10n);
-document.getElementById('swap-alert-title').innerHTML(swap_l10n.extAlert.title.ru);
-document.getElementById('swap-alert-btn').innerHTML(swap_l10n.extAlert.btn.ru);
+document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.title.ru;
+document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn.ru;
+document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title.ru;
+document.getElementById('start-modal-linktext').innerHTML = swap_l10n.startModal.linktext.ru;
+document.getElementById('start-modal-btn').innerHTML = swap_l10n.startModal.btn.ru;
+document.getElementById('start-modal-desc-1').innerHTML = swap_l10n.startModal.desc.one.ru;
+document.getElementById('start-modal-desc-2').innerHTML = swap_l10n.startModal.desc.two.ru;
+document.getElementById('start-modal-desc-3').innerHTML = swap_l10n.startModal.desc.three.ru;
