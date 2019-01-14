@@ -116,16 +116,47 @@ document.getElementById('swap-alert-close').addEventListener('click', function()
 });
 
 /**
- * Dinamic language content
+ * Multilinguage Content
  */
 var swap_l10n = {
-	"extensionAlert": {
-		"en": "Add Swap.Online extension to your Chrome browser for better security<br class=\"d-lg-none\"> and to unlock premium features",
-		"ru": "Добавьте Swap.Online как расширение для хрома для большей безопасности",
+	"extAlert": { 
+		"msg": {
+			"en": "Add Swap.Online extension to your Chrome browser for better security<br class=\"d-lg-none\"> and to unlock premium features",
+			"ru": "Добавьте Swap.Online как расширение для хрома для большей безопасности",
+		},
+		"btn" : {
+			"en": "Add to chrome",
+			"ru": "Добавить в Chrome",
+		},
+	},
+	"startModal": {
+		"title" : {
+			"en": "Multiple blockchains - multiple opportunities for profit",
+			"ru": "Криптовалютный кошелек с встроенным обменником",
+		"linktext" : {
+			"en": "I already have a wallet on swap online",
+			"ru": "У меня уже есть кошелек",
+		},
+		"desc" : {
+			"1" : {
+				"en": "Multiple blockchains - multiple opportunities for profit",
+				"ru": "Поддерживает множество блокчейнов",
+			},
+			"2" : {
+				"en": "Instant exchange:<br> no confirmation required",
+				"ru": "Быстрый обмен между разными валютами",
+			},
+			"3" : {
+				"en": "No middlemen, direct<br> wallet-to-wallet exchange",
+				"ru": "Без посредника, обмен происходит между пользователями",
+			},
+		},
+		"btn" : {
+			"en": "Create new wallet",
+			"ru": "Создать новый кошелек",
+		},
 	},
 };
 console.log(swap_l10n);
-console.log(swap_l10n.extensionAlert);
-console.log(swap_l10n.extensionAlert.ru);
-//document.getElementById('swap-alert')
-
+document.getElementById('swap-alert-title').innerHTML(swap_l10n.extAlert.title.ru);
+document.getElementById('swap-alert-btn').innerHTML(swap_l10n.extAlert.btn.ru);
