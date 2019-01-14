@@ -158,9 +158,12 @@ var swap_l10n = {
 		},
 	},
 };
-
-var lang = en;
-var linkLang = window.location.pathname;
+/*
+var lang = 'en';
+var linkLang = window.location.pathname.split('/')[1];
+if (linkLang = 'ru'){
+	lang = 'ru';
+}
 console.log(swap_l10n);
 document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.title.ru;
 document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn.ru;
@@ -170,3 +173,4 @@ document.getElementById('swap-create-wallet').innerHTML = swap_l10n.startModal.b
 document.getElementById('start-modal-desc-1').innerHTML = swap_l10n.startModal.desc.one.ru;
 document.getElementById('start-modal-desc-2').innerHTML = swap_l10n.startModal.desc.two.ru;
 document.getElementById('start-modal-desc-3').innerHTML = swap_l10n.startModal.desc.three.ru;
+*/
