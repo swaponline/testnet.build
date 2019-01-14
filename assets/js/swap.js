@@ -170,5 +170,5 @@ document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.ti
 document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
 document.getElementById('swap-create-wallet').innerHTML = swap_l10n.startModal.btn[lang];
 document.getElementById('start-modal-desc-1').innerHTML = swap_l10n.startModal.desc.one[lang];
-document.getElementById('start-modal-desc-2').innerHTML = swap_l10n.startModal.desc.two.[lang];
+document.getElementById('start-modal-desc-2').innerHTML = swap_l10n.startModal.desc.two[lang];
 document.getElementById('start-modal-desc-3').innerHTML = swap_l10n.startModal.desc.three[lang];
