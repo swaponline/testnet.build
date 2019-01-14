@@ -1,4 +1,11 @@
 /**
+ * Common
+ * =========================================== */
+body {
+	font-family: CerebriSans, Arial, Verdana, Tahoma;
+}
+
+/**
  * Alert
  * =========================================== */
 .swap-alert {
