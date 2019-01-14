@@ -114,3 +114,18 @@ document.getElementById('swap-alert-close').addEventListener('click', function()
 	document.getElementById('swap-alert').classList.remove('d-md-block');
 	setCookie('swapDisalbeAlert', 'true', { expires: swapGetYearSec } );
 });
+
+/**
+ * Dinamic language content
+ */
+var swap_l10n = {
+	"extensionAlert": {
+		"en": "Add Swap.Online extension to your Chrome browser for better security<br class=\"d-lg-none\"> and to unlock premium features",
+		"ru": "Добавьте Swap.Online как расширение для хрома для большей безопасности",
+	},
+};
+console.log(swap_l10n);
+console.log(swap_l10n.extensionAlert);
+console.log(swap_l10n.extensionAlert.ru);
+//document.getElementById('swap-alert')
+
