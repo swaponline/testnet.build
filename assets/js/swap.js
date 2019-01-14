@@ -116,7 +116,7 @@ document.getElementById('swap-alert-close').addEventListener('click', function()
 });
 
 /**
- * Multilinguage Content
+ * Multilanguage Content
  */
 var swap_l10n = {
 	"extAlert": { 
@@ -164,7 +164,7 @@ if ( linkLang == 'ru' ){
 	lang = 'ru';
 }
 console.log(swap_l10n);
-document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.title[lang];
+document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[lang];
 document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lang];
 document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
 document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
