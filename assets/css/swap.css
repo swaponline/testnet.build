@@ -186,4 +186,9 @@ body {
 ._2X4LM9 {
 	margin-top: initial;
 }
-
+@media (min-width: 569px) and (max-width: 1024px)  {
+	._1gAj6A,
+	._1GNbQs{
+		margin-top: 0;
+	}
+}
