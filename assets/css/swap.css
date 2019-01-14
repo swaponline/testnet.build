@@ -45,7 +45,7 @@ body {
 		padding: 0 5px;
 	}
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.swap-alert {
 		display: block;
 	}
