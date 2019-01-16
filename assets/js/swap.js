@@ -115,23 +115,6 @@ document.getElementById('swap-alert-close').addEventListener('click', function()
 	setCookie('swapDisalbeAlert', 'true', { expires: swapGetYearSec } );
 });
 
-
-/**
- * Multilanguage
- */
-var swapNewVisitor = getCookie('swapNewVisitor');
-if( swapNewVisitor != 'true' ){
-	var swapVisitorLang = navigator.language;
-	swapVisitorLang = swapVisitorLang.substring(0, 2);
-	if ( swapVisitorLang == 'ru' ) {
-		isVistorLangRu = confirm('Переключится на русский язык?');
-		if( isVistorLangRu === true ) {
-			window.location.replace(/ru/);
-		}
-	}
-	setCookie('swapNewVisitor', 'true', { expires: swapGetYearSec } );
-}
-
 /**
  * Multilanguage Content
  */
@@ -179,8 +162,21 @@ var lang = 'en';
 var linkLang = window.location.pathname.split('/')[1];
 if ( linkLang == 'ru' ){
 	lang = 'ru';
+} else {
+	// confirm new ru visitor
+	var swapNewVisitor = getCookie('swapNewVisitor');
+	if( swapNewVisitor != 'true' ){
+		var swapVisitorLang = navigator.language;
+		swapVisitorLang = swapVisitorLang.substring(0, 2);
+		if ( swapVisitorLang == 'ru' ) {
+			isVistorLangRu = confirm('Переключится на русский язык?');
+			if( isVistorLangRu === true ) {
+				window.location.replace(/ru/);
+			}
+		}
+		setCookie('swapNewVisitor', 'true', { expires: swapGetYearSec } );
+	}
 }
-console.log(swap_l10n);
 document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[lang];
 document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lang];
 document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
