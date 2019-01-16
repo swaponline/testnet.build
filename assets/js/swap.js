@@ -115,6 +115,23 @@ document.getElementById('swap-alert-close').addEventListener('click', function()
 	setCookie('swapDisalbeAlert', 'true', { expires: swapGetYearSec } );
 });
 
+
+/**
+ * Multilanguage
+ */
+var swapNewVisitor = getCookie('swapNewVisitor');
+if( swapNewVisitor != 'true' ){
+	var swapVisitorLang = navigator.language;
+	swapVisitorLang = swapVisitorLang.substring(0, 2);
+	if ( swapVisitorLang == 'ru' ) {
+		isVistorLangRu = confirm('Переключится на русский язык?');
+		if( isVistorLangRu === true ) {
+			window.location.replace(/ru/);
+		}
+	}
+	setCookie('swapNewVisitor', 'true', { expires: swapGetYearSec } );
+}
+
 /**
  * Multilanguage Content
  */
