@@ -173,7 +173,7 @@ if ( linkLang == 'ru' ){
 		var swapVisitorLang = navigator.language;
 		swapVisitorLang = swapVisitorLang.substring(0, 2);
 		if ( swapVisitorLang == 'ru' ) {
-			isVistorLangRu = confirm('Переключится на русский язык?');
+			isVistorLangRu = confirm('Переключиться на русский язык?');
 			if( isVistorLangRu === true ) {
 				window.location.replace('https://swap.online/ru');
 			}
