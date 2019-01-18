@@ -168,19 +168,24 @@ if ( linkLang == 'ru' ){
 		setCookie('swapNewVisitor', 'true', { expires: swapGetYearSec } );
 	}
 } else {
-	// confirm new ru visitor
-	if( swapNewVisitor != 'true' ){
-		var swapVisitorLang = navigator.language;
-		swapVisitorLang = swapVisitorLang.substring(0, 2);
-		if ( swapVisitorLang == 'ru' ) {
-			isVistorLangRu = confirm('Переключится на русский язык?');
-			if( isVistorLangRu === true ) {
-				window.location.replace('https://swap.online/ru');
+	if ( Boolean( linkLang ) == false ) {
+		// confirm new ru visitor
+		if( swapNewVisitor != 'true' ){
+			var swapVisitorLang = navigator.language;
+			swapVisitorLang = swapVisitorLang.substring(0, 2);
+			if ( swapVisitorLang == 'ru' ) {
+				window.onload = function() {
+					isVistorLangRu = confirm('Переключится на русский язык?');
+					if( isVistorLangRu === true ) {
+						window.location.replace('https://swap.online/ru');
+					}
+				};
 			}
+			setCookie('swapNewVisitor', 'true', { expires: swapGetYearSec } );
 		}
-		setCookie('swapNewVisitor', 'true', { expires: swapGetYearSec } );
 	}
 }
+
 document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[lang];
 document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lang];
 document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
