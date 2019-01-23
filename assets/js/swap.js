@@ -100,10 +100,7 @@ document.getElementById('swap-has-wallet').addEventListener('click', function(e)
 	e.preventDefault();
 	thisHref = this.href;
 	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
-	//window.location.replace( thisHref );
 	window.location = thisHref;
-	//window.location.href = thisHref;
-	//location.reload();
 	//document.getElementById('starter-modal').classList.add('d-none');
 	//document.body.classList.remove('overflow-hidden');
 });
@@ -195,7 +192,7 @@ document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[l
 document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lang];
 document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
 document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
-document.getElementById('swap-has-wallet').href = 'https://swap.online/' + lang + '#importKeys';
+document.getElementById('swap-has-wallet').href = 'https://swap.online/' + lang + '/#importKeys';
 document.getElementById('swap-create-wallet').innerHTML = swap_l10n.startModal.btn[lang];
 document.getElementById('start-modal-desc-one').innerHTML = swap_l10n.startModal.desc.one[lang];
 document.getElementById('start-modal-desc-two').innerHTML = swap_l10n.startModal.desc.two[lang];
