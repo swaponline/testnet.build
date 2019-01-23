@@ -30,8 +30,66 @@
 
 
 <link rel="apple-touch-icon" sizes="114x114" href="https://swap.online/assets/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="https://swap.online/assets/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="https://swap.online/assets/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="https://swap.online/assets/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="https://swap.online/assets/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="57x57" href="https://swap.online/assets/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="https://swap.online/assets/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="https://swap.online/assets/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="https://swap.online/assets/apple-touch-icon-76x76.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="https://swap.online/assets/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="https://swap.online/assets/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="https://swap.online/assets/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="https://swap.online/assets/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="https://swap.online/assets/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="https://swap.online/assets/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="https://swap.online/assets/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="https://swap.online/assets/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="https://swap.online/assets/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="https://swap.online/assets/apple-touch-startup-image-1536x2008.png"><link rel="icon" type="image/png" sizes="16x16" href="https://swap.online/assets/favicon-16x16.png"><link rel="icon" type="image/png" sizes="228x228" href="https://swap.online/assets/coast-228x228.png"><link rel="icon" type="image/png" sizes="32x32" href="https://swap.online/assets/favicon-32x32.png"><link rel="manifest" href="https://swap.online/assets/manifest.json"><link rel="shortcut icon" href="https://swap.online/assets/favicon.ico"><link rel="yandex-tableau-widget" href="https://swap.online/assets/yandex-browser-manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="swap.online"><meta name="application-name" content="swap.online"><meta name="mobile-web-app-capable" content="yes"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="https://swap.online/assets/mstile-144x144.png"><meta name="msapplication-config" content="https://swap.online/assets/browserconfig.xml"><meta name="theme-color" content="#fff"><link href="https://swap.online/app.3df9ae.css" rel="stylesheet"></head>
+<link rel="stylesheet" href="https://swap.online/assets/css/swap.css?v=1.0.4">
+<!-- ноды стеллара и лайткоина не пашут, временно скрываем -->
+<style>
+._3pPNJw:nth-child(5),._3pPNJw:nth-child(6) {
+    display: none;
+}
+</style>
 <body>
+
+  <div class="starter-modal d-none" id="starter-modal">
+  <div class="container">
+    <div class="starter-modal-container d-flex flex-column h-100 justify-content-around">
+      <img src="assets/images/swap-logo.svg" alt="" class="starter-modal-logo">
+      <h2 id="start-modal-title">Online cryptocurrency wallet with cross-chain exchange</h2>
+      <div class="row starter-modal-row order-4 order-md-2">
+        <div class="col-md-4">
+          <div class="number-one-item">
+            <span class="number-one-icon">
+              <img src="assets/images/number-one-icon-1.svg?v=2" alt="">
+            </span>
+            <span class="number-one-title" id="start-modal-desc-one">Multiple blockchains - multiple opportunities for profit</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="number-one-item">
+            <span class="number-one-icon">
+              <img src="assets/images/number-one-icon-2.svg?v=2" alt="">
+            </span>
+            <span class="number-one-title" id="start-modal-desc-two">Instant exchange:<br> no confirmation required</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="number-one-item">
+            <span class="number-one-icon">
+              <img src="assets/images/number-one-icon-3.svg?v=2" alt="">
+            </span>
+            <span class="number-one-title" id="start-modal-desc-three">No middlemen, direct<br> wallet-to-wallet exchange</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mb-4 mt-4 mt-md-0 order-2 order-md-3">
+        <a href="#" class="btn btn-swap btn-lg" id="swap-create-wallet">Create new wallet</a>
+      </div>
+      <a href="#" class="btn btn-link order-3 mb-4" id="swap-has-wallet">I already have a wallet on swap online</a>
+    </div>
+  </div>
+  <i class="fas fa-spinner fa-pulse"></i>
+</div>
+
+<div class="alert swap-alert d-none position-relative" id="swap-alert">
+  <div class="container text-center"><span id="swap-alert-title">Add Swap.Online extension to your Chrome browser for better security<br class="d-lg-none"> and to unlock premium features</span>
+    <a class="btn btn-light" id="swap-alert-btn" target="_blank" href="https://chrome.google.com/webstore/detail/swaponline/oldojieloelkkfeacfinhcngmbkepnlm">Add to chrome</a>
+  </div>
+  <button type="button" class="close position-absolute" id="swap-alert-close">
+    <span aria-hidden="true">×</span>
+  </button>
+</div>
+
   <div id="root"></div>
   <div id="portal"></div>
+  <script src="https://swap.online/assets/js/swap.js?ver=1.0.4"></script>
 <script type="text/javascript" src="https://swap.online/vendor.3df9ae.js"></script><script type="text/javascript" src="https://swap.online/app.3df9ae.js"></script></body>
 </html>
