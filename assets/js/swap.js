@@ -101,6 +101,7 @@ document.getElementById('swap-has-wallet').addEventListener('click', function(e)
 	thisHref = this.href;
 	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
 	window.location.replace( thisHref );
+	window.location.href = thisHref;
 	console.log(thisHref);
 	//document.getElementById('starter-modal').classList.add('d-none');
 	//document.body.classList.remove('overflow-hidden');
