@@ -44,7 +44,7 @@
 <link rel="stylesheet" href="https://swap.online/assets/css/swap.css?v=1.0.6">
 <body>
 
-  <div class="starter-modal d-none" id="starter-modal">
+  <div class="starter-modal d-none" style="display:none" id="starter-modal">
   <div class="container">
     <div class="starter-modal-container d-flex flex-column h-100 justify-content-around">
       <img src="assets/images/swap-logo.svg" alt="" class="starter-modal-logo">
@@ -84,6 +84,10 @@
   <i class="fas fa-spinner fa-pulse"></i>
 </div>
 
+<style>
+if (window.location.pathname="/") document.querySelector("#starter-modal").style.display = "block";
+</style> 
+  
 <div class="alert swap-alert d-none position-relative" id="swap-alert">
   <div class="container text-center"><span id="swap-alert-title">Add Swap.Online extension to your Chrome browser for better security<br class="d-lg-none"> and to unlock premium features</span>
     <a class="btn btn-light" id="swap-alert-btn" target="_blank" href="https://chrome.google.com/webstore/detail/swaponline/oldojieloelkkfeacfinhcngmbkepnlm">Add to chrome</a>
@@ -93,6 +97,7 @@
   </button>
 </div>
 
+  
 
   <div id="root">
   <!-- Loader before any JS -->
@@ -118,5 +123,9 @@
   <div id="portal"></div>
 
     <script src="https://swap.online/assets/js/swap.js?ver=1.0.6"></script>
-<script type="text/javascript" src="https://swap.online/vendor.7bfa29.js"></script><script type="text/javascript" src="https://swap.online/app.7bfa29.js"></script></body>
+<script type="text/javascript" src="https://swap.online/vendor.7bfa29.js"></script><script type="text/javascript" src="https://swap.online/app.7bfa29.js"></script>
+  
+
+  
+  </body>
 </html>
