@@ -164,6 +164,7 @@ var swap_l10n = {
 var swapNewVisitor = getCookie('swapNewVisitor');
 var lang = 'en';
 var linkLang = window.location.pathname.split('/')[1];
+var langKeyHref = '';
 if ( linkLang == 'ru' ){
 	lang = 'ru';
 	if( swapNewVisitor != 'true' ){
@@ -177,10 +178,10 @@ if ( linkLang == 'ru' ){
 			swapVisitorLang = swapVisitorLang.substring(0, 2);
 			if ( swapVisitorLang == 'ru' ) {
 				window.onload = function() {
-					isVistorLangRu = confirm('Переключится на русский язык?');
-					if( isVistorLangRu === true ) {
+					//isVistorLangRu = confirm('Переключится на русский язык?');
+					//if( isVistorLangRu === true ) {
 						window.location.replace('https://swap.online/ru');
-					}
+					//}
 				};
 			}
 			setCookie('swapNewVisitor', 'true', { expires: swapGetYearSec } );
@@ -188,11 +189,17 @@ if ( linkLang == 'ru' ){
 	}
 }
 
+if ( lang == 'ru') {
+	langKeyHref = 'https://swap.online/ru#importKeys';
+} else {
+	langKeyHref = 'https://swap.online/#importKeys';
+}
+
 document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[lang];
 document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lang];
 document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
 document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
-document.getElementById('swap-has-wallet').href = 'https://swap.online/' + lang + '/#importKeys';
+document.getElementById('swap-has-wallet').href = langKeyHref;
 document.getElementById('swap-create-wallet').innerHTML = swap_l10n.startModal.btn[lang];
 document.getElementById('start-modal-desc-one').innerHTML = swap_l10n.startModal.desc.one[lang];
 document.getElementById('start-modal-desc-two').innerHTML = swap_l10n.startModal.desc.two[lang];
