@@ -101,8 +101,8 @@ document.getElementById('swap-has-wallet').addEventListener('click', function(e)
 	thisHref = this.href;
 	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
 	window.location = thisHref;
-	//document.getElementById('starter-modal').classList.add('d-none');
-	//document.body.classList.remove('overflow-hidden');
+	document.getElementById('starter-modal').classList.add('d-none');
+	document.body.classList.remove('overflow-hidden');
 });
 
 /**
