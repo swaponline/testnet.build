@@ -76,7 +76,7 @@ var swapGetHourSec  = 60 * 60,
  */
 var swapDisalbeStarter = getCookie('swapDisalbeStarter');
 
-if (window.location.pathname != "/" && window.location.pathname != "/ru/") swapDisalbeStarter = true;
+if (window.location.pathname != "/" && window.location.pathname != "/ru/") swapDisalbeStarter = "true";
     
 if( swapDisalbeStarter != 'true' ){
 	document.getElementById('starter-modal').classList.remove('d-none');
