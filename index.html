@@ -77,9 +77,11 @@
            </div>
          </div>
          <div class="text-center mb-4 mt-4 mt-md-0 order-2 order-md-3">
-           <a href="#" class="btn btn-swap btn-lg" onclick="ym(51622001, 'reachGoal', 'reg');ga('send', 'event', 'reg', 'clickReg', 'Create wallet')" id="swap-create-wallet">Create new wallet</a>
+          <a href="#" class="btn btn-swap btn-lg" id="swap-exchange-crypto" onclick="window.gtag('event', 'start-on-exchange')">Exchange crypto</a>
+           <span class="pl-3 pr-3 btns-separator" id="btns-separator">OR</span>
+           <a href="#" class="btn btn-swap btn-lg" onclick="window.gtag('event', 'start-on-new-wallet')" id="swap-create-wallet">Create new wallet</a>
          </div>
-         <a href="#" class="btn btn-link order-3 mb-4" id="swap-has-wallet">I already have a wallet on swap online</a>
+         <a href="#" class="btn btn-link order-3 mb-4" id="swap-has-wallet" onclick="window.gtag('event', 'start-on-imported-wallet')">I already have a wallet on swap online</a>
        </div>
       </div>
       <i class="fas fa-spinner fa-pulse"></i>
