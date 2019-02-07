@@ -75,6 +75,9 @@ var swapGetHourSec  = 60 * 60,
  * Swap Modal
  */
 var swapDisalbeStarter = getCookie('swapDisalbeStarter');
+
+if (window.location.pathname != "/" && window.location.pathname != "/ru/") swapDisalbeStarter = true;
+    
 if( swapDisalbeStarter != 'true' ){
 	document.getElementById('starter-modal').classList.remove('d-none');
 	document.body.classList.add('overflow-hidden');
