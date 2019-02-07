@@ -162,8 +162,8 @@ var swap_l10n = {
 			"ru": "Создать новый кошелек",
 		},
 		"btnExchange" : {
-			"en": "Create new wallet",
-			"ru": "Создать новый кошелек",
+			"en": "Exchange crypto",
+			"ru": "Обмен крипто",
 		},
 		"btnsSeparator" : {
 			"en": "OR",
