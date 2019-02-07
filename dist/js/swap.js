@@ -77,7 +77,7 @@ var swapGetHourSec  = 60 * 60,
 var swapDisalbeStarter = getCookie('swapDisalbeStarter');
 
 if (window.location.pathname != "/" && window.location.pathname != "/ru/") swapDisalbeStarter = "true";
-    
+
 if( swapDisalbeStarter != 'true' ){
 	document.getElementById('starter-modal').classList.remove('d-none');
 	document.body.classList.add('overflow-hidden');
@@ -187,14 +187,14 @@ if ( linkLang == 'ru' ){
 		if( swapNewVisitor != 'true' ){
 			var swapVisitorLang = navigator.language;
 			swapVisitorLang = swapVisitorLang.substring(0, 2);
-			if ( swapVisitorLang == 'ru' ) {
+			/*if ( swapVisitorLang == 'ru' ) {
 				window.onload = function() {
 					//isVistorLangRu = confirm('Переключится на русский язык?');
 					//if( isVistorLangRu === true ) {
 						window.location.replace('https://swap.online/ru');
 					//}
 				};
-			}
+			}*/
 			setCookie('swapNewVisitor', 'true', { expires: swapGetYearSec } );
 		}
 	}
