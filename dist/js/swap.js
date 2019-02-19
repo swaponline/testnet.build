@@ -229,6 +229,6 @@ document.getElementById('start-modal-desc-three').innerHTML = swap_l10n.startMod
 // Show if is chrome
 var is_chrome = window.chrome;
 if ( is_chrome ) {
-	document.getElementById('btns-separator').classList.add('d-lg-inline');
-	document.getElementById('swap-download-app').classList.add('d-lg-inline');
+	document.getElementById('btns-separator').classList.add('d-lg-inline-block');
+	document.getElementById('swap-download-app').classList.add('d-lg-inline-block');
 }
