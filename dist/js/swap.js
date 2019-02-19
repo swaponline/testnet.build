@@ -166,8 +166,8 @@ var swap_l10n = {
 			"ru": "Обменник",
 		},
 		"btnDownApp" : {
-			"en": "Download extension",
-			"ru": "Скачать екстеншин",
+			"en": "Add to Chrome",
+			"ru": "Добавить в Chrome",
 		},
 		"btnsSeparator" : {
 			"en": "OR",
@@ -225,3 +225,10 @@ document.getElementById('btns-separator').innerHTML = swap_l10n.startModal.btnsS
 document.getElementById('start-modal-desc-one').innerHTML = swap_l10n.startModal.desc.one[lang];
 document.getElementById('start-modal-desc-two').innerHTML = swap_l10n.startModal.desc.two[lang];
 document.getElementById('start-modal-desc-three').innerHTML = swap_l10n.startModal.desc.three[lang];
+
+// Show if is chrome
+var is_chrome = window.chrome;
+if ( is_chrome ) {
+	document.getElementById('btns-separator').classList.add('d-lg-inline');
+	document.getElementById('swap-download-app').classList.add('d-lg-inline');
+}
