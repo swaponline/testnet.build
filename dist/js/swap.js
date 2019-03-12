@@ -218,18 +218,17 @@ document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.ti
 document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
 document.getElementById('swap-has-wallet').href = langKeyHref;
 document.getElementById('swap-create-wallet').innerHTML = swap_l10n.startModal.btn[lang];
-//document.getElementById('swap-exchange-crypto').innerHTML = swap_l10n.startModal.btnExchange[lang];
-//document.getElementById('swap-exchange-crypto').href = langExchangeHref;
-document.getElementById('swap-download-app').innerHTML = swap_l10n.startModal.btnDownApp[lang];
+document.getElementById('swap-exchange-crypto').innerHTML = swap_l10n.startModal.btnExchange[lang];
+document.getElementById('swap-exchange-crypto').href = langExchangeHref;
+//document.getElementById('swap-download-app').innerHTML = swap_l10n.startModal.btnDownApp[lang];
 document.getElementById('btns-separator').innerHTML = swap_l10n.startModal.btnsSeparator[lang];
 document.getElementById('start-modal-desc-one').innerHTML = swap_l10n.startModal.desc.one[lang];
 document.getElementById('start-modal-desc-two').innerHTML = swap_l10n.startModal.desc.two[lang];
 document.getElementById('start-modal-desc-three').innerHTML = swap_l10n.startModal.desc.three[lang];
 
 // Show if is chrome
-var is_chrome = window.chrome;
+/*var is_chrome = window.chrome;
 if ( is_chrome ) {
 	document.getElementById('btns-separator').classList.add('d-lg-inline-block');
 	document.getElementById('swap-download-app').classList.add('d-lg-inline-block');
-
-}
+}*/
