@@ -219,8 +219,8 @@ if ( lang == 'ru') {
 document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[lang];
 document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lang];
 document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
-document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
-document.getElementById('swap-has-wallet').href = langKeyHref;
+//document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
+//document.getElementById('swap-has-wallet').href = langKeyHref;
 document.getElementById('swap-create-wallet').innerHTML = swap_l10n.startModal.btn[lang];
 document.getElementById('swap-exchange-crypto').innerHTML = swap_l10n.startModal.btnExchange[lang];
 document.getElementById('swap-exchange-crypto').href = langExchangeHref;
