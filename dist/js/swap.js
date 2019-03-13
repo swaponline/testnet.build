@@ -99,14 +99,14 @@ document.getElementById('swap-create-wallet').addEventListener('click', function
 		});
 	}
 });
-document.getElementById('swap-has-wallet').addEventListener('click', function(e){
+/*document.getElementById('swap-has-wallet').addEventListener('click', function(e){
 	e.preventDefault();
 	thisHref = this.href;
 	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
 	window.location = thisHref;
 	document.getElementById('starter-modal').classList.add('d-none');
 	document.body.classList.remove('overflow-hidden');
-});
+});*/
 
 /**
  * Swap Alert
@@ -210,10 +210,10 @@ if ( linkLang == 'ru' ){
 
 if ( lang == 'ru') {
 	langKeyHref = 'https://swap.online/ru#importKeys';
-	langExchangeHref = 'https://swap.online/ru/exchange';
+	langExchangeHref = 'https://swap.online/ru/exchange/btc-to-swap';
 } else {
 	langKeyHref = 'https://swap.online/#importKeys';
-	langExchangeHref = 'https://swap.online/exchange';
+	langExchangeHref = 'https://swap.online/exchange/btc-to-swap';
 }
 
 document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[lang];
