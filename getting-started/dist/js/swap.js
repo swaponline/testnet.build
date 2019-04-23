@@ -283,6 +283,18 @@ function wpautop(pee, br) {
 		});
 	};
 
-	$('.scroll-to-slide').smoothScroll();
+	$('.scroll-to').smoothScroll();
+
+	/* Disable on click event */
+	$('.disabled-click').on('click', function (e) {
+		e.preventDefault();
+	});
+
+	/* Add cookie date utc */
+	$('.swap-subscribe-cookie').on('click', function(e){
+		e.preventDefault();
+		var userUtcDate = new Date().toISOString();
+		setCookie('getstarted', userUtcDate, { expires: swapGetYearSec } );
+	});
 
 })( jQuery );
