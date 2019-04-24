@@ -291,8 +291,7 @@ function wpautop(pee, br) {
 	});
 
 	/* Add cookie date utc */
-	$('.swap-subscribe-cookie').on('click', function(e){
-		e.preventDefault();
+	$('.swap-subscribe-cookie').on('click', function(){
 		var userUtcDate = new Date().toISOString();
 		setCookie('getstarted', userUtcDate, { expires: swapGetYearSec } );
 	});
