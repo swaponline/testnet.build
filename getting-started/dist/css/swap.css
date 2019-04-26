@@ -280,6 +280,9 @@ a:hover {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.nav-open-menu {
+		display: none;
+	}
 }
 @media (max-width: 991px) {
 	.navbar {
@@ -354,8 +357,9 @@ a:hover {
 /* How It Work */
 .howitwork {
 	background-color: #F3F3FF;
-	padding-top: 130px;
-	padding-bottom: 80px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	min-height: 600px;
 }
 .howitwork h6 {
 	font-family: Inter;
@@ -398,6 +402,7 @@ a:hover {
 }
 .howitwork-images {
 	position: relative;
+	margin: 0 auto;
 }
 .howitwork-images:after {
 	content: '';
@@ -423,6 +428,9 @@ a:hover {
 	transition: all .3s;
 	opacity: .7;
 }
+.howitwork-image-link > img {
+	max-height: 70%;
+}
 .howitwork-image-link:hover > img,
 .howitwork-image-link.active > img {
 	box-shadow: 0 3px 30px rgba(119, 119, 255,.5);
@@ -437,20 +445,22 @@ a:hover {
 }
 .howitwork-image-link:nth-child(1) {
 	top: 23%;
-	right: 15%;
-	width: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 60%;
 	z-index: 3;
 }
 .howitwork-image-link:nth-child(2) {
 	top: 0;
 	left: 0;
-	width: 60%;
+	max-width: 60%;
+	max-height: 80%;
 	z-index: 2;
 }
 .howitwork-image-link:nth-child(3) {
 	top: 13%;
 	right: 0;
-	width: 90%;
+	max-width: 90%;
 	z-index: 1;
 }
 .howitwork-image-link.active {
@@ -459,37 +469,34 @@ a:hover {
 .howitwork-images .howitwork-image-link:hover {
 	z-index: 5;
 }
-
-
-
-
-.howitwork-carousel .carousel-item {
-	height: 450px;
-	padding: 20px;
+.howitwork-action {
+	text-align: center;
+	padding-top: 0;
 }
-.howitwork-carousel .carousel-item img {
-	max-height: 100%;
-	position: relative;
-	top: 0;
-	transition: all .5s;
+@media (max-height: 700px) and (min-width: 992px) {
+	.howitwork {
+		margin-top: -60px;
+	}
 }
-.howitwork-carousel .carousel-control-next,
-.howitwork-carousel .carousel-control-prev {
-	color: #7777FF;
-	font-size: 30px;
-	opacity: .3;
+@media (max-height: 800px) and (min-width: 992px) {
+	.howitwork {
+		margin-top: -30px;
+	}
 }
-.howitwork-carousel:hover .carousel-control-next,
-.howitwork-carousel:hover .carousel-control-prev {
-	opacity: .6;
-}
-.howitwork-carousel .carousel-control-next:hover,
-.howitwork-carousel .carousel-control-prev:hover {
-	opacity: 1;
-}
-.howitwork-carousel .carousel-item .scroll-to:hover img {
-	top: -5px;
-	box-shadow: 0 3px 10px rgba(119, 119, 255,.2)!important;
+@media (max-height: 700px) {
+	.howitwork-images {
+		max-width: 70%;
+	}
+	.howitwork-images:after {
+		padding-top: 80%;
+	}
+	.howitwork h2 {
+		font-size: 26px;
+		margin-bottom: 30px;
+	}
+	.howitwork-action {
+		padding-top: 15px;
+	}
 }
 @media (min-width: 1270px) {
 	.carousel-control-next {
@@ -500,10 +507,6 @@ a:hover {
 	}
 }
 @media (max-width: 767px) {
-	.howitwork {
-		padding-top: 60px;
-		padding-bottom: 30;
-	}
 	.howitwork h2 {
 		font-size: 26px;
 	}
@@ -896,6 +899,9 @@ a:hover {
 }
 
 /* Faq */
+.swap-faq {
+	position: relative;
+}
 .faq {
 	padding-top: 70px;
 	padding-bottom: 55px;
