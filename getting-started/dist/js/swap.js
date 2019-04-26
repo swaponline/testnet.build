@@ -214,6 +214,7 @@ function wpautop(pee, br) {
 	});
 
 	// Json Faq Accordion */
+	var hash = window.location.hash;
 	$.getJSON( "https://wiki.swap.online/wp-json/swap/faq/", function( data ) {
 		var items = [];
 		var accordionHtmlOne = $('<div class="faq-list faq-list-one"></div>');
@@ -242,16 +243,15 @@ function wpautop(pee, br) {
 
 		$('.swap-faq-col-1').html( accordionHtmlOne );
 		$('.swap-faq-col-2').html( accordionHtmlTwo );
-	});
 
-	/* Accordion */
-	$(document).on('click', '.faq-header > a', function(e){
-		e.preventDefault();
-		var thisParent = $(this).parents('.faq-row');
-		thisParent.find('.faq-header > a').addClass('collapsed');
-		thisParent.find('.faq-item .collapse').removeClass('show');
-		$(this).removeClass('collapsed');
-		$(this).parent().next().addClass('show');
+		/* Open accordion */
+		$(hash).collapse('show');
+		setTimeout(function(){
+			$('html, body').stop().animate({
+				scrollTop: $(hash).offset().top - 165
+			}, 800, 'swing');
+		}, 3000 );
+
 	});
 
 	/**
