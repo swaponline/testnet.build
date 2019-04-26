@@ -3,100 +3,99 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 	<title>Swap.Online - Cryptocurrency Wallet with Atomic Swap Exchange</title>
+	<link rel="shortcut icon" href="dist/images/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="shortcut icon" href="https://swap.online/dist/images/favicon.ico">
 	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.03">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.04">
 </head>
 <body>
 
 	<div class="swap-main"><!-- starter-overlay -->
 
 		<nav class="navbar navbar-expand-lg sticky-top bg-light">
-			<a class="navbar-brand" href="#">
-				<img src="dist/images/navbar-logo.svg" alt="">
-			</a>
 
-			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-				<span class="navbar-toggler-icon">
-					<i class="fas fa-bars"></i>
-				</span>
-			</button>
+			<div class="container-fluid">
+			
+				<a class="navbar-brand px-0 m-0 col-1" href="https://swap.online">
+					<img src="dist/images/logo.svg" alt="">
+				</a>
 
-			<div class="collapse navbar-collapse justify-content-md-end" id="navbar-collapse">
-				<ul class="navbar-nav navbar-nav-left mr-lg-5">
-					<li class="nav-item active">
-						<a class="nav-link" href="https://swap.online">Swap.Online</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://swap.online/exchange">
-							Exchange
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://swap.online/aboutus">
-							About Us
-						</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="https://listing.swap.online/" data-toggle="dropdown">
-							Listing
-						</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="https://swap.online/history">My History</a>
-						</div>
-					</li>
-				</ul>
+				<a href="#" class="nav-open-menu navbar-toggler-icon collapsed" data-toggle="collapse" data-target="#navbar-collapse"></a>
 
-				<ul class="navbar-nav navbar-nav-right ml-lg-5">
-					<li class="nav-item">
-						<a class="nav-link" href="#">team@swap.online</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">@swaponline</a>
-					</li>
-				</ul>
+				<div class="collapse navbar-collapse justify-content-md-end" id="navbar-collapse">
+					<ul class="navbar-nav navbar-nav-left mr-lg-5">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="https://swap.online/" data-toggle="dropdown">
+								About
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Project Summary</a>
+								<a class="dropdown-item" href="#">Atomic Swap</a>
+								<a class="dropdown-item" href="https://swap.online/getting-started/#faq-item-5860">IPFS orderbook</a>
+								<a class="dropdown-item" href="https://swap.online/getting-started/#faq-item-5861">Supported Blockchains</a>
+								<a class="dropdown-item" href="https://wiki.swap.online/en.pdf" target="_blank">White Paper</a>
+								<a class="dropdown-item" href="#">Road Map</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="https://swap.online/" data-toggle="dropdown">
+								Products
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item scroll-to" href="#s-decentralize-ieo-platform">Decentralized IEO platform</a>
+								<a class="dropdown-item scroll-to" href="#s-otc-p2p-exchange">OTC p2p exchange</a>
+								<a class="dropdown-item scroll-to" href="#s-hot-wallet">Hot Wallet</a>
+								<a class="dropdown-item scroll-to" href="#block-iframe-widget">Swap Widget (White label exchange tool)</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://medium.com/swaponline" target="_blank">
+								Blog
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" target="_blank">
+								Contacts
+							</a>
+						</li>
+
+						
+					</ul>
+
+					<div class="navbar-nav-right ml-auto d-flex flex-column flex-lg-row align-items-start">
+						<a class="btn btn-outline-primary ml-lg-3 mb-lg-0 mb-3" href="https://swap.online/ru/exchange/eth-to-btc">Start Trading</a>
+						<a class="btn btn-primary ml-lg-3" href="https://swap.online">Create Wallet</a>
+					</div>
+				</div>
+
 			</div>
 		</nav><!-- .navbar -->
 
 		<section class="howitwork">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-xl-5">
 						<h6>The ecosystem powered by Atomic Swap</h6>
 						<h2>Participate with the fastest protocol for decentralized exchange</h2>
 						<div class="howitwork-nav mb-lg-0 mb-5">
-							<a href="#" data-target=".howitwork-carousel" data-slide-to="0" class="active">Decentralize IEO platform</a>
-							<a href="#" data-target=".howitwork-carousel" data-slide-to="1">p2p exchange</a>
-							<a href="#" data-target=".howitwork-carousel" data-slide-to="2">Hot wallet</a>
+							<a href="#" class="active">Decentralize IEO platform</a>
+							<a href="#">p2p exchange</a>
+							<a href="#">Hot wallet</a>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-xl-7">
 
-						<div class="howitwork-carousel carousel slide" id="howitwork-carousel">
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<a href="#decentralize-ieo-platform" class="h-100 d-flex align-items-center scroll-to">
-										<img src="dist/uploads/screenshot-1.png" class="img-fluid d-block mx-auto rounded shadow" alt="">
-									</a>
-								</div>
-								<div class="carousel-item">
-									<a href="#p2p-exchange" class="h-100 d-flex align-items-center scroll-to">
-										<img src="dist/uploads/screenshot-2.png" class="img-fluid d-block mx-auto rounded shadow" alt="">
-									</a>
-								</div>
-								<div class="carousel-item">
-									<a href="#hot-wallet" class="h-100 d-flex align-items-center scroll-to">
-										<img src="dist/uploads/screenshot-4.png" class="img-fluid d-block mx-auto rounded shadow" alt="">
-									</a>
-								</div>
-							</div>
-							<a class="carousel-control-prev" href="#howitwork-carousel" data-slide="prev">
-								<i class="fas fa-chevron-left"></i>
+						<div class="howitwork-images">
+							<a href="#decentralize-ieo-platform" class="howitwork-image-link active scroll-to">
+								<img src="dist/uploads/screenshot-1.svg" class="img-fluid d-block mx-auto rounded" alt="">
 							</a>
-							<a class="carousel-control-next" href="#howitwork-carousel" data-slide="next">
-								<i class="fas fa-chevron-right"></i>
+							<a href="#p2p-exchange" class="howitwork-image-link scroll-to">
+								<img src="dist/uploads/screenshot-2.svg" class="img-fluid d-block mx-auto rounded" alt="">
+							</a>
+							<a href="#hot-wallet" class="howitwork-image-link scroll-to">
+								<img src="dist/uploads/screenshot-3.svg" class="img-fluid d-block mx-auto rounded" alt="">
 							</a>
 						</div>
 
@@ -171,7 +170,7 @@
 			</div>
 		</section><!-- .features -->
 
-		<section class="section bg-light-blue">
+		<section class="section bg-light-blue" id="s-decentralize-ieo-platform">
 			<div class="container">
 				<h2 class="why-subtitle mb-4 mb-sm-5">The first ever platform for decentralized IEO</h2>
 				<div class="row align-items-center" id="decentralize-ieo-platform">
@@ -188,9 +187,9 @@
 						</div>
 						<div class="text-muted">swap.online запустит собственное IEO по этой технологии</div>
 					</div>
-					<div class="col-lg-6 mt-5 mb-0 mb-sm-5">
-						<a href="#" class="disabled-click">
-							<img src="dist/uploads/screenshot-1.png" class="img-fluid d-block mx-auto rounded shadow" alt="">
+					<div class="col-lg-6 mt-5 mb-0 mb-sm-5 text-center">
+						<a data-fancybox="ieo-platform" href="dist/uploads/screenshot-1.svg" class="image-link-anim">
+							<img src="dist/uploads/screenshot-1.svg" class="img-fluid d-block mx-auto rounded shadow" alt="">
 						</a>
 					</div>
 				</div>
@@ -207,9 +206,9 @@
 						</div>
 						<div class="text-muted">Админы формируют первичное предложение, далее пользователи вторичный рынок</div>
 					</div>
-					<div class="col-lg-6 mt-5 mb-0 mb-sm-5">
-						<a href="#" class="disabled-click">
-							<img src="dist/uploads/screenshot-2.png" class="img-fluid d-block mx-auto rounded shadow" alt="">
+					<div class="col-lg-6 mt-5 mb-0 mb-sm-5 text-center">
+						<a data-fancybox="p2p-exchange" href="dist/uploads/screenshot-2.svg" class="image-link-anim">
+							<img src="dist/uploads/screenshot-2.svg" class="img-fluid d-block mx-auto rounded shadow" alt="">
 						</a>
 					</div>
 				</div>
@@ -217,10 +216,10 @@
 
 		</section><!-- .section -->
 
-		<section class="section">
+		<section class="section" id="s-otc-p2p-exchange">
 			<div class="container">
 				<h2 class="why-subtitle mb-4 mb-sm-5">The fastest cross-chain p2p exchange</h2>
-				<div class="row align-items-center">
+				<div class="row align-items-center" id="otc-p2p-exchange">
 					<div class="col-lg-6">
 						<p class="block-p mb-3 text-cyan">Swap Online has completed development of fastest crypto OTC exchange</p>
 						<ul class="swap-list mb-5">
@@ -233,7 +232,7 @@
 							Try our exchange on the right <a href="#" class="btn btn-primary ml-2 px-3 py-1"><i class="fas fa-arrow-right fa-md"></i></a>
 						</div>
 					</div>
-					<div class="col-lg-6 mt-5 mb-0 mb-sm-5">
+					<div class="col-lg-6 mt-5 mb-0 mb-sm-5" id="block-iframe-widget">
 						<div class="iframe-widget">
 							<iframe src="https://swap.online/exchange/?utm_source=gettingstarted&utm_medium=iframe&utm_campaign=iframe#widget" style="border:0;width:100%;height:490px"></iframe>
 						</div>
@@ -242,25 +241,25 @@
 			</div>
 		</section><!-- .section -->
 
-		<section class="section bg-light-blue">
+		<section class="section bg-light-blue" id="s-hot-wallet">
 			<div class="container">
 				<div class="row align-items-center" id="hot-wallet">
-					<div class="col-lg-6">
+					<div class="col-lg-5">
 						<h2 class="block-h1 mb-5">Web Wallet</h2>
 						<p class="block-p mb-3">We have created a multi-currency wallet that works with all our products</p>
 						<ul class="swap-list mb-5">
-							<li>Store your LTC, BTC, BCH, ETH, USDT, ERC-20 tokens</li>
-							<li>Works in any internet browser (except Internet Explorer)</li>
-							<li>Integrates with exchanges, DEXes, IEOs based on Swap Online</li>
+							<li>Store your LTC, BTC, BCH, ETH, <br class="d-none d-lg-block">USDT, ERC-20 tokens</li>
+							<li>Works in any internet browser <br class="d-none d-lg-block">(except Internet Explorer)</li>
+							<li>Integrates with exchanges, <br class="d-none d-lg-block">DEXes, IEOs based on Swap Online</li>
 							<li>Doesn't store Private keys</li>
 						</ul>
 						<div class="mb-3 pt-3">
 							<a href="https://swap.online/?utm_source=getting-started&utm_content=button-four" class="btn btn-primary swap-subscribe-cookie">CREATE YOUR WALLET IN 3 CLICKS</a>
 						</div>
 					</div>
-					<div class="col-lg-6 mt-5 mb-0 mb-sm-5">
-						<a href="#" class="disabled-click">
-							<img src="dist/uploads/screenshot-4.png" class="img-fluid d-block mx-auto rounded shadow" alt="">
+					<div class="col-lg-7 mt-5 mb-0 mb-sm-5">
+						<a data-fancybox="hot-wallet" href="dist/uploads/screenshot-3.svg" class="image-link-anim">
+							<img src="dist/uploads/screenshot-3.svg" class="img-fluid w-100 d-block mx-auto rounded shadow" alt="">
 						</a>
 					</div>
 				</div>
@@ -270,24 +269,30 @@
 		<section class="reviews">
 			<div class="container">
 				<h4 class="reviews-heading">Отзывы o Swap.Online</h4>
-				<div class="reviews-carousel carousel slide carousel-fade">
+				<div class="reviews-carousel carousel slide">
 					<div class="carousel-inner">
 						<div class="review-carousel-item carousel-item active">
-							<div class="review-carousel-content d-flex h-100 flex-column justify-content-center">
-								<h2 class="review-carousel-heading">Wow, this is awesome! 1</h2>
+							<div class="review-carousel-content d-flex h-100 mx-auto flex-column justify-content-center">
+								<p>The <a href="https://swap.online">swap.online</a> project realizes swaps among Bitcoin-like, Ethereum-like, and EOS cryptocurrencies, and made a product for users to execute swaps</p>
+								<p>
+									<a href="https://blog.qtum.org/atomic-cross-chain-swap-on-qtum-7e756a890ed7" target="_blank" class="btn btn-primary btn-sm">Atomic Cross-Chain Swaps on Qtum <i class="fas fa-external-link-alt ml-1"></i></a>
+								</p>
 							</div>
 						</div>
 						<div class="review-carousel-item carousel-item">
-							<div class="review-carousel-content d-flex h-100 flex-column justify-content-center">
-								<h2 class="review-carousel-heading">Wow, this is awesome! 2</h2>
+							<div class="review-carousel-content d-flex h-100 mx-auto flex-column justify-content-center">
+								<p>I’m happy to see STAR token listed on Swap online, which is a working atomic swap protocol based open-source decentralized exchange.</p>
+								<p>
+									<a href="https://blog.starbase.co/star-token-now-listed-on-swap-online-17907705f423" target="_blank" class="btn btn-primary btn-sm">STAR token now listed on Swap.Online! <i class="fas fa-external-link-alt ml-1"></i></a>
+								</p>
 							</div>
 						</div>
 						<div class="review-carousel-item carousel-item">
-							<div class="review-carousel-content d-flex h-100 flex-column justify-content-center">
-								<h2 class="review-carousel-heading">Wow, this is awesome! 3</h2>
-								<p>На этой неделе цена Биткоина сделала несколько попыток прорваться выше На этой неделе цена Биткоина сделала несколько попыток прорваться выше На этой неделе цена Биткоина сделала несколько попыток прорваться выше</p>
-								<p>На этой неделе цена Биткоина сделала несколько попыток прорваться выше</p>
-								<p>На этой неделе цена Биткоина сделала несколько попыток прорваться выше</p>
+							<div class="review-carousel-content d-flex h-100 mx-auto flex-column justify-content-center">
+								<p>Soon!</p>
+								<p>
+									<a href="#" target="_blank" class="btn btn-primary btn-sm">Soon! <i class="fas fa-external-link-alt ml-1"></i></a>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -298,12 +303,12 @@
 							<span class="review-nav-inner d-flex">
 								<span class="review-nav-gravatar">
 									<span>
-										<img src="dist/uploads/review-1.png" alt="">
+										<img src="dist/uploads/zheng-yi.png" alt="">
 									</span>
 								</span>
 								<span class="review-nav-bio">
-									<span class="review-nav-name">@rogerkver</span>
-									<span class="review-nav-ocupation">World's first Investor in Bitcoin about our USDT swaps</span>
+									<span class="review-nav-name">Zheng Yi</span>
+									<span class="review-nav-ocupation">QTUM core developer</span>
 								</span>
 							</span>
 						</a>
@@ -311,12 +316,12 @@
 							<span class="review-nav-inner d-flex">
 								<span class="review-nav-gravatar">
 									<span>
-										<img src="dist/uploads/review-1.png" alt="">
+										<img src="dist/uploads/@tomorrowaki.png" alt="">
 									</span>
 								</span>
 								<span class="review-nav-bio">
-									<span class="review-nav-name">@rogerkver</span>
-									<span class="review-nav-ocupation">World's first Investor in Bitcoin about our USDT swaps</span>
+									<span class="review-nav-name">@tomorrowaki</span>
+									<span class="review-nav-ocupation">The founder of crowdfunding platform Starbase!</span>
 								</span>
 							</span>
 						</a>
@@ -517,7 +522,8 @@
 
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="dist/js/bootstrap.min.js"></script>
-	<script src="dist/js/swap.js?ver=1.0.03"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="dist/js/swap.js?ver=1.0.04"></script>
 
 </body>
 </html>

@@ -178,19 +178,28 @@ function wpautop(pee, br) {
 ( function ( $ ) {
 	"use strict";
 
+	/* How It Work Tabs */
+	$('.howitwork-nav a').on('click', function(e){
+		e.preventDefault();
+		var thisIndex = $(this).index();
+		$('.howitwork-nav a').removeClass('active');
+		$(this).addClass('active');
+		console.log(thisIndex);
+		/* How It Work Images */
+		$('.howitwork-images > a').removeClass('active');
+		$('.howitwork-images > a').eq(thisIndex).addClass('active').addClass('animate-top');
+		setTimeout( function(){
+			$('.howitwork-images > a').eq(thisIndex).removeClass('animate-top');
+		}, 300 );
+	});
+
 	/* How It Work Tabs And Carousel */
 	var howitworkNav = $('.howitwork-nav');
 	var howitworkCarousel = $('.howitwork-carousel');
 	howitworkCarousel.carousel({
 		interval: false
 	});
-	
-	howitworkCarousel.on('slide.bs.carousel', function ( e ) {
-		var slideTo = e.to;
-		howitworkNav.children().removeClass('active');
-		howitworkNav.children().eq( slideTo ).addClass('active');
-	});
-	
+
 	/* Reviews Tabs and Carousel */
 	var reviewsNav = $('.reviews-nav');
 	var reviewsCarousel = $('.reviews-carousel');
