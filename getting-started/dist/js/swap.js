@@ -174,6 +174,8 @@ function wpautop(pee, br) {
 	return pee;
 };
 
+var hash = '';
+
 /* Using jQuery */
 ( function ( $ ) {
 	"use strict";
@@ -244,15 +246,32 @@ function wpautop(pee, br) {
 		$('.swap-faq-col-1').html( accordionHtmlOne );
 		$('.swap-faq-col-2').html( accordionHtmlTwo );
 
-		/* Open accordion */
-		$(hash).collapse('show');
-		setTimeout(function(){
-			$('html, body').stop().animate({
-				scrollTop: $(hash).offset().top - 165
-			}, 800, 'swing');
-		}, 3000 );
+	}).done( function( data ) {
 
+		/* Open accordion if hash */
+		if ( hash ) {
+			$(hash).collapse('show');
+			setTimeout(function(){
+				$('html, body').stop().animate({
+					scrollTop: $(hash).offset().top - 165
+				}, 800, 'swing');
+			}, 300 );
+		}
+
+		/* Go to anchor */
+		$('.goto-anchor').on('click', function (e) {
+			e.preventDefault();
+			hash = $(this).attr('href');
+			$(hash).collapse('show');
+			setTimeout(function(){
+				$('html, body').stop().animate({
+					scrollTop: $(hash).offset().top - 165
+				}, 800, 'swing');
+			}, 300 );
+		});
 	});
+
+
 
 	/**
 	 * Smooth Scroll
