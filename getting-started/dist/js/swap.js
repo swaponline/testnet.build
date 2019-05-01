@@ -317,6 +317,26 @@ var hash = '';
 	$('.disabled-click').on('click', function (e) {
 		e.preventDefault();
 	});
+	
+	/* Initialize Swiper */
+    var galleryThumbs = new Swiper('.reviews-swiper-nav', {
+      spaceBetween: 0,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.reviews-swiper', {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+	
+	/* Popover */
+	$('[data-toggle="popover"]').popover({
+		container: 'body'
+	})
 
 	/* Add cookie date utc */
 	$('.swap-subscribe-cookie').on('click', function(){

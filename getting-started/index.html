@@ -7,8 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="dist/css/swiper.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.06">
+	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.07">
+
 </head>
 <body>
 
@@ -61,11 +63,10 @@
 							</a>
 						</li>
 
-						
 					</ul>
 
 					<div class="navbar-nav-right ml-auto d-flex flex-column flex-lg-row align-items-start">
-						<a class="btn btn-outline-primary ml-lg-3 mb-lg-0 mb-3" href="https://swap.online/ru/exchange/eth-to-btc">Start Trading</a>
+						<a class="btn btn-outline-primary ml-lg-3 mb-lg-0 mb-3" href="https://swap.online/ru/exchange/eth-to-btc">Exchange Crypto</a>
 						<a class="btn btn-primary ml-lg-3" href="https://swap.online">Create Wallet</a>
 					</div>
 				</div>
@@ -77,12 +78,13 @@
 			<div class="container h-100">
 				<div class="row h-100 align-content-center">
 					<div class="col-lg-6 col-xl-5">
-						<h6>The ecosystem powered by Atomic Swap</h6>
+						<h6>The ecosystem powered by Atomic Swap and IPFS</h6>
 						<h2>Participate with the fastest protocol for decentralized exchange</h2>
+						<h3>What We Do</h3>
 						<div class="howitwork-nav mb-lg-0 mb-5">
-							<a href="#" class="active">Decentralize IEO platform</a>
+							<a href="#" class="active">Decentralized <span class="position-relative"><span data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Initial Exchange Offering" class="howitwork-help fas fa-question"></span>IEO</span> platform</a>
 							<a href="#">p2p exchange</a>
-							<a href="#">Hot wallet</a>
+							<a href="#">Hot wallet</a>	
 						</div>
 					</div>
 					<div class="col-lg-6 col-xl-7">
@@ -100,9 +102,6 @@
 						</div>
 
 					</div>
-					<div class="col-12 howitwork-action">
-						<a href="https://swap.online/?utm_source=getting-started&utm_content=button-one" class="btn btn-primary minw-290 swap-subscribe-cookie">Coming soon subscribe for IEO</a>
-					</div>
 				</div>
 			</div>
 		</section><!-- .howitwork -->
@@ -118,21 +117,20 @@
 						</div>
 						<div class="col-lg-3 swap-step-content-item active">
 							<h4>Gathering community</h4>
-							<p>Subscribe to particpate! Мы собираем комьюнити из партнеров, адвейзеров и инвесторов, присоединяйтесь чтоб получить привелегии и потестить продукт</p>
+							<p>We gathering advisers, partners and community to help us in building an ecosystem for decentralized cross-chain exchange</p>
 						</div>
 						<div class="col-lg-3 swap-step-content-item">
 							<h4>IEO</h4>
-							<p>Half of our hard cap we will reach on centralized exchange!</p>
-							<p>мы проведем IEO</p>
+							<p>Half of our hard cap we will reach in IEO on centralized exchange! Subscribe now - we have benefits for first participants</p>
 						</div>
 						<div class="col-lg-3 swap-step-content-item">
 							<h4>Decentralized IEO</h4>
-							<p>Second half of our hard cap we will on our own dIEO platform</p>
+							<p>Second half of our hard cap we will run on our own dIEO platform - to show community results of our work</p>
 						</div>
 					</div>
 				</div>
 				<div class="text-center mt-lg-5 mt-3">
-					<a href="https://swap.online/?utm_source=getting-started&amp;utm_content=button-four" class="btn btn-primary minw-290 swap-subscribe-cookie">Coming soon subscribe for IEO</a>
+					<a href="https://swap.online/?utm_source=getting-started&amp;utm_content=button-four" class="btn btn-primary minw-290 swap-subscribe-cookie">Join Now</a>
 				</div>
 			</div>
 		</section><!-- .section -->
@@ -154,7 +152,6 @@
 						<div class="mb-3 pt-3">
 							<a href="https://swap.online/?utm_source=getting-started&utm_content=button-two" class="btn btn-primary swap-subscribe-cookie">Coming soon subscribe for IEO</a>
 						</div>
-						<div class="text-muted">swap.online запустит собственное IEO по этой технологии</div>
 					</div>
 					<div class="col-lg-6 mt-5 mb-0 mb-sm-5 text-center">
 						<a data-fancybox="ieo-platform" href="dist/uploads/screenshot-1.svg" class="image-link-anim">
@@ -168,13 +165,11 @@
 
 		<section class="features">
 			<div class="container container-md">
-				<h6 class="section-title">Features</h6>
-				<h2 class="section-subtitle">Our goal is to deliver value to our client through high quality services</h2>
 				<div class="row">
 					<div class="col-lg-4 col-sm-6">
 						<div class="features-item">
 							<div class="features-icon d-flex align-items-center">
-								<img src="dist/images/feature-icon-1.svg" alt="">
+								<i class="fab fa-delicious"></i>
 							</div>
 							<h4>Open Source</h4>
 							<p>Our project completely transparent for everyone</p>
@@ -183,7 +178,8 @@
 					<div class="col-lg-4 col-sm-6">
 						<div class="features-item">
 							<div class="features-icon d-flex align-items-center">
-								<img src="dist/images/feature-icon-2.svg" alt="">
+								<!-- <img src="dist/images/feature-icon-2.svg" alt=""> -->
+								<i class="far fa-gem"></i>
 							</div>
 							<h4>Atomic Swap</h4>
 							<p>We use Atomic Swap technology for cross-chain transactions in all our products</p>
@@ -192,7 +188,7 @@
 					<div class="col-lg-4 col-sm-6">
 						<div class="features-item">
 							<div class="features-icon d-flex align-items-center">
-								<img src="dist/images/feature-icon-3.svg" alt="">
+								<i class="far fa-flag"></i>
 							</div>
 							<h4>IPFS orderbook</h4>
 							<p>We use IPFS to grant complete decentralization for our orderbook</p>
@@ -233,7 +229,7 @@
 					<div class="col-lg-4 col-sm-6">
 						<div class="features-item">
 							<div class="features-icon d-flex align-items-center">
-								<img src="dist/images/feature-icon-4.svg" alt="">
+								<i class="far fa-bell"></i>
 							</div>
 							<h4>P2P Cross-chain</h4>
 							<p>Our protocol provides peer-2-peer transactions between multiple blockchains</p>
@@ -242,7 +238,7 @@
 					<div class="col-lg-4 col-sm-6">
 						<div class="features-item">
 							<div class="features-icon d-flex align-items-center">
-								<img src="dist/images/feature-icon-5.svg" alt="">
+								<i class="far fa-calendar-check"></i>
 							</div>
 							<h4>Privacy</h4>
 							<p>Our wallet and exchange are available in Tor browser.</p>
@@ -251,7 +247,7 @@
 					<div class="col-lg-4 col-sm-6">
 						<div class="features-item">
 							<div class="features-icon d-flex align-items-center">
-								 <img src="dist/images/feature-icon-6.svg" alt="">
+								 <i class="fab fa-digital-ocean"></i>
 							</div>
 							<h4>User controls Private key</h4>
 							<p>Store your private keys in local storage or with KeyChain security app</p>
@@ -308,10 +304,10 @@
 			</div>
 		</section><!-- .section -->
 
-		<section class="section bg-light-blue" id="s-hot-wallet">
+		<section class="section bg-light-blue">
 			<div class="container">
-				<h2 class="section-subtitle">Swap Online White Label Solution for any online business</h2>
-				<div class="row align-items-center" id="hot-wallet">
+				<h2 class="section-subtitle">Swap Online White Label Solution<br class="d-none d-lg-block"> for any online business</h2>
+				<div class="row align-items-center">
 					<div class="col-lg-5">
 						<p class="block-p mb-3">Our first income was provided by Swap Widget - a white label tool to sell tokens and exchange crypto from any website!</p>
 						<ul class="swap-list mb-5">
@@ -322,43 +318,75 @@
 							<li>Widget can connect additional crypto to any ETH or BTS DEX</li>
 						</ul>
 						<div class="mb-3 pt-3">
-							<a href="https://swap.online/?utm_source=getting-started&amp;utm_content=button-five" class="btn btn-primary swap-subscribe-cookie minw-290 mb-3">Conect Swap White Label</a>
-							<a href="https://swap.online/?utm_source=getting-started&amp;utm_content=button-five" class="btn btn-outline-primary swap-subscribe-cookie minw-290">Learn More</a>
+							<a href="https://widget.swap.online" class="btn btn-primary swap-subscribe-cookie minw-290 mb-3" target="_blank">Get Widget</a>
 						</div>
 					</div>
 					<div class="col-lg-7 mt-5 mb-0 mb-sm-5">
-						<a data-fancybox="white-label" href="dist/uploads/screenshot-4.jpg" class="image-link-anim">
+						<div class="white-label-popovers">
 							<img src="dist/uploads/screenshot-4.jpg" class="img-fluid w-100 d-block mx-auto rounded shadow" alt="">
-						</a>
+							<div class="widget-embed-path rounded">
+								<span data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Our Widget" class="white-label-item">
+									<span class="fa-stack fa-lg">
+										<i class="far fa-circle fa-stack-2x text-cyan faa-burst animated"></i>
+									  <i class="fas fa-circle fa-stack-2x text-cyan"></i>
+									  <i class="fas fa-question fa-stack-1x fa-inverse faa-flash animated"></i>
+									</span>
+								</span>
+							</div>
+							<div class="widget-embed-site">
+								<span data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Your Website" class="white-label-item">
+									<span class="fa-stack fa-lg">
+										<i class="far fa-circle fa-stack-2x text-cyan faa-burst animated"></i>
+									  <i class="fas fa-circle fa-stack-2x text-cyan"></i>
+									  <i class="fas fa-question fa-stack-1x fa-inverse faa-flash animated"></i>
+									</span>
+								</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
+		
+		<section class="section section-noxon" id="noxon">
+			<div class="container">
+				<div class="noxon-bio">
+					<div class="noxon-img shadow">
+						<img src="dist/uploads/noxon.jpg" alt="noxon">
+					</div>
+					<h4>Noxon</h4>
+					<p>Co-Founder & CEO of swap.online</p>
+				</div>
+				<div class="noxon-text rounded">
+					<p>Our goal is to create an ecosystem for decentralized exchange of various cryptocurrencies, tokens and assets. For such purpose we use Atomic Swap technology, which allows us to perform cross blockchain transactions, unlike classic DEXes. To store orders we are using our own unique technology of decentralized order book based on IPFS. We have already completed two standalone products - hot wallet and the fastest exchange - you can already test it to exchange ETH, BTC and ERC-20 tokens - it will take less than 5 minutes. We also doing a lot of work on UI design, to simplify it as much as we can - to show people, that it is not that difficult to interact with crypto. Moreover, our project is absolutely open sourced - just check our github!</p>
+					<p>And now we have discovered, that stack of our developments could be used to create a really amazing and innovative product - the first platform for decentralized IEO - where all participants have the equal rights to buy tokens and set an order to sell at the same order. Transparency is granted by blockchain itself, all processing is being controlled by smart contracts - neither project, nor we could affect anyhow on IEO. Create a wallet and be the first who will test such platform! </p>
+				</div>
+			</div>
+		</section><!-- .section-noxon -->
 		
 		<section class="reviews">
 			<div class="container">
-				<h4 class="reviews-heading">Отзывы o Swap.Online</h4>
-				<div class="reviews-carousel carousel slide">
-					<div class="carousel-inner">
-						<div class="review-carousel-item carousel-item active">
-							<div class="review-carousel-content d-flex h-100 mx-auto flex-column justify-content-center">
+				<h4 class="reviews-heading">Reviews about Swap.Online</h4>
+				<div class="swiper-container reviews-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="review-swiper-content d-flex h-100 mx-auto flex-column justify-content-center">
 								<p>The <a href="https://swap.online">swap.online</a> project realizes swaps among Bitcoin-like, Ethereum-like, and EOS cryptocurrencies, and made a product for users to execute swaps</p>
 								<p>
 									<a href="https://blog.qtum.org/atomic-cross-chain-swap-on-qtum-7e756a890ed7" target="_blank" class="btn btn-primary btn-sm">Atomic Cross-Chain Swaps on Qtum <i class="fas fa-external-link-alt ml-1"></i></a>
 								</p>
 							</div>
 						</div>
-						<div class="review-carousel-item carousel-item">
-							<div class="review-carousel-content d-flex h-100 mx-auto flex-column justify-content-center">
+						<div class="swiper-slide">
+							<div class="review-swiper-content d-flex h-100 mx-auto flex-column justify-content-center">
 								<p>I’m happy to see STAR token listed on Swap online, which is a working atomic swap protocol based open-source decentralized exchange.</p>
 								<p>
 									<a href="https://blog.starbase.co/star-token-now-listed-on-swap-online-17907705f423" target="_blank" class="btn btn-primary btn-sm">STAR token now listed on Swap.Online! <i class="fas fa-external-link-alt ml-1"></i></a>
 								</p>
 							</div>
 						</div>
-						<div class="review-carousel-item carousel-item">
-							<div class="review-carousel-content d-flex h-100 mx-auto flex-column justify-content-center">
+						<div class="swiper-slide">
+							<div class="review-swiper-content d-flex h-100 mx-auto flex-column justify-content-center">
 								<p>Soon!</p>
 								<p>
 									<a href="#" target="_blank" class="btn btn-primary btn-sm">Soon! <i class="fas fa-external-link-alt ml-1"></i></a>
@@ -366,10 +394,11 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="reviews-nav">
-					<div class="row no-gutters">
-						<a href="#" class="review-nav-item col-4 active" data-target=".reviews-carousel" data-slide-to="0">
+				</div><!-- .swiper-reviews -->
+
+				<div class="swiper-container reviews-swiper-nav">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide review-nav-item">
 							<span class="review-nav-inner d-flex">
 								<span class="review-nav-gravatar">
 									<span>
@@ -381,8 +410,8 @@
 									<span class="review-nav-ocupation">QTUM core developer</span>
 								</span>
 							</span>
-						</a>
-						<a href="#" class="review-nav-item col-4" data-target=".reviews-carousel" data-slide-to="1">
+						</div>
+						<div class="swiper-slide review-nav-item">
 							<span class="review-nav-inner d-flex">
 								<span class="review-nav-gravatar">
 									<span>
@@ -394,8 +423,8 @@
 									<span class="review-nav-ocupation">The founder of crowdfunding platform Starbase!</span>
 								</span>
 							</span>
-						</a>
-						<a href="#" class="review-nav-item col-4" data-target=".reviews-carousel" data-slide-to="2">
+						</div>
+						<div class="swiper-slide review-nav-item">
 							<span class="review-nav-inner d-flex">
 								<span class="review-nav-gravatar">
 									<span>
@@ -407,16 +436,17 @@
 									<span class="review-nav-ocupation">World's first Investor in Bitcoin about our USDT swaps</span>
 								</span>
 							</span>
-						</a>
+						</div>
 					</div>
-				</div>
+				</div><!-- .reviews-swiper-nav -->
+
 			</div>
-		</section><!-- .howitwork -->
+		</section><!-- .reviews -->
 
 		<section class="why-section">
 			<div class="container">
-				<h5 class="why-title">Почему Swap.Online?</h5>
-				<h2 class="why-subtitle">Капитализация доступных к торгам активов в 40 раз больше, чем любой другой DEX</h2>
+				<h5 class="why-title">Why Swap.Online?</h5>
+				<h2 class="why-subtitle">Market capitalization of tradable assets on Swap Online 40 times higher than any DEX</h2>
 				<div class="why-diagram">
 					<div class="why-diagram-row">
 						<div class="why-diagram-label">Swap.online</div>
@@ -436,8 +466,8 @@
 		
 		<section class="section section-inverse section-partners">
 			<div class="container">
-				<h5 class="why-title">Наши партнеры</h5>
-				<h2 class="why-subtitle">Они доверили нам и рассказали своему сообществу о нас</h2>
+				<h5 class="why-title">Our partners</h5>
+				<h2 class="why-subtitle">Collaboration is a key for success.<br class="d-none d-lg-block"> We are building a network of partners,<br class="d-none d-lg-block"> including this projects</h2>
 				<div class="block-partners row justify-content-center">
 					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/uryonline.png" alt=""></div>
 					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/debitium.png" alt=""></div>
@@ -484,17 +514,38 @@
 				</div>
 			</div>
 		</section><!-- .section -->
+		
+		<div class="section-socials">
+			<div class="container">
+				<div class="row justify-content-around socials-row">
+					<a href="https://medium.com/swaponline" target="_blank">
+						<i class="fab fa-medium-m"></i>
+					</a>
+					<a href="https://www.facebook.com/Swaponline" target="_blank">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="https://twitter.com/SwapOnlineTeam" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://t.me/swaponline" target="_blank">
+						<i class="fab fa-telegram-plane"></i>
+					</a>
+					<a href="https://github.com/swaponline" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+			</div>
+		</div><!-- .section-socials -->
 
 		<footer class="footer">
 			<div class="container">
 				<div class="row footer-top align-items-center">
 					<div class="col-lg-8">
-						<h2><span>Почему Swap.Online?</span>
-						Обмен криптовалют, utility- и security- токенов без посредников</h2>
+						<h2><span>Why Swap.Online?</span>
+						Store and exchange your crypto,<br class="d-none d-lg-block"> utility and security tokens.<br class="d-none d-lg-block"> No server, no third party, no midleman.</h2>
 					</div>
 					<div class="col-lg-4 footer-action">
-						<a href="#" class="btn btn-primary">Создать кошелек</a>
-						<a href="#" class="btn btn-outline-primary">У меня уже есть кошелек</a>
+						<a href="https://swap.online" class="btn btn-primary">Get Started</a>
 					</div>
 				</div>
 				<div class="row footer-middle">
@@ -593,7 +644,8 @@
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="dist/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-	<script src="dist/js/swap.js?ver=1.0.06"></script>
+	<script src="dist/js/swiper.min.js"></script>
+	<script src="dist/js/swap.js?ver=1.0.07"></script>
 
 </body>
 </html>
