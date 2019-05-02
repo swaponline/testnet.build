@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="dist/css/swiper.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.07">
+	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.08">
 
 </head>
 <body>
@@ -67,7 +67,7 @@
 
 					<div class="navbar-nav-right ml-auto d-flex flex-column flex-lg-row align-items-start">
 						<a class="btn btn-outline-primary ml-lg-3 mb-lg-0 mb-3" href="https://swap.online/ru/exchange/eth-to-btc">Exchange Crypto</a>
-						<a class="btn btn-primary ml-lg-3" href="https://swap.online">Create Wallet</a>
+						<a class="btn btn-primary ml-lg-3" href="#" data-toggle="modal" data-target=".modal-cta">Create Wallet</a>
 					</div>
 				</div>
 
@@ -130,7 +130,7 @@
 					</div>
 				</div>
 				<div class="text-center mt-lg-5 mt-3">
-					<a href="https://swap.online/?utm_source=getting-started&amp;utm_content=button-four" class="btn btn-primary minw-290 swap-subscribe-cookie">Join Now</a>
+					<a href="https://swap.online/?utm_source=getting-started&amp;utm_content=button-four" class="btn btn-primary minw-290 swap-subscribe-cookie" data-toggle="modal" data-target=".modal-cta">Join Now</a>
 				</div>
 			</div>
 		</section><!-- .section -->
@@ -150,7 +150,7 @@
 							<li>No third parties involved</li>
 						</ul>
 						<div class="mb-3 pt-3">
-							<a href="https://swap.online/?utm_source=getting-started&utm_content=button-two" class="btn btn-primary swap-subscribe-cookie">Coming soon subscribe for IEO</a>
+							<a href="https://swap.online/?utm_source=getting-started&utm_content=button-two" class="btn btn-primary swap-subscribe-cookie" data-toggle="modal" data-target=".modal-cta">Coming soon subscribe for IEO</a>
 						</div>
 					</div>
 					<div class="col-lg-6 mt-5 mb-0 mb-sm-5 text-center">
@@ -198,19 +198,19 @@
 			</div>
 		</section><!-- .features -->
 
-		<section class="section bg-light-blue" id="s-otc-p2p-exchange">
+		<section class="section bg-light-blue s-otc-p2p-exchange" id="s-otc-p2p-exchange">
 			<div class="container">
 				<h2 class="why-subtitle mb-4 mb-sm-5">The fastest cross-chain p2p exchange</h2>
 				<div class="row align-items-center" id="otc-p2p-exchange">
 					<div class="col-lg-6">
-						<p class="block-p mb-3 text-cyan">Swap Online has completed development of fastest crypto OTC exchange</p>
+						<p class="block-p mb-3 text-cyan">Swap Online has completed development of fastest crypto <span class="position-relative"><span data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Over the counter" class="howitwork-help fas fa-question"></span>OTC</span> exchange</p>
 						<ul class="swap-list mb-5">
 							<li>Based on Atomic Swap technology</li>
 							<li>Takes 2 minutes to exchange</li>
 							<li>Supports LTC, BTC, BCH, ETH, USDT, ERC-20 tokens</li>
 							<li>Can be deployed on any website as an exchange service</li>
 						</ul>
-						<div class="mb-3 pt-3 h4">
+						<div class="mb-sm-3 pt-sm-3 h4">
 							Try our exchange on the right <a href="#" class="btn btn-primary ml-2 px-3 py-1"><i class="fas fa-arrow-right fa-md"></i></a>
 						</div>
 					</div>
@@ -270,7 +270,7 @@
 							<li>Doesn't store Private keys</li>
 						</ul>
 						<div class="mb-3 pt-3">
-							<a href="https://swap.online/?utm_source=getting-started&utm_content=button-four" class="btn btn-primary swap-subscribe-cookie">CREATE YOUR WALLET IN 3 CLICKS</a>
+							<a href="https://swap.online/?utm_source=getting-started&utm_content=button-four" class="btn btn-primary swap-subscribe-cookie" data-toggle="modal" data-target=".modal-cta">CREATE YOUR WALLET IN 3 CLICKS</a>
 						</div>
 					</div>
 					<div class="col-lg-7 mt-5 mb-0 mb-sm-5">
@@ -289,7 +289,7 @@
 					<div class="swap-steps-content justify-content-center row">
 						<div class="col-lg-3 swap-step-content-item active ">
 							<h4>Click on this button</h4>
-							<p><a class="btn btn-primary swap-subscribe-cookie" href="https://swap.online">Create Wallet</a></p>
+							<p><a class="btn btn-primary swap-subscribe-cookie" href="#" data-toggle="modal" data-target=".modal-cta">Create Wallet</a></p>
 						</div>
 						<div class="col-lg-3 swap-step-content-item active">
 							<h4>Follow one-screen registration</h4>
@@ -318,7 +318,7 @@
 							<li>Widget can connect additional crypto to any ETH or BTS DEX</li>
 						</ul>
 						<div class="mb-3 pt-3">
-							<a href="https://widget.swap.online" class="btn btn-primary swap-subscribe-cookie minw-290 mb-3" target="_blank">Get Widget</a>
+							<a href="#" class="btn btn-primary swap-subscribe-cookie minw-290 mb-3" data-toggle="modal" data-target=".modal-cta">Get Widget</a>
 						</div>
 					</div>
 					<div class="col-lg-7 mt-5 mb-0 mb-sm-5">
@@ -545,7 +545,7 @@
 						Store and exchange your crypto,<br class="d-none d-lg-block"> utility and security tokens.<br class="d-none d-lg-block"> No server, no third party, no midleman.</h2>
 					</div>
 					<div class="col-lg-4 footer-action">
-						<a href="https://swap.online" class="btn btn-primary">Get Started</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target=".modal-cta">Get Started</a>
 					</div>
 				</div>
 				<div class="row footer-middle">
@@ -640,12 +640,62 @@
 		</footer><!-- .footer -->
 
 	</div>
+	
+	<!-- Modal -->
+	<div class="modal modal-cta fade">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title ml-auto">Welcome aboard!</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Thanks for your interest to our project! At the moment, our team working hard on preparations for IEO on several top-tier platforms. If you are willing to participate - join our social channels and enter your email for latest news and updates considering IEO.</p>
+					<h5>Bonuses for early adopters</h5>
+					<p>We have prepared a special bounty program for those, who joined us before IEO. For all users we will send additional token bonus. Moreover, their wallet accounts will have higher rating for exchange and dIEO platform. We need such rating system to protect platform from spam bots. The earlier you create your wallet and the more tokens you have - the higher your rating will be once dIEO platform launches.</p>
+					<form class="row justify-content-center">
+						<div class="col-md-7 col">
+							<div class="form-group">
+								<input type="email" class="form-control form-control-lg" placeholder="Your email">
+							</div>
+							<div class="block-socials">
+								<div class="container">
+									<div class="row justify-content-around socials-row">
+										<a href="https://medium.com/swaponline" target="_blank">
+											<i class="fab fa-medium-m"></i>
+										</a>
+										<a href="https://www.facebook.com/Swaponline" target="_blank">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+										<a href="https://twitter.com/SwapOnlineTeam" target="_blank">
+											<i class="fab fa-twitter"></i>
+										</a>
+										<a href="https://t.me/swaponline" target="_blank">
+											<i class="fab fa-telegram-plane"></i>
+										</a>
+										<a href="https://github.com/swaponline" target="_blank">
+											<i class="fab fa-github"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="text-center mt-3">
+								<button type="submit" class="btn btn-primary minw-290 swap-subscribe-cookie">Continue to create wallet</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="dist/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="dist/js/swiper.min.js"></script>
-	<script src="dist/js/swap.js?ver=1.0.07"></script>
+	<script src="dist/js/swap.js?ver=1.0.08"></script>
 
 </body>
 </html>
