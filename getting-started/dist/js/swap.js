@@ -261,6 +261,7 @@ var hash = '';
 		/* Go to anchor */
 		$('.goto-anchor').on('click', function (e) {
 			e.preventDefault();
+			$('.navbar-collapse').collapse('hide');
 			hash = $(this).attr('href');
 			$(hash).collapse('show');
 			setTimeout(function(){
