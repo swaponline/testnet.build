@@ -342,7 +342,7 @@ var hash = '';
 	/* Add cookie date utc */
 	$('.swap-subscribe-cookie').on('click', function(){
 		var userUtcDate = new Date().toISOString();
-		setCookie('getstarted', userUtcDate, { expires: swapGetYearSec } );
+		Cookies.set('getstarted', userUtcDate, { expires: 365 });
 	});
 
 })( jQuery );
