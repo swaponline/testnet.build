@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="dist/css/swiper.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.08">
+	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.092">
 
 </head>
 <body>
@@ -66,8 +66,8 @@
 					</ul>
 
 					<div class="navbar-nav-right ml-auto d-flex flex-column flex-lg-row align-items-start">
-						<a class="btn btn-outline-primary ml-lg-3 mb-lg-0 mb-3" href="https://swap.online/ru/exchange/eth-to-btc">Exchange Crypto</a>
-						<a class="btn btn-primary ml-lg-3" href="#" data-toggle="modal" data-target=".modal-cta">Create Wallet</a>
+						<a class="btn btn-outline-primary ml-lg-3 mb-lg-0 mb-3 swap-subscribe-cookie" href="https://swap.online/ru/exchange/eth-to-btc">Exchange Crypto</a>
+						<a class="btn btn-primary ml-lg-3 swap-subscribe-cookie" href="#" data-toggle="modal" data-target=".modal-cta">Create Wallet</a>
 					</div>
 				</div>
 
@@ -78,7 +78,11 @@
 			<div class="container h-100">
 				<div class="row h-100 align-content-center">
 					<div class="col-lg-6 col-xl-5">
-						<h6>The ecosystem powered by Atomic Swap and IPFS</h6>
+						<h6>The ecosystem powered by Atomic 
+							<span class="position-relative"><span data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Atomic swap is a cryptographically powered smart contract technology that enables two parties to exchange different cryptocurrencies/tokens" class="howitwork-help fas fa-question"></span>Swap</span>
+							and 
+							<span class="position-relative"><span data-toggle="popover" data-placement="top" data-trigger="hover" data-content="IPFS - storage system without a single server. We store order data there." class="howitwork-help fas fa-question"></span>IPFS</span>
+						</h6>
 						<h2>Participate with the fastest protocol for decentralized exchange</h2>
 						<h3>What We Do</h3>
 						<div class="howitwork-nav mb-lg-0 mb-5">
@@ -123,7 +127,7 @@
 							<h4>IEO</h4>
 							<p>Half of our hard cap we will reach in IEO on centralized exchange! Subscribe now - we have benefits for first participants</p>
 						</div>
-						<div class="col-lg-3 swap-step-content-item">
+						<div class="col-lg-3 swap-step-content-item swap-step-content-continued">
 							<h4>Decentralized IEO</h4>
 							<p>Second half of our hard cap we will run on our own dIEO platform - to show community results of our work</p>
 						</div>
@@ -545,7 +549,7 @@
 						Store and exchange your crypto,<br class="d-none d-lg-block"> utility and security tokens.<br class="d-none d-lg-block"> No server, no third party, no midleman.</h2>
 					</div>
 					<div class="col-lg-4 footer-action">
-						<a href="#" class="btn btn-primary" data-toggle="modal" data-target=".modal-cta">Get Started</a>
+						<a href="#" class="btn btn-primary swap-subscribe-cookie" data-toggle="modal" data-target=".modal-cta">Get Started</a>
 					</div>
 				</div>
 				<div class="row footer-middle">
@@ -695,7 +699,9 @@
 	<script src="dist/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="dist/js/swiper.min.js"></script>
-	<script src="dist/js/swap.js?ver=1.0.08"></script>
+	<script src="dist/js/js.cookie.js"></script>
+	<script src="dist/js/swap.js?ver=1.0.092"></script>
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -711,5 +717,6 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/53522386" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<script></script></body>
+
+</body>
 </html>
