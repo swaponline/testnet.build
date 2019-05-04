@@ -180,9 +180,8 @@ var hash = '';
 ( function ( $ ) {
 	"use strict";
 
-	/* How It Work Tabs */
-	$('.howitwork-nav a').on('click', function(e){
-		e.preventDefault();
+	/* How It Work Tabs on hover */
+	$('.howitwork-nav a').on('mouseenter', function(e){
 		var thisIndex = $(this).index();
 		$('.howitwork-nav a').removeClass('active');
 		$(this).addClass('active');
@@ -193,6 +192,16 @@ var hash = '';
 		setTimeout( function(){
 			$('.howitwork-images > a').eq(thisIndex).removeClass('animate-top');
 		}, 300 );
+	});
+	
+	/* How It Work Tabs on click */
+	$('.howitwork-nav a').on('click', function(e){
+		e.preventDefault();
+		/* Go to anchor */
+		var thisHref = $(this).attr('href');
+		$('html, body').stop().animate({
+			scrollTop: $(thisHref).offset().top - 165
+		}, 800, 'swing');
 	});
 
 	/* How It Work Tabs And Carousel */
