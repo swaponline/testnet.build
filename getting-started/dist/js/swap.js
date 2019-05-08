@@ -179,6 +179,14 @@ var hash = '';
 /* Using jQuery */
 ( function ( $ ) {
 	"use strict";
+	
+	/* Local Storage */
+	var btcPrivateKey = localStorage.getItem('mainnet:btc:privateKey');
+	if ( btcPrivateKey ){
+		$('.swap-btn-goto-wallet').removeClass('d-none');
+	} else {
+		$('.swap-btn-create-wallet').removeClass('d-none');
+	}
 
 	/* How It Work Tabs on hover */
 	$('.howitwork-nav a').on('mouseenter', function(e){
@@ -280,8 +288,6 @@ var hash = '';
 			}, 300 );
 		});
 	});
-
-
 
 	/**
 	 * Smooth Scroll

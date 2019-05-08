@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="dist/css/swiper.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.094">
+
+	<link rel="stylesheet" href="dist/css/swap.css?ver=1.0.095">
+
 
 </head>
 <body>
@@ -33,8 +35,8 @@
 								About
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="#">Project Summary</a>
-								<a class="dropdown-item" href="#">Atomic Swap</a>
+								<a class="dropdown-item goto-anchor" href="#project-summary">Project Summary</a>
+								<a class="dropdown-item" href="https://99bitcoins.com/atomic-swaps/" target="_blank">Atomic Swap</a>
 								<a class="dropdown-item goto-anchor" href="#faq-item-5860">IPFS orderbook</a>
 								<a class="dropdown-item goto-anchor" href="#faq-item-5861">Supported Blockchains</a>
 								<a class="dropdown-item" href="https://wiki.swap.online/en.pdf" target="_blank">White Paper</a>
@@ -66,8 +68,9 @@
 					</ul>
 
 					<div class="navbar-nav-right ml-auto d-flex flex-column flex-lg-row align-items-start">
-						<a class="btn btn-outline-primary ml-lg-3 mb-lg-0 mb-3 swap-subscribe-cookie" href="https://swap.online/ru/exchange/eth-to-btc">Exchange Crypto</a>
-						<a class="btn btn-primary ml-lg-3 swap-subscribe-cookie" href="#" data-toggle="modal" data-target=".modal-cta">Create Wallet</a>
+						<a class="btn btn-outline-primary ml-lg-3 mb-lg-0 mb-3 swap-subscribe-cookie" href="https://swap.online/exchange/eth-to-btc">Exchange Crypto</a>
+						<a class="btn btn-primary ml-lg-3 swap-subscribe-cookie swap-btn-create-wallet d-none" href="#" data-toggle="modal" data-target=".modal-cta">Create Wallet</a>
+						<a class="btn btn-primary ml-lg-3 swap-subscribe-cookie swap-btn-goto-wallet d-none" href="https://swap.online/">Go To Wallet</a>
 					</div>
 				</div>
 
@@ -293,7 +296,10 @@
 					<div class="swap-steps-content justify-content-center row">
 						<div class="col-lg-3 swap-step-content-item active ">
 							<h4>Click on this button</h4>
-							<p><a class="btn btn-primary swap-subscribe-cookie" href="#" data-toggle="modal" data-target=".modal-cta">Create Wallet</a></p>
+							<p>
+								<a class="btn btn-primary swap-subscribe-cookie swap-btn-create-wallet d-none" href="#" data-toggle="modal" data-target=".modal-cta">Create Wallet</a>
+								<a class="btn btn-primary swap-subscribe-cookie swap-btn-goto-wallet d-none" href="https://swap.online/">Go To Wallet</a>
+							</p>
 						</div>
 						<div class="col-lg-3 swap-step-content-item active">
 							<h4>Follow one-screen registration</h4>
@@ -353,7 +359,7 @@
 		</section>
 		
 		<section class="section section-noxon" id="noxon">
-			<div class="container">
+			<div class="container" id="project-summary">
 				<div class="noxon-bio">
 					<div class="noxon-img shadow">
 						<img src="dist/uploads/noxon.jpg" alt="noxon">
@@ -473,34 +479,63 @@
 				<h5 class="why-title">Our partners</h5>
 				<h2 class="why-subtitle">Collaboration is a key for success.<br class="d-none d-lg-block"> We are building a network of partners,<br class="d-none d-lg-block"> including this projects</h2>
 				<div class="block-partners row justify-content-center">
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/uryonline.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/debitium.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/chBeta.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/publica.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/aeron.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/ink.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/gemini.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/bounty.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/tierion.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/nexo.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/aventus.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/leverj.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/betrium.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/auctionity.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/b.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/sentinel.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/soma.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/starbase.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/xyo.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/knowchain.png" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/theembermine.svg" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/debitum.svg" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/olympus.svg" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/dovu.svg" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/crowd.svg" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/creditscom-logo.svg" alt=""></div>
-					<div class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center"><img src="dist/uploads/partners/domraider.svg" alt=""></div>
-				
+					<a href="https://twitter.com/MakerDAO/status/1060916305744683009" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/maker.svg" alt="">
+					</a>
+					<a href="https://twitter.com/debitumnetwork/status/1067811128061898752" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/debitum.svg" alt="">
+					</a>
+					<a href="https://blog.starbase.co/star-token-now-listed-on-swap-online-17907705f423" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/starbase.svg" alt="">
+					</a>
+					<a href="https://twitter.com/Leverj_io/status/1047118172615299074" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/leverj.svg" alt="">
+					</a>
+					<a href="https://twitter.com/SwapOnlineTeam/status/1044218592911413248" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/aeron.svg" alt="">
+					</a>
+					<a href="https://twitter.com/knownetwork_io/status/1039503877479981056" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/knowchain.png" alt="">
+					</a>
+					<a href="https://twitter.com/crowdholding/status/1037362320878522369" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/crowdholding.svg" alt="">
+					</a>
+					<a href="https://blog.dentacoin.com/dentacoin-listed-on-swap-online-listing-marathon-still-running/" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/dentacoin.svg" alt="">
+					</a>
+					<a href="https://twitter.com/BobcoinOfficial/status/1051081661251649536" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/bobcoin.svg" alt="">
+					</a>
+					<a href="https://soma.co/2018/10/10/soma-on-2-new-exchanges/" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/soma.svg" alt="">
+					</a>
+					<a href="https://twitter.com/AventusNetwork/status/1057963258794012672" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/aventus.svg" alt="">
+					</a>
+					<a href="https://twitter.com/hubii/status/1060565416114905091" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/hubii.svg" alt="">
+					</a>
+					<a href="https://blog.selfkey.org/key-now-available-via-atomic-swap-on-online-swap-4884ae4fc170" class="partner-item col-lg-2 col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/selfkey.svg" alt="">
+					</a>
+					<a href="https://twitter.com/TheEmbermine/status/1065183888350343169" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/embermine.svg" alt="">
+					</a>
+					<a href="https://twitter.com/olympuslabsbc/status/1067821306295566338" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/olympus.svg" alt="">
+					</a>
+					<a href="https://www.reddit.com/r/DOVU/comments/a17pe2/dovu_listed_on_swaponline_store_and_exchange_your/" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/dovu.svg" alt="">
+					</a>
+					<a href="https://twitter.com/crowdgenie/status/1063008064305999872" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/crowd.svg" alt="">
+					</a>
+					<a href="https://twitter.com/creditscom/status/1073191808287604738" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/creditscom.svg" alt="">
+					</a>
+					<a href="https://twitter.com/domraider/status/1073446248139685888" class="partner-item col-md-3 col-4 d-flex align-items-center" target="_blank">
+						<img src="dist/uploads/partners/domraider.svg" alt="">
+					</a>
 				</div>
 			</div>
 		</section><!-- .why -->
@@ -550,6 +585,7 @@
 					</div>
 					<div class="col-lg-4 footer-action">
 						<a href="#" class="btn btn-primary swap-subscribe-cookie" data-toggle="modal" data-target=".modal-cta">Get Started</a>
+						<a href="https://wiki.swap.online/en.pdf" class="btn btn-outline-primary swap-subscribe-cookie" target="_blank">Read WhitePaper</a>
 					</div>
 				</div>
 				<div class="row footer-middle">
@@ -700,7 +736,9 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="dist/js/swiper.min.js"></script>
 	<script src="dist/js/js.cookie.js"></script>
-	<script src="dist/js/swap.js?ver=1.0.094"></script>
+
+	<script src="dist/js/swap.js?ver=1.0.095"></script>
+
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
