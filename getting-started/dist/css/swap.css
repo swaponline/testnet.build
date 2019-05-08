@@ -395,7 +395,7 @@ a:hover {
 	font-family: Inter;
 	font-weight: bold;
 	font-size: 40px;
-	color: #7777FF;
+	color: #151B57;
 	margin-bottom: 25px;
 }
 .howitwork-nav > a {
@@ -1108,6 +1108,10 @@ a:hover {
 		left: 35px;
 		top: -60px;
 	}
+	.swap-step-content-continued:before {
+		width: auto;
+		right: 0;
+	}
 	.swap-step-content-item:after {
 		top: -80px;
 		left: 15px;
@@ -1174,6 +1178,9 @@ a:hover {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
+.socials-row {
+	position: relative;
+}
 .socials-row > a {
 	display: block;
 	width: 100px;
@@ -1188,6 +1195,29 @@ a:hover {
 .socials-row > a:hover {
 	color: #f3f3ff;
 	background: #7777ff;
+}
+.socials-followed {
+	display: block;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #7777FF;
+	border-radius: 3px;
+	color: #fff;
+    padding: 5px 15px;
+	font-family: Inter;
+	font-size: 24px;
+    letter-spacing: 1px;
+}
+.socials-followed:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 100%;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #7777FF;
 }
 @media (max-width: 767px) {
 	.section-socials {
