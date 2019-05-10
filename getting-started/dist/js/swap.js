@@ -193,7 +193,6 @@ var hash = '';
 		var thisIndex = $(this).index();
 		$('.howitwork-nav a').removeClass('active');
 		$(this).addClass('active');
-		console.log(thisIndex);
 		/* How It Work Images */
 		$('.howitwork-images > a').removeClass('active');
 		$('.howitwork-images > a').eq(thisIndex).addClass('active').addClass('animate-top');

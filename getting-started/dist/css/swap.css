@@ -83,6 +83,10 @@ a:hover {
 	margin-right: auto;
 	margin-bottom: 65px;
 }
+.section-subtitle a:hover {
+	text-decoration: none;
+	color: #151b57;
+}
 .block-h6 {
 	font-family: Inter;
 	font-weight: bold;
@@ -425,7 +429,7 @@ a:hover {
 	color: #444;
 	bottom: 100%;
 	margin-bottom: -2px;
-	left: 25%;
+	right: -5px;
 	font-size: 13px;
 	width: 50%;
 	text-align: center;
@@ -475,8 +479,7 @@ a:hover {
 }
 .howitwork-image-link:nth-child(1) {
 	top: 15%;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 21%;
 	width: 58%;
 	z-index: 3;
 }
@@ -495,6 +498,8 @@ a:hover {
 }
 .howitwork-image-link.active {
 	z-index: 4;
+	-webkit-animation: soar 3.5s cubic-bezier(.445,.05,.55,.95) infinite;
+    		animation: soar 3.5s cubic-bezier(.445,.05,.55,.95) infinite;
 }
 .howitwork-images .howitwork-image-link:hover {
 	z-index: 5;
@@ -604,9 +609,32 @@ a:hover {
 	color: #7777FF;
 	text-decoration: none;
 }
+.review-nav-gravatar {
+	position: relative;
+}
+.review-nav-profile {
+	position: absolute;
+	bottom: -6px;
+	right: -5px;
+	background: #7777FF;
+	color: #fff;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 36px;
+	height: 36px;
+	line-height: 34px;
+	font-size: 12px;
+	text-align: center;
+	transition: all .3s;
+}
+.review-nav-profile:hover {
+	background-color: #f3f3ff;
+	color: #7777FF;
+}
 .review-nav-inner {
 	opacity: .5;
 	transition: all .3s;
+	padding-bottom: 8px;
 }
 .review-nav-item:hover .review-nav-inner,
 .swiper-slide-thumb-active .review-nav-inner {
@@ -1295,6 +1323,9 @@ a:hover {
 /**
  * Section Exchange
  * =========================================== */
+.s-otc-p2p-exchange .section-title {
+	max-width: 800px;
+}
 .s-otc-p2p-exchange .h4 {
 	font-size: 17px;
 }
@@ -1472,7 +1503,41 @@ a:hover {
   }
 }
 
+@-webkit-keyframes soar {
+	0% { 
+		-webkit-transform:translateZ(0);
+				transform:translateZ(0)
+	}
+	50% { 
+		-webkit-transform:translate3d(0,-10px,0);
+				transform:translate3d(0,-10px,0)
+	}
+	to { 
+		-webkit-transform:translateZ(0);
+				transform:translateZ(0)
+	}
+}
+@keyframes soar {
+	0% {
+		-webkit-transform:translateZ(0);
+				transform:translateZ(0)
+	}
+	50% {
+		-webkit-transform:translate3d(0,-10px,0);
+				transform:translate3d(0,-10px,0)
+	}
+	to {
+		-webkit-transform:translateZ(0);
+		transform:translateZ(0)
+	}
+}
 
 /**
  * Custom Temp Style
  * =========================================== */
+.popover-fastest {
+	max-width: 700px;
+}
+.fw-800 {
+	font-weight: 800;
+}
