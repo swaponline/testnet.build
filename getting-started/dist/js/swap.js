@@ -210,6 +210,15 @@ var hash = '';
 			scrollTop: $(thisHref).offset().top - 165
 		}, 800, 'swing');
 	});
+	
+	/* How It Work Tabs on hover */
+	$('.howitwork-images a').on('mouseenter', function(e){
+		var thisIndex = $(this).index();
+		$('.howitwork-nav a').removeClass('active');
+		$('.howitwork-images > a').removeClass('active').removeClass('animate-top');
+		$(this).addClass('active').addClass('animate-top');
+		$('.howitwork-nav a').eq(thisIndex).addClass('active');
+	});
 
 	/* How It Work Tabs And Carousel */
 	var howitworkNav = $('.howitwork-nav');
