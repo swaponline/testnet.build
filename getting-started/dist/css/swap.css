@@ -613,23 +613,11 @@ a:hover {
 	position: relative;
 }
 .review-nav-profile {
-	position: absolute;
-	bottom: -6px;
-	right: -5px;
-	background: #7777FF;
-	color: #fff;
-	border-radius: 50%;
-	border: 2px solid #fff;
-	width: 36px;
-	height: 36px;
-	line-height: 34px;
-	font-size: 12px;
-	text-align: center;
+	font-size: 16px;
 	transition: all .3s;
 }
 .review-nav-profile:hover {
-	background-color: #f3f3ff;
-	color: #7777FF;
+	color: #e518a7;
 }
 .review-nav-inner {
 	opacity: .5;
@@ -669,8 +657,7 @@ a:hover {
 	max-width: 250px;
 	font-size: 15px;
 	line-height: 22px;
-	color: #151B57;
-	opacity: 0.5;
+	color: #8a8dab;
 }
 @media (min-width: 1199px) {
 	.review-swiper-content {
@@ -1540,4 +1527,36 @@ a:hover {
 }
 .fw-800 {
 	font-weight: 800;
+}
+.youtube-link-btn {
+	position: relative;
+	display: block;
+}
+.youtube-link-btn:before {
+	font-family: "Font Awesome 5 Brands";
+	content: "\f167";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 60px;
+	line-height: 60px;
+	margin-top: -30px;
+	margin-left: -45px;
+	width: 90px;
+	z-index: 2;
+	color: #e518a7;
+	transiton: color .3s;
+	transform: translate(-50%,-50%);
+	text-shadow: 0 3px 10px rgba(119, 119, 255,.2);
+	-webkit-animation: soar 3.5s cubic-bezier(.445,.05,.55,.95) infinite;
+    animation: soar 3.5s cubic-bezier(.445,.05,.55,.95) infinite;
+}
+.youtube-link-btn:hover:before {
+	color: #7777FF;
+}
+.youtube-link-btn > img {
+	transition: all .3s;
+}
+.youtube-link-btn:hover > img {
+	filter: grayscale(100%);
 }
