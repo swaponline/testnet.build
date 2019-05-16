@@ -313,6 +313,11 @@ a:hover {
 	}
 }
 
+/* Section Decentralized */
+.page-ieo .section-decentralized {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
 
 /* Features */
 .features {
