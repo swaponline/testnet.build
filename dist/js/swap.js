@@ -229,3 +229,20 @@ document.getElementById('btns-separator').innerHTML = swap_l10n.startModal.btnsS
 document.getElementById('start-modal-desc-one').innerHTML = swap_l10n.startModal.desc.one[lang];
 document.getElementById('start-modal-desc-two').innerHTML = swap_l10n.startModal.desc.two[lang];
 document.getElementById('start-modal-desc-three').innerHTML = swap_l10n.startModal.desc.three[lang];
+
+// If variable prerenderReadys undefined
+if ( typeof window.prerenderReady === 'undefined') {
+	window.prerenderReady = false;
+}
+
+// Check each 2 seconds if true,
+var preLoaderRenderReady = setInterval( function(){
+	if ( window.prerenderReady === true ) {
+		// clear if true
+		clearInterval( preLoaderRenderReady );
+		// Hide loader
+		document.getElementById('swap-wait-loading').classList.add('fade');
+		// Show buttons
+		document.getElementById('swap-after-loading').classList.add('show');
+	}
+}, 2000 );
