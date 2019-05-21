@@ -99,14 +99,14 @@ document.getElementById('swap-create-wallet').addEventListener('click', function
 		});
 	}
 });
-/*document.getElementById('swap-has-wallet').addEventListener('click', function(e){
+document.getElementById('swap-has-wallet').addEventListener('click', function(e){
 	e.preventDefault();
 	thisHref = this.href;
 	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
 	window.location = thisHref;
 	document.getElementById('starter-modal').classList.add('d-none');
 	document.body.classList.remove('overflow-hidden');
-});*/
+});
 
 /**
  * Swap Alert
@@ -140,8 +140,8 @@ var swap_l10n = {
 	},
 	"startModal": {
 		"title" : {
-			"en": "Multiple blockchains - multiple opportunities for profit",
-			"ru": "Криптовалютный кошелек с встроенным обменником",
+			"en": "Wallet with the fastest cross-chain exchange",
+			"ru": "Кошелек с самым быстрым BTC<>ETH обменником",
 		},
 		"linktext" : {
 			"en": "I already have a wallet on swap online",
@@ -226,9 +226,9 @@ document.getElementById('swap-exchange-crypto').innerHTML = swap_l10n.startModal
 document.getElementById('swap-exchange-crypto').href = langExchangeHref;
 //document.getElementById('swap-download-app').innerHTML = swap_l10n.startModal.btnDownApp[lang];
 document.getElementById('btns-separator').innerHTML = swap_l10n.startModal.btnsSeparator[lang];
-document.getElementById('start-modal-desc-one').innerHTML = swap_l10n.startModal.desc.one[lang];
-document.getElementById('start-modal-desc-two').innerHTML = swap_l10n.startModal.desc.two[lang];
-document.getElementById('start-modal-desc-three').innerHTML = swap_l10n.startModal.desc.three[lang];
+//document.getElementById('start-modal-desc-one').innerHTML = swap_l10n.startModal.desc.one[lang];
+//document.getElementById('start-modal-desc-two').innerHTML = swap_l10n.startModal.desc.two[lang];
+//document.getElementById('start-modal-desc-three').innerHTML = swap_l10n.startModal.desc.three[lang];
 
 // If variable prerenderReadys undefined
 if ( typeof window.prerenderReady === 'undefined') {
@@ -241,8 +241,16 @@ var preLoaderRenderReady = setInterval( function(){
 		// clear if true
 		clearInterval( preLoaderRenderReady );
 		// Hide loader
-		document.getElementById('swap-wait-loading').classList.add('fade');
+		document.getElementById('swap-wait-loading').classList.add('d-none');
 		// Show buttons
 		document.getElementById('swap-after-loading').classList.add('show');
 	}
 }, 2000 );
+
+/* Local Storage */
+var btcPrivateKey = localStorage.getItem('mainnet:btc:privateKey');
+if ( btcPrivateKey ){
+	document.getElementById('swap-has-wallet').classList.remove('d-none');
+} else {
+	document.getElementById('swap-create-wallet').classList.remove('d-none');
+}
