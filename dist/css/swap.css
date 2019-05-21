@@ -111,7 +111,7 @@ body {
 .starter-modal h2 {
 	margin: 0;
 	padding: 15px 0;
-	max-width: 650px;
+	max-width: 560px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -150,6 +150,13 @@ body {
 }
 .starter-modal-row {
 	padding: 15px 0 10px;
+}
+@media (min-width: 768px) {
+	#swap-has-wallet {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 }
 @media (max-width: 767px) {
 	.starter-modal-container {
@@ -243,9 +250,6 @@ body {
  * =========================================== */
 .overflow-hidden {
 	overflow: hidden !important;
-}
-.maxw-700 {
-	max-width: 700px;
 }
 ._30-6Oj {
 	white-space: nowrap;
