@@ -109,6 +109,15 @@ document.getElementById('swap-has-wallet').addEventListener('click', function(e)
 	document.body.classList.remove('overflow-hidden');
 });
 
+document.getElementById('swap-exchange-crypto').addEventListener('click', function(e){
+	e.preventDefault();
+	thisHref = this.href;
+	setCookie('swapDisalbeStarter', 'true', { expires: swapGetYearSec } );
+	window.location = thisHref;
+	document.getElementById('starter-modal').classList.add('d-none');
+	document.body.classList.remove('overflow-hidden');
+});
+
 /**
  * Swap Alert
  */
