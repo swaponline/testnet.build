@@ -187,6 +187,10 @@ var swap_l10n = {
 			"en": "OR",
 			"ru": "ИЛИ",
 		},
+		"loadingText" : {
+			"en": "Loading... it may take one minute",
+			"ru": "Загрузка... Подождите, в следующий раз будет быстрее",
+		},
 	},
 };
 
@@ -231,6 +235,7 @@ document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lan
 document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
 document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
 //document.getElementById('swap-has-wallet').href = langKeyHref;
+document.getElementById('swap-loading-text').innerHTML = swap_l10n.startModal.loadingText[lang];
 document.getElementById('swap-create-wallet').innerHTML = swap_l10n.startModal.btn[lang];
 document.getElementById('swap-exchange-crypto').innerHTML = swap_l10n.startModal.btnExchange[lang];
 document.getElementById('swap-exchange-crypto').href = langExchangeHref;
