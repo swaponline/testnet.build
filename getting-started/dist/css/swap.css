@@ -36,6 +36,7 @@
 body {
 	font-family: CerebriSans, Arial, Verdana, Tahoma;
 	position: relative;
+	counter-reset: tooltip;
 }
 a,
 a:hover {
@@ -438,6 +439,13 @@ a:hover {
 	font-size: 13px;
 	width: 50%;
 	text-align: center;
+}
+.howitwork-help:before {
+	content: counter(tooltip);
+	counter-increment: tooltip;
+	font-family: Inter;
+	font-weight: bold;
+	line-height: 1;
 }
 .howitwork-images {
 	position: relative;
