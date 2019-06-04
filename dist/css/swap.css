@@ -95,7 +95,7 @@ body {
 	display: none;
 }
 .starter-modal > .container {
-	min-height: 550px;
+	/*min-height: 550px;*/
 	height: 100%;
 	max-width: 960px;
 }
@@ -176,9 +176,9 @@ body {
  * Swap Loading
  * =========================================== */
 .swap-wait-loading {
-	position: absolute;
+	/*position: absolute;
 	top: 12px;
-	left: 0;
+	left: 0;*/
 	width: 100%;
 	text-align: center;
 }

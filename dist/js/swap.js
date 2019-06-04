@@ -82,6 +82,7 @@ if( swapDisalbeStarter != 'true' ){
 	document.getElementById('starter-modal').classList.remove('d-none');
 	document.body.classList.add('overflow-hidden');
 }
+/*
 document.getElementById('swap-create-wallet').addEventListener('click', function(e){
 	e.preventDefault();
 	document.getElementById('starter-modal').classList.add('loading');
@@ -117,6 +118,7 @@ document.getElementById('swap-exchange-crypto').addEventListener('click', functi
 	document.getElementById('starter-modal').classList.add('d-none');
 	document.body.classList.remove('overflow-hidden');
 });
+*/
 
 /**
  * Swap Alert
@@ -188,7 +190,7 @@ var swap_l10n = {
 			"ru": "ИЛИ",
 		},
 		"loadingText" : {
-			"en": "Loading... it may take one minute",
+			"en": "Loading... It may take one minute (next time it will be faster)",
 			"ru": "Загрузка... Подождите, в следующий раз будет быстрее",
 		},
 	},
@@ -232,15 +234,15 @@ if ( lang == 'ru') {
 
 document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[lang];
 document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lang];
-document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
-document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
+//document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
+//document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
 //document.getElementById('swap-has-wallet').href = langKeyHref;
 document.getElementById('swap-loading-text').innerHTML = swap_l10n.startModal.loadingText[lang];
-document.getElementById('swap-create-wallet').innerHTML = swap_l10n.startModal.btn[lang];
-document.getElementById('swap-exchange-crypto').innerHTML = swap_l10n.startModal.btnExchange[lang];
-document.getElementById('swap-exchange-crypto').href = langExchangeHref;
+//document.getElementById('swap-create-wallet').innerHTML = swap_l10n.startModal.btn[lang];
+//document.getElementById('swap-exchange-crypto').innerHTML = swap_l10n.startModal.btnExchange[lang];
+//document.getElementById('swap-exchange-crypto').href = langExchangeHref;
 //document.getElementById('swap-download-app').innerHTML = swap_l10n.startModal.btnDownApp[lang];
-document.getElementById('btns-separator').innerHTML = swap_l10n.startModal.btnsSeparator[lang];
+//document.getElementById('btns-separator').innerHTML = swap_l10n.startModal.btnsSeparator[lang];
 //document.getElementById('start-modal-desc-one').innerHTML = swap_l10n.startModal.desc.one[lang];
 //document.getElementById('start-modal-desc-two').innerHTML = swap_l10n.startModal.desc.two[lang];
 //document.getElementById('start-modal-desc-three').innerHTML = swap_l10n.startModal.desc.three[lang];
@@ -256,16 +258,20 @@ var preLoaderRenderReady = setInterval( function(){
 		// clear if true
 		clearInterval( preLoaderRenderReady );
 		// Hide loader
-		document.getElementById('swap-wait-loading').classList.add('d-none');
+		//document.getElementById('swap-wait-loading').classList.add('d-none');
+		// Hide overlay
+		document.getElementById('starter-modal').classList.add('d-none');
 		// Show buttons
-		document.getElementById('swap-after-loading').classList.add('show');
+		//document.getElementById('swap-after-loading').classList.add('show');
 	}
 }, 2000 );
 
 /* Local Storage */
+/*
 var btcPrivateKey = localStorage.getItem('mainnet:btc:privateKey');
 if ( btcPrivateKey ){
 	document.getElementById('swap-has-wallet').classList.remove('d-none');
 } else {
 	document.getElementById('swap-create-wallet').classList.remove('d-none');
 }
+*/
