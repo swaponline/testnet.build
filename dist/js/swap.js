@@ -261,6 +261,8 @@ var preLoaderRenderReady = setInterval( function(){
 		//document.getElementById('swap-wait-loading').classList.add('d-none');
 		// Hide overlay
 		document.getElementById('starter-modal').classList.add('d-none');
+		// Remove body class
+		document.body.classList.remove('overflow-hidden');
 		// Show buttons
 		//document.getElementById('swap-after-loading').classList.add('show');
 	}
