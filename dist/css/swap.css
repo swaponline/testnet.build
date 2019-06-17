@@ -5,7 +5,7 @@ body {
 	font-family: CerebriSans, Arial, Verdana, Tahoma;
 }
 #root {
-	position: relative;
+	/*position: relative;*/
 }
 
 /**
@@ -247,7 +247,7 @@ body {
 .maxw-700 {
 	max-width: 700px;
 }
-._30-6Oj {
+/*._30-6Oj {
 	white-space: nowrap;
 }
 .qZaPkJ {
@@ -265,3 +265,4 @@ body {
 		margin-top: 0;
 	}
 }
+*/
