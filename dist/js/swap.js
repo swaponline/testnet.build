@@ -123,6 +123,7 @@ document.getElementById('swap-exchange-crypto').addEventListener('click', functi
 /**
  * Swap Alert
  */
+/*
 var swapDisalbeAlert = getCookie('swapDisalbeAlert');
 if( swapDisalbeAlert != 'true' ){
 	// Show if is chrome
@@ -135,6 +136,7 @@ document.getElementById('swap-alert-close').addEventListener('click', function()
 	document.getElementById('swap-alert').classList.remove('d-md-block');
 	setCookie('swapDisalbeAlert', 'true', { expires: swapGetYearSec } );
 });
+*/
 
 /**
  * Multilanguage Content
