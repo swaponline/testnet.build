@@ -234,8 +234,8 @@ if ( lang == 'ru') {
 	langExchangeHref = 'https://swap.online/exchange/btc-to-swap';
 }
 
-document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[lang];
-document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lang];
+//document.getElementById('swap-alert-title').innerHTML = swap_l10n.extAlert.msg[lang];
+//document.getElementById('swap-alert-btn').innerHTML = swap_l10n.extAlert.btn[lang];
 //document.getElementById('start-modal-title').innerHTML = swap_l10n.startModal.title[lang];
 //document.getElementById('swap-has-wallet').innerHTML = swap_l10n.startModal.linktext[lang];
 //document.getElementById('swap-has-wallet').href = langKeyHref;
